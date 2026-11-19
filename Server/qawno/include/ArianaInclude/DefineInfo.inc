@@ -203,11 +203,6 @@ new VersionUpdate[MAX_PLAYERS], LastVersionUpdate[MAX_PLAYERS], LastUpdatePayChe
 //Zakhireye check point faal va id check point bazikon
 new bool:PlayerActiveCheckPoint[MAX_PLAYERS], PlayerCheckPoint[MAX_PLAYERS];
 
-//Vehicles
-new PlayerGovVeh[MAX_PLAYERS];
-//********
-
-
 
 //Reset kardane meghdarr vatiable moghe connect va disconnect
 stock ResetPlayerVariable(playerid){
@@ -217,6 +212,5 @@ stock ResetPlayerVariable(playerid){
 	SetPlayerPflylic(playerid, 0);
 	SetPlayerPsailinglic(playerid, 0);
 	SetPlayerPweaponlic(playerid, 0);
-	PlayerGovVeh[playerid] = 0;
 	return 1;
 }

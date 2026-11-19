@@ -4,7 +4,7 @@
       {
         "label": "Compile Pawn",
         "type": "shell",
-        "command": "C:\\Users\\NvDAdmin\\Desktop\\Ariana\\Server\\qawno\\pawncc.exe",
+        "command": "C:\\Users\\NvDAdmin\\Desktop\\ArianaGame\\Server\\qawno\\pawncc.exe",
         "args": [
           "gamemodes/ArianaGame.pwn"
         ],
