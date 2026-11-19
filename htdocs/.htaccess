@@ -1,0 +1,12 @@
+RewriteEngine On
+Options -Indexes
+ServerSignature Off
+
+RewriteRule ^includes/ - [F,L]
+
+RewriteRule ^logs/?$ logs.php [L]
+
+RewriteCond %{REQUEST_URI} !^/Email/ [NC]
+RewriteCond %{REQUEST_URI} !^/ArianaGame\.mp3$ [NC]
+RewriteCond %{THE_REQUEST} !\s/(logs/?)?(\?[^\s]*)?\s [NC]
+RewriteRule ^ - [F,L]

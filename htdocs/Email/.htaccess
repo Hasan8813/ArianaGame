@@ -1,0 +1,6 @@
+RewriteEngine On
+Options -Indexes
+
+RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+RewriteCond %{REMOTE_ADDR} !^::1$
+RewriteRule ^ - [F,L]

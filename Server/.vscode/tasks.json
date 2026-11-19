@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Compile Pawn",
+        "type": "shell",
+        "command": "C:\\Users\\NvDAdmin\\Desktop\\Ariana\\Server\\qawno\\pawncc.exe",
+        "args": [
+          "gamemodes/ArianaGame.pwn"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": []
+      }
+    ]
+  }
