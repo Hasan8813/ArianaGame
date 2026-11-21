@@ -3,6 +3,9 @@
 #endif
 #define _SYSTEME_EXAM_BY_MAMAD_PERSIAN_INC
 
+#define DMV_LIC_FEE 90
+#define FLY_LIC_FEE 300
+#define SAILING_LIC_FEE 170
 stock LoadMapExam(){
     //Mape exam
 	CreateDynamicObject(4641,1354.067,-2341.873,14.175,0.000,0.000,0.000,0,0,-1,200.000,200.000);
@@ -12,9 +15,9 @@ stock LoadMapExam(){
 	CreateDynamicPickup(1581, 1, 1353.544921, -2343.492187, 13.546875, 0, 0, -1, 200.0);
 	CreateDynamicPickup(1581, 1, -1769.167480, -184.762985, 3.554687, 0, 0, -1, 200.0);
 	CreateDynamicPickup(1581, 1, 415.045288, 2535.450683, 19.058437, 0, 0, -1, 200.0);
-	Create3DTextLabel("To obtain a driving license\nuse /exam", 0x70D8F8FF, 1353.544921, -2343.492187, 13.546875, 5.0, 0, true);
-	Create3DTextLabel("To obtain a sailing license\nuse /exam", 0x70D8F8FF, -1769.167480, -184.762985, 3.554687, 5.0, 0, true);
-	Create3DTextLabel("To obtain a flying license\nuse /exam", 0x70D8F8FF, 415.045288, 2535.450683, 19.058437, 5.0, 0, true);
+	Create3DTextLabel("To obtain a driving license\nuse /exam\nExam fee: {1A7936}$%d", 0x70D8F8FF, 1353.544921, -2343.492187, 13.546875, 5.0, 0, true, DMV_LIC_FEE);
+	Create3DTextLabel("To obtain a sailing license\nuse /exam\nExam fee: {1A7936}$%d", 0x70D8F8FF, -1769.167480, -184.762985, 3.554687, 5.0, 0, true, SAILING_LIC_FEE);
+	Create3DTextLabel("To obtain a flying license\nuse /exam\nExam fee: {1A7936}$%d", 0x70D8F8FF, 415.045288, 2535.450683, 19.058437, 5.0, 0, true, FLY_LIC_FEE);
     return 1;
 }
 new ParkinPosAct[3], Iterator:ExamLic<MAX_PLAYERS>, TimerExamLic = -1;
@@ -183,9 +186,25 @@ stock StartTestLicense(playerid, TestNumber, Token){
 	if(TestNumber == 3 && Level < 2) return SendPM(playerid, PMError, "Baraye in mojavez, levele shoma bayad hadeaghal 2 bashad", "For this license, your level must be at least 2", Token);
 	new LIC, VehTestId, LicNameP[30], LicNameE[20];
 	switch(TestNumber){
-		case 1: LIC = GetPlayerPdrivlic(playerid), VehTestId = 589, LicNameP = "govahinameye ranandegi", LicNameE = "driving license";
-		case 2: LIC = GetPlayerPflylic(playerid), VehTestId = 469, LicNameP = "mojaveze parvaz", LicNameE = "flying license";
-		case 3: LIC = GetPlayerPsailinglic(playerid), VehTestId = 446, LicNameP = "mojaveze ghayegh rani", LicNameE = "sailing license";
+		case 1:{
+			if(GetPlayerPmoney(playerid) < DMV_LIC_FEE) return SendPM(playerid, PMError, "Mojudiye hesabe shoma kafi nist", "Your account balance is insufficient", Token);
+			LIC = GetPlayerPdrivlic(playerid);
+			VehTestId = 589;
+			LicNameP = "govahinameye ranandegi";
+			LicNameE = "driving license";
+		}case 2:{
+			if(GetPlayerPmoney(playerid) < FLY_LIC_FEE) return SendPM(playerid, PMError, "Mojudiye hesabe shoma kafi nist", "Your account balance is insufficient", Token);
+			LIC = GetPlayerPflylic(playerid);
+			VehTestId = 469;
+			LicNameP = "mojaveze parvaz";
+			LicNameE = "flying license";
+		}case 3:{
+			if(GetPlayerPmoney(playerid) < SAILING_LIC_FEE) return SendPM(playerid, PMError, "Mojudiye hesabe shoma kafi nist", "Your account balance is insufficient", Token);
+			LIC = GetPlayerPsailinglic(playerid);
+			VehTestId = 446;
+			LicNameP = "mojaveze ghayegh rani";
+			LicNameE = "sailing license";
+		}
 	}
 	if(LIC >= 0 && LIC <= 10){
 		CheckPlayerCheckPointActiveAndError(playerid);
