@@ -131,6 +131,8 @@ stock StopTestDMV(playerid, bool:RMLIST){
 	CancelPlayerRaceCheckPoint(playerid);
 	DeleteV(playerid, CheckPointNumberDMV);
 	DeleteV(playerid, PlayerPersonalUseDMV);
+	PlayerTextDrawDestroy(playerid, PlayerText:GetInt(playerid, ExamCpNumTd));
+	DeleteV(playerid, ExamCpNumTd);
 }
 CreateRaceCheckPointStock(CHECKPOINTID_ExamLic){
 	new DMVCPID = GetInt(playerid, CheckPointNumberDMV);
@@ -167,12 +169,18 @@ CreateRaceCheckPointStock(CHECKPOINTID_ExamLic){
 		case 1: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_NORMAL, DmvCpPos[CpId][DMVCPID][0], DmvCpPos[CpId][DMVCPID][1], DmvCpPos[CpId][DMVCPID][2], DmvCpPos[CpId][DMVCPID+1][0], DmvCpPos[CpId][DMVCPID+1][1], DmvCpPos[CpId][DMVCPID+1][2], 8.0);
 		case 2: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_BOBBING, DmvCpPos[CpId][DMVCPID][0], DmvCpPos[CpId][DMVCPID][1], DmvCpPos[CpId][DMVCPID][2], DmvCpPos[CpId][DMVCPID+1][0], DmvCpPos[CpId][DMVCPID+1][1], DmvCpPos[CpId][DMVCPID+1][2], 8.0);
 	}
+	new PlayerText:PlayerTdCp = PlayerText:GetInt(playerid, ExamCpNumTd);
+	PlayerTextDrawSetString(playerid, PlayerTdCp, "~r~%d/23", DMVCPID);
+	PlayerTextDrawShow(playerid, PlayerTdCp);
 	SetInt(playerid, CheckPointNumberDMV, DMVCPID+1);
 	return 1;
 }
 stock StartTestLicense(playerid, TestNumber, Token){
 	CheckPlayerOnlineAndLogin(playerid);
 	CheckPlayerTokenCmp(playerid, Token);
+	new Level = GetPlayerPlevel(playerid);
+	if(TestNumber == 2 && Level < 3) return SendPM(playerid, PMError, "Baraye in mojavez, levele shoma bayad hadeaghal 3 bashad", "For this license, your level must be at least 3", Token);
+	if(TestNumber == 3 && Level < 2) return SendPM(playerid, PMError, "Baraye in mojavez, levele shoma bayad hadeaghal 2 bashad", "For this license, your level must be at least 2", Token);
 	new LIC, VehTestId, LicNameP[30], LicNameE[20];
 	switch(TestNumber){
 		case 1: LIC = GetPlayerPdrivlic(playerid), VehTestId = 589, LicNameP = "govahinameye ranandegi", LicNameE = "driving license";
@@ -187,6 +195,9 @@ stock StartTestLicense(playerid, TestNumber, Token){
 		else i = (ParkinPosAct[TestNumber-1]++);
 		new DMVV = CreateVehicleGov(playerid, TestNumber, VehTestId, ParkingPosExam[TestNumber-1][i][0], ParkingPosExam[TestNumber-1][i][1],  ParkingPosExam[TestNumber-1][i][2], ParkingPosExam[TestNumber-1][i][3], 130, 130, false);
 		if(DMVV == INVALID_VEHICLE_ID) return SendPM(playerid, PMError, "Lotfan chand daghighe digar dobare talash konid", "Please try again in a few minutes", Token);
+		new PlayerText:ExamLicTd = CreatePlayerTextDraw(playerid, 300.0, 370.0, "0/23"); PlayerTextDrawFont(playerid, ExamLicTd, TEXT_DRAW_FONT_1); PlayerTextDrawLetterSize(playerid, ExamLicTd, 0.6, 3.5); PlayerTextDrawColour(playerid, ExamLicTd, 0xFFFFFFFF); PlayerTextDrawSetOutline(playerid, ExamLicTd, 1); PlayerTextDrawSetProportional(playerid, ExamLicTd, true); PlayerTextDrawSetShadow(playerid, ExamLicTd, true);
+		PlayerTextDrawShow(playerid, ExamLicTd);
+		SetInt(playerid, ExamCpNumTd, _:ExamLicTd);
 		SetVehicleNumberPlate(DMVV, "Exam");
 		SetVehicleParamsEx(DMVV, 1, 0, 0, 1, 0, 0, 0);
 		SetPState(playerid, TestNumber);
