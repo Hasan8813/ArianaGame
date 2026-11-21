@@ -225,9 +225,9 @@ stock StartTestLicense(playerid, TestNumber, Token){
 		Iter_Add(ExamLic, playerid);
 		if(!IsValidTimer(TimerExamLic)) TimerExamLic = SetTimer("CheckPlayerExamLic", 3000, true);
 		switch(TestNumber-1){
-			case 0: SetPlayerRaceCheckpoint(playerid, CP_TYPE_GROUND_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 4.0);
-			case 1: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0);
-			case 2: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_BOBBING, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0);
+			case 0: SetPlayerRaceCheckpoint(playerid, CP_TYPE_GROUND_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 4.0), GiveMoney(playerid, 1, -DMV_LIC_FEE, Token);
+			case 1: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0), GiveMoney(playerid, 1, -FLY_LIC_FEE, Token);
+			case 2: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_BOBBING, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0), GiveMoney(playerid, 1, -SAILING_LIC_FEE, Token);
 		}
 		SetPlayerCheckPointID(playerid, CHECKPOINTID_ExamLic);
 		SetInt(playerid, CheckPointNumberDMV, 1);
