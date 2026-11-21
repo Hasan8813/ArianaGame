@@ -59,7 +59,6 @@
 #include 								<ArianaInclude/SystemZones.inc>//System zone(Mantaghe ha)
 // 								**** 								//
 // 								Maps 								//
-#include 								<ArianaInclude/Maps/MapSpawn.inc>//Systeme mapperi spawn
 #include 								<ArianaInclude/Maps/LoadAllMap.inc>//Load all map
 // 								**** 								//
 main(){}
