@@ -120,7 +120,7 @@ public OnPlayerDisconnect(playerid, reason){
 	if(GetInt(playerid, TimerPremium) > 0) KillTimer(GetInt(playerid, TimerPremium));
 	UpdatePlayerDataDisconnect(playerid, GetPlayerToken(playerid));
 	DestroyVehicleGov(playerid);
-	if(Iter_Contains(ExamLic, playerid)) Iter_Remove(ExamLic, playerid);
+	StopTestDMV(playerid, true);
 	ResetPlayerVariable(playerid);
 	ResetAntiCheatVariable(playerid);
 	return 1;

@@ -143,6 +143,9 @@ CreateRaceCheckPointStock(CHECKPOINTID_ExamLic){
 	if(!IsPlayerInRangeOfPoint(playerid, 20.0, DmvCpPos[CpId][DMVCPID-1][0], DmvCpPos[CpId][DMVCPID-1][1], DmvCpPos[CpId][DMVCPID-1][2])) return 1;
 	PlayerPlaySound(playerid, 1056);
 	new DMVCPIDMAX = sizeof(DmvCpPos[])-1;
+	new PlayerText:PlayerTdCp = PlayerText:GetInt(playerid, ExamCpNumTd);
+	PlayerTextDrawSetString(playerid, PlayerTdCp, "~g~%d~w~/22", DMVCPID);
+	PlayerTextDrawShow(playerid, PlayerTdCp);
 	if(DMVCPID == DMVCPIDMAX+1){
 		switch(GetPState(playerid)){
 			case 1: SetPlayerPdrivlic(playerid, 60);
@@ -169,9 +172,6 @@ CreateRaceCheckPointStock(CHECKPOINTID_ExamLic){
 		case 1: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_NORMAL, DmvCpPos[CpId][DMVCPID][0], DmvCpPos[CpId][DMVCPID][1], DmvCpPos[CpId][DMVCPID][2], DmvCpPos[CpId][DMVCPID+1][0], DmvCpPos[CpId][DMVCPID+1][1], DmvCpPos[CpId][DMVCPID+1][2], 8.0);
 		case 2: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_BOBBING, DmvCpPos[CpId][DMVCPID][0], DmvCpPos[CpId][DMVCPID][1], DmvCpPos[CpId][DMVCPID][2], DmvCpPos[CpId][DMVCPID+1][0], DmvCpPos[CpId][DMVCPID+1][1], DmvCpPos[CpId][DMVCPID+1][2], 8.0);
 	}
-	new PlayerText:PlayerTdCp = PlayerText:GetInt(playerid, ExamCpNumTd);
-	PlayerTextDrawSetString(playerid, PlayerTdCp, "~r~%d/23", DMVCPID);
-	PlayerTextDrawShow(playerid, PlayerTdCp);
 	SetInt(playerid, CheckPointNumberDMV, DMVCPID+1);
 	return 1;
 }
@@ -195,7 +195,7 @@ stock StartTestLicense(playerid, TestNumber, Token){
 		else i = (ParkinPosAct[TestNumber-1]++);
 		new DMVV = CreateVehicleGov(playerid, TestNumber, VehTestId, ParkingPosExam[TestNumber-1][i][0], ParkingPosExam[TestNumber-1][i][1],  ParkingPosExam[TestNumber-1][i][2], ParkingPosExam[TestNumber-1][i][3], 130, 130, false);
 		if(DMVV == INVALID_VEHICLE_ID) return SendPM(playerid, PMError, "Lotfan chand daghighe digar dobare talash konid", "Please try again in a few minutes", Token);
-		new PlayerText:ExamLicTd = CreatePlayerTextDraw(playerid, 300.0, 370.0, "0/23"); PlayerTextDrawFont(playerid, ExamLicTd, TEXT_DRAW_FONT_1); PlayerTextDrawLetterSize(playerid, ExamLicTd, 0.6, 3.5); PlayerTextDrawColour(playerid, ExamLicTd, 0xFFFFFFFF); PlayerTextDrawSetOutline(playerid, ExamLicTd, 1); PlayerTextDrawSetProportional(playerid, ExamLicTd, true); PlayerTextDrawSetShadow(playerid, ExamLicTd, true);
+		new PlayerText:ExamLicTd = CreatePlayerTextDraw(playerid, 297.0, 370.0, "~g~0~w~/22"); PlayerTextDrawFont(playerid, ExamLicTd, TEXT_DRAW_FONT_1); PlayerTextDrawLetterSize(playerid, ExamLicTd, 0.6, 3.5); PlayerTextDrawColour(playerid, ExamLicTd, 0xFFFFFFFF); PlayerTextDrawSetOutline(playerid, ExamLicTd, 1); PlayerTextDrawSetProportional(playerid, ExamLicTd, true); PlayerTextDrawSetShadow(playerid, ExamLicTd, true);
 		PlayerTextDrawShow(playerid, ExamLicTd);
 		SetInt(playerid, ExamCpNumTd, _:ExamLicTd);
 		SetVehicleNumberPlate(DMVV, "Exam");
