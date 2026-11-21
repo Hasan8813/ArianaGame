@@ -21,8 +21,8 @@ public GiveGold(playerid, GiveSet1or2, amount, token){
             format(MSG2, sizeof(MSG2), "{EECD0F}You received {FFFFFF}%d {EECD0F}gold.", amount);
             format(MSG, sizeof(MSG), "~h~+%d GOLD", amount);
         }else if(amount < 0){
-            format(MSG1, sizeof(MSG1), "%d {FF0000}gold az hesabe shoma kam shod.", amount);
-            format(MSG2, sizeof(MSG2), "%d {FF0000}gold has been deducted from your account.", amount);
+            format(MSG1, sizeof(MSG1), "%d {FF0000}gold az hesabe shoma kam shod.", abs(amount));
+            format(MSG2, sizeof(MSG2), "%d {FF0000}gold has been deducted from your account.", abs(amount));
             format(MSG, sizeof(MSG), "~r~%d GOLD", amount);
         }
     }else return 1;
@@ -57,8 +57,8 @@ public GiveMoney(playerid, GiveSet1or2, amount, token){
             format(MSG2, sizeof(MSG2), "{1A7936}You received $%d dollar.", amount);
             format(MSG, sizeof(MSG), "~g~+$%d", amount);
         }else if(amount < 0){
-            format(MSG1, sizeof(MSG1), "{FF0000}$%d dollar az hesabe shoma kam shod.", amount);
-            format(MSG2, sizeof(MSG2), "{FF0000}$%d dollar was deducted from your account.", amount);
+            format(MSG1, sizeof(MSG1), "{FF0000}$%d dollar az hesabe shoma kam shod.", abs(amount));
+            format(MSG2, sizeof(MSG2), "{FF0000}$%d dollar was deducted from your account.", abs(amount));
             format(MSG, sizeof(MSG), "~r~$%d", amount);
         }
     }else return 1;
