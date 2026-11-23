@@ -53,7 +53,7 @@ new Querys = 0;
 #define 								SendEmailLink 								"http://127.0.0.1/Email/send1.php"
 #define 								SendEmailLink2 								"http://127.0.0.1/Email/send2.php"
 
-#define 								MUSIC_WELCOME 								"http://100.85.6.85/ArianaGame.mp3"
+#define 								MUSIC_WELCOME 								"http://3.139.105.193/ArianaGame.mp3"
 
 //Timer baraye login ke age tu in time password ro nazane kick mishe
 #define 								TimeForLogin 								45000
