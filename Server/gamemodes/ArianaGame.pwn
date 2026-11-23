@@ -19,7 +19,6 @@
 #include 								<Pawn.RakNet>
 // 							******** 								//
 
-
 // 								   Include made by Persian for Ariana Game 								//
 #include 								<ArianaInclude/DefineInfo.inc>//Define ha va bazi az vatiable global
 #include 								<ArianaInclude/ArianaStock.inc>//Stock haye por karbord
