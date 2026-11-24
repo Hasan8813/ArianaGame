@@ -7,15 +7,15 @@
 #define MAX_PLACES   1000
 
 //***********Dast kari nashe*************//
-#define GRID_SIZE    100.0
-#define GRID_ORIGIN  10000.0
-#define GRID_W       200
-new CellHead[GRID_W * GRID_W] = {-1, ...}; 
+#define CELL_SIZE    100.0
+#define CELL_ORIGIN  10000.0
+#define CELL_ALL       200
+new CellHead[CELL_ALL * CELL_ALL] = {-1, ...}; 
 new PlaceNext[MAX_PLACES], bool:PlaceActive[MAX_PLACES];
 stock GridXID(Float:Val){
-    new Cl = floatround((Val + GRID_ORIGIN) / GRID_SIZE, floatround_floor);
+    new Cl = floatround((Val + CELL_ORIGIN) / CELL_SIZE, floatround_floor);
     if(Cl < 0) return 0;
-    if(Cl >= GRID_W) return GRID_W - 1;
+    if(Cl >= CELL_ALL) return CELL_ALL - 1;
     return Cl;
 }
 //*******************************************************//
@@ -31,7 +31,7 @@ stock AddPlace(Float:x, Float:y, Float:z, Float:tox, Float:toy, Float:toz, int_i
     PlaceToX[pid] = tox; PlaceToY[pid] = toy; PlaceToZ[pid] = toz;
     PlaceInt[pid] = int_id;
     PlaceActive[pid] = true;
-    new cell = GridXID(y) * GRID_W + GridXID(x);
+    new cell = GridXID(y) * CELL_ALL + GridXID(x);
     PlaceNext[pid] = CellHead[cell];
     CellHead[cell] = pid;
     return pid;
@@ -41,10 +41,10 @@ stock FindPlaceForEnter(playerid){
     GetPlayerPos(playerid, px, py, pz);
     new cx = GridXID(px), cy = GridXID(py);
     for(new gy = cy - 1; gy <= cy + 1; gy++){
-        if(gy < 0 || gy >= GRID_W) continue;
+        if(gy < 0 || gy >= CELL_ALL) continue;
         for(new gx = cx - 1; gx <= cx + 1; gx++){
-            if(gx < 0 || gx >= GRID_W) continue;
-            for(new id = CellHead[gy * GRID_W + gx]; id != -1; id = PlaceNext[id]){
+            if(gx < 0 || gx >= CELL_ALL) continue;
+            for(new id = CellHead[gy * CELL_ALL + gx]; id != -1; id = PlaceNext[id]){
                 if(!PlaceActive[id]) continue;
                 if(IsPlayerInRangeOfPoint(playerid, 2.5, PlaceX[id], PlaceY[id], PlaceZ[id])) return id;
             }
