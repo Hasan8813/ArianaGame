@@ -24,6 +24,7 @@
 #include 								<ArianaInclude/ArianaStock.inc>//Stock haye por karbord
 #include 								<ArianaInclude/AntiCheat/AntiCheatCallback.inc>//Anti cheat
 #include 								<ArianaInclude/Security/Anti-Flood-Command.inc>//Systeme anti flood baraye jolo giri az spam dadane cmd ha
+#include 								<ArianaInclude/EnterExitSystem.inc>//Systeme enter va exit makan ha
 #include 								<ArianaInclude/CreateGovVehicle.inc>//Sakhte mashine goverment baraye bazikon
 #include 								<ArianaInclude/CheckPlayerPermForEnterToVeh.inc>//Check haye bazikon moghe vorud be vehicle ha
 #include 								<ArianaInclude/CheckPoints.inc>//Check point ha
@@ -484,45 +485,5 @@ CMD:cancel(playerid, params[]){
 	}else{
 		SendPM(playerid, PMError, "Name mo'tabar nist", "Name is not valid", Tok);
 	}
-	return 1;
-}
-#define MAX_PLACES 10
-new Float:PlaceX[MAX_PLACES], Float:PlaceY[MAX_PLACES], Float:PlaceZ[MAX_PLACES], Float:PlaceToX[MAX_PLACES], Float:PlaceToY[MAX_PLACES], Float:PlaceToZ[MAX_PLACES], PlaceInt[MAX_PLACES], PlaceCount;
-new PlayerPlace[MAX_PLAYERS] = {-1, ...};
-stock FindPlaceForEnter(playerid){
-	for(new i; i < PlaceCount; i++){
-		if(IsPlayerInRangeOfPoint(playerid, 2.5, PlaceX[i], PlaceY[i], PlaceZ[i])) return i;
-	}
-	return -1;
-}
-CMD:enter(playerid){
-	if(PlayerPlace[playerid] != -1) return 1;
-	new pid = FindPlaceForEnter(playerid);
-	if(pid == -1) return 1;
-	PlayerPlace[playerid] = pid;
-	SetPlayerInterior(playerid, PlaceInt[pid]);
-	SetPlayerVirtualWorld(playerid, 1000+pid);
-	SetPlayerPos(playerid, PlaceToX[pid], PlaceToY[pid], PlaceToZ[pid]);
-	return 1;
-}
-CMD:exit(playerid){
-	new Int = PlayerPlace[playerid];
-	if(Int == -1) return 1;
-	if(!IsPlayerInRangeOfPoint(playerid, 3.0, PlaceToX[Int], PlaceToY[Int], PlaceToZ[Int])) return 1;
-	PlayerPlace[playerid] = -1;
-	SetPlayerInterior(playerid, 0);
-	SetPlayerVirtualWorld(playerid, 0)
-	SetPlayerPos(playerid, PlaceX[Int], PlaceY[Int], PlaceZ[Int]);
-	return 1;
-}
-CMD:create(playerid){
-	PlaceX[0] = 1438.953735;
-	PlaceY[0] = -2282.733398;
-	PlaceZ[0] = 13.546875;
-	PlaceToX[0] = 2233.918945;
-	PlaceToY[0] = 1713.641967;
-	PlaceToZ[0] = 1012.194641;
-	PlaceInt[0] = 1;
-	PlaceCount++;
 	return 1;
 }
