@@ -145,6 +145,7 @@ public OnPlayerSpawn(playerid){
 	else if(GetPlayerPsex(playerid) == 2) SetPlayerSkin(playerid, NewPlayerSkinZan);
 	ResetPlayerMoney(playerid);
 	GivePlayerMoney(playerid, GetPlayerPmoney(playerid));
+	PlayerPlace[playerid] = -1;
 	return 1;
 }
 
@@ -156,6 +157,7 @@ public OnPlayerDeath(playerid, killerid, WEAPON:reason){
 		KillTimer(GetInt(playerid, TimerMushakArea));
 		RemovePlayerMapIcon(playerid, 0);
 	}
+	PlayerPlace[playerid] = -1;
 	return 1;
 }
 
