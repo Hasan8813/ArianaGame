@@ -464,18 +464,6 @@ CMD:pos(playerid){
 	SendClientMessage(playerid, -1, "X: %f, Y: %f, Z: %f, A: %f", Pos[0], Pos[1], Pos[2], Pos[3]);
 	return 1;
 }
-CMD:g(playerid){
-	SetPlayerPdrivlic(playerid, 1);
-	SetPlayerPflylic(playerid, 1);
-	SetPlayerPsailinglic(playerid, 1);
-	return 1;
-}
-CMD:d(playerid){
-	SetPlayerPdrivlic(playerid, 0);
-	SetPlayerPflylic(playerid, 0);
-	SetPlayerPsailinglic(playerid, 0);
-	return 1;
-}
 CMD:cancel(playerid, params[]){
 	new CNID[50], Tok = GetPlayerToken(playerid);
 	if(sscanf(params, "s[50]", CNID)){
