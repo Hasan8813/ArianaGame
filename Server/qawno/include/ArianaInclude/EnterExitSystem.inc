@@ -12,11 +12,11 @@
 #define GRID_W       200
 new CellHead[GRID_W * GRID_W] = {-1, ...}; 
 new PlaceNext[MAX_PLACES], bool:PlaceActive[MAX_PLACES];
-stock GridIdx(Float:v){
-    new c = floatround((v + GRID_ORIGIN) / GRID_SIZE, floatround_floor);
-    if(c < 0) return 0;
-    if(c >= GRID_W) return GRID_W - 1;
-    return c;
+stock GridXID(Float:Val){
+    new Cl = floatround((Val + GRID_ORIGIN) / GRID_SIZE, floatround_floor);
+    if(Cl < 0) return 0;
+    if(Cl >= GRID_W) return GRID_W - 1;
+    return Cl;
 }
 //*******************************************************//
 
@@ -26,20 +26,20 @@ new PlaceInt[MAX_PLACES], PlaceCount;
 new PlayerPlace[MAX_PLAYERS] = {-1, ...};
 stock AddPlace(Float:x, Float:y, Float:z, Float:tox, Float:toy, Float:toz, int_id){
     if(PlaceCount >= MAX_PLACES) return -1;
-    new id = PlaceCount++;
-    PlaceX[id] = x; PlaceY[id] = y; PlaceZ[id] = z;
-    PlaceToX[id] = tox; PlaceToY[id] = toy; PlaceToZ[id] = toz;
-    PlaceInt[id] = int_id;
-    PlaceActive[id] = true;
-    new cell = GridIdx(y) * GRID_W + GridIdx(x);
-    PlaceNext[id] = CellHead[cell];
-    CellHead[cell] = id;
-    return id;
+    new pid = PlaceCount++;
+    PlaceX[pid] = x; PlaceY[pid] = y; PlaceZ[pid] = z;
+    PlaceToX[pid] = tox; PlaceToY[pid] = toy; PlaceToZ[pid] = toz;
+    PlaceInt[pid] = int_id;
+    PlaceActive[pid] = true;
+    new cell = GridXID(y) * GRID_W + GridXID(x);
+    PlaceNext[pid] = CellHead[cell];
+    CellHead[cell] = pid;
+    return pid;
 }
 stock FindPlaceForEnter(playerid){
     new Float:px, Float:py, Float:pz;
     GetPlayerPos(playerid, px, py, pz);
-    new cx = GridIdx(px), cy = GridIdx(py);
+    new cx = GridXID(px), cy = GridXID(py);
     for(new gy = cy - 1; gy <= cy + 1; gy++){
         if(gy < 0 || gy >= GRID_W) continue;
         for(new gx = cx - 1; gx <= cx + 1; gx++){
