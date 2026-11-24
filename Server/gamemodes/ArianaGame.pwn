@@ -435,9 +435,10 @@ public OnUnoccupiedVehicleUpdate(vehicleid, playerid, passenger_seat, Float:new_
 	return 1;
 }
 CMD:mypos(playerid){
-	new Float:mp[3];
+	new Float:mp[4];
 	GetPlayerPos(playerid, mp[0], mp[1], mp[2]);
-	printf("%f, %f, %f", mp[0], mp[1], mp[2]);
+	GetPlayerFacingAngle(playerid, mp[3])
+	printf("%f, %f, %f, %f", mp[0], mp[1], mp[2], mp[3]);
 	return 1;
 }
 new gov;
