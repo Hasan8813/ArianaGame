@@ -486,3 +486,22 @@ CMD:cancel(playerid, params[]){
 	}
 	return 1;
 }
+#define MAX_PLACES 10
+new Float:PlaceX[MAX_PLACES], Float:PlaceY[MAX_PLACES], Float:PlaceZ[MAX_PLACES], Float:PlaceToX[MAX_PLACES], Float:PlaceToY[MAX_PLACES], Float:PlaceToZ[MAX_PLACES], PlaceInt[MAX_PLACES], PlaceCount;
+new PlayerPlace[MAX_PLAYERS] = {-1, ...};
+stock FindPlaceForEnter(playerid){
+	for(new i; i < PlaceCount; i++){
+		if(IsPlayerInRangeOfPoint(playerid, 2.5, PlaceX[i], PlaceY[i], PlaceZ[i])) return i;
+	}
+	return -1;
+}
+CMD:enter(playerid){
+	if(PlayerPlace[playerid] == -1) return 1;
+	new pid = FindPlaceForEnter(playerid);
+	if(pid == -1) return 1;
+	PlayerPlace[playerid] = pid;
+	SetPlayerInterior(playerid, PlaceInt[pid]);
+	SetPlayerVirtualWorld(playerid, 1000+pid);
+	SetPlayerPos(playerid, PlaceToX[pid], PlaceToY[pid], PlaceToZ[pid]);
+	return 1;
+}
