@@ -5,25 +5,25 @@
 
 
 #define MAX_PLACES   1000
+
+//***********Dast kari nashe*************//
 #define GRID_SIZE    100.0
 #define GRID_ORIGIN  10000.0
 #define GRID_W       200
-
 new CellHead[GRID_W * GRID_W] = {-1, ...}; 
-new PlaceNext[MAX_PLACES]; 
-new bool:PlaceActive[MAX_PLACES]; 
-
-new Float:PlaceX[MAX_PLACES], Float:PlaceY[MAX_PLACES], Float:PlaceZ[MAX_PLACES];
-new Float:PlaceToX[MAX_PLACES], Float:PlaceToY[MAX_PLACES], Float:PlaceToZ[MAX_PLACES];
-new PlaceInt[MAX_PLACES], PlaceCount;
-new PlayerPlace[MAX_PLAYERS] = {-1, ...};
-
+new PlaceNext[MAX_PLACES], bool:PlaceActive[MAX_PLACES];
 stock GridIdx(Float:v){
     new c = floatround((v + GRID_ORIGIN) / GRID_SIZE, floatround_floor);
     if(c < 0) return 0;
     if(c >= GRID_W) return GRID_W - 1;
     return c;
 }
+//*******************************************************//
+
+new Float:PlaceX[MAX_PLACES], Float:PlaceY[MAX_PLACES], Float:PlaceZ[MAX_PLACES];
+new Float:PlaceToX[MAX_PLACES], Float:PlaceToY[MAX_PLACES], Float:PlaceToZ[MAX_PLACES];
+new PlaceInt[MAX_PLACES], PlaceCount;
+new PlayerPlace[MAX_PLAYERS] = {-1, ...};
 stock AddPlace(Float:x, Float:y, Float:z, Float:tox, Float:toy, Float:toz, int_id){
     if(PlaceCount >= MAX_PLACES) return -1;
     new id = PlaceCount++;
