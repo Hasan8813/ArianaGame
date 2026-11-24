@@ -61,21 +61,26 @@ CMD:enter(playerid){
     SetPlayerInterior(playerid, PlaceInt[pid]);
     SetPlayerVirtualWorld(playerid, 1000+pid);
     SetPlayerPos(playerid, PlaceToX[pid], PlaceToY[pid], PlaceToZ[pid]);
+    SetPlayerFacingAngle(playerid, PlaceToA[pid]);
+    SetCameraBehindPlayer(playerid);
     return 1;
 }
 
 CMD:exit(playerid){
     new Int = PlayerPlace[playerid];
     if(Int == -1) return 1;
+    if(GetPlayerVirtualWorld(playerid) != 1000+Int) return 1;
     if(!IsPlayerInRangeOfPoint(playerid, 3.0, PlaceToX[Int], PlaceToY[Int], PlaceToZ[Int])) return 1;
     PlayerPlace[playerid] = -1;
     SetPlayerInterior(playerid, 0);
     SetPlayerVirtualWorld(playerid, 0);
     SetPlayerPos(playerid, PlaceX[Int], PlaceY[Int], PlaceZ[Int]);
+    SetPlayerFacingAngle(playerid, PlaceA[Int]);
+    SetCameraBehindPlayer(playerid);
     return 1;
 }
 CMD:create(playerid){
-	AddPlace(1438.953735, -2282.733398, 13.546875, 90.0, 2233.918945, 1713.641967, 1012.194641, 90.0, 1, 0);
-	AddPlace(1439.229248, -2291.389648, 13.546875, 90.0, 2017.879882, 1017.817138, 996.875000, 90.0, 10, 0);
+	AddPlace(1438.953735, -2282.733398, 13.546875, 90.0, 2233.918945, 1713.641967, 1012.194641, 0.0, 1, 0);
+	AddPlace(1439.229248, -2291.389648, 13.546875, 90.0, 2017.879882, 1017.817138, 996.875000, 270.0, 10, 0);
     return 1;
 }
