@@ -34,7 +34,7 @@ stock FindPlaceForEnter(playerid){
             if(gx < 0 || gx >= CELL_ALL) continue;
             for(new id = CellHead[gy * CELL_ALL + gx]; id != -1; id = PlaceNextFind[id]){
                 if(!PlaceActive[id]) continue;
-                if(IsPlayerInRangeOfPoint(playerid, 2.5, PlaceX[id], PlaceY[id], PlaceZ[id])) return id;
+                if(IsPlayerInRangeOfPoint(playerid, 2.0, PlaceX[id], PlaceY[id], PlaceZ[id])) return id;
             }
         }
     }return -1;
@@ -84,5 +84,10 @@ CMD:exit(playerid){
 CMD:create(playerid){
 	AddPlace(1438.953735, -2282.733398, 13.546875, 90.0, 2233.918945, 1713.641967, 1012.194641, 0.0, 1, 0);
 	AddPlace(1439.229248, -2291.389648, 13.546875, 90.0, 2017.879882, 1017.817138, 996.875000, 270.0, 10, 0);
+
+    AddPlace(2461.323486, 1682.649658, 11.023437, 0.0, 235.254180, 1187.189086, 1080.257812, 180.0, 3, 0);
+    AddPlace(2466.310791, 1682.646484, 11.023437, 0.0, 227.061462, 1114.255004, 1080.989257, 90.0, 5, 0);
+    AddPlace(2471.316650, 1682.639404, 11.023437, 0.0, 223.081375, 1287.534423, 1082.140625, 180.0, 1, 0);
+    AddPlace(2476.399658, 1682.675170, 11.023437, 0.0, 226.080780, 1239.959838, 1082.140625, 270, 2, 0);
     return 1;
 }

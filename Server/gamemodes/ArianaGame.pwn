@@ -491,3 +491,23 @@ CMD:cancel(playerid, params[]){
 	}
 	return 1;
 }
+CMD:int1(playerid){
+	SetPlayerInterior(playerid, 3);
+	SetPlayerPos(playerid, 234.6087, 1187.8195, 1080.2578);
+	return 1;
+}
+CMD:int2(playerid){
+	SetPlayerInterior(playerid, 2);
+	SetPlayerPos(playerid, 225.5707, 1240.0643, 1082.1406);
+	return 1;
+}
+CMD:int3(playerid){
+	SetPlayerInterior(playerid, 1);
+	SetPlayerPos(playerid, 224.288, 1289.1907, 1082.1406);
+	return 1;
+}
+CMD:int4(playerid){
+	SetPlayerInterior(playerid, 5);
+	SetPlayerPos(playerid, 239.2819, 1114.1991, 1080.9922);
+	return 1;
+}
