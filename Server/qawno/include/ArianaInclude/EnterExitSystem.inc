@@ -54,9 +54,10 @@ stock AddPlace(Float:x, Float:y, Float:z, Float:a, Float:tox, Float:toy, Float:t
 }
 
 CMD:enter(playerid){
-    if(PlayerPlace[playerid] != -1) return 1;
+    new Tok = GetPlayerToken(playerid);
+    if(PlayerPlace[playerid] != -1) return SendPM(playerid, PMError, "Shoma nazdike hich dare vorudi nistid", "You are not near any entrance valley", Tok);
     new pid = FindPlaceForEnter(playerid);
-    if(pid == -1) return 1;
+    if(pid == -1) return SendPM(playerid, PMError, "Shoma nazdike hich dare vorudi nistid", "You are not near any entrance valley", Tok);
     PlayerPlace[playerid] = pid;
     SetPlayerInterior(playerid, PlaceInt[pid]);
     SetPlayerVirtualWorld(playerid, 1000+pid);
@@ -68,9 +69,10 @@ CMD:enter(playerid){
 
 CMD:exit(playerid){
     new Int = PlayerPlace[playerid];
-    if(Int == -1) return 1;
+    new Tok = GetPlayerToken(playerid);
+    if(Int == -1) return SendPM(playerid, PMError, "Shoma be hich noghteye khoruji nazdik nistid", "You are not close to any exit point", Tok);
     if(GetPlayerVirtualWorld(playerid) != 1000+Int) return 1;
-    if(!IsPlayerInRangeOfPoint(playerid, 3.0, PlaceToX[Int], PlaceToY[Int], PlaceToZ[Int])) return 1;
+    if(!IsPlayerInRangeOfPoint(playerid, 3.0, PlaceToX[Int], PlaceToY[Int], PlaceToZ[Int])) return SendPM(playerid, PMError, "Shoma be hich noghteye khoruji nazdik nistid", "You are not close to any exit point", Tok);
     PlayerPlace[playerid] = -1;
     SetPlayerInterior(playerid, 0);
     SetPlayerVirtualWorld(playerid, 0);
