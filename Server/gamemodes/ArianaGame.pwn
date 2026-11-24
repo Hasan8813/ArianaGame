@@ -122,6 +122,7 @@ public OnPlayerDisconnect(playerid, reason){
 	StopTestDMV(playerid, true);
 	ResetPlayerVariable(playerid);
 	ResetAntiCheatVariable(playerid);
+	PlayerPlace[playerid] = -1;
 	return 1;
 }
 

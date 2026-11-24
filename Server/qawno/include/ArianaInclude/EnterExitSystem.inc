@@ -22,20 +22,8 @@ stock GridXID(Float:Val){
 
 new Float:PlaceX[MAX_PLACES], Float:PlaceY[MAX_PLACES], Float:PlaceZ[MAX_PLACES];
 new Float:PlaceToX[MAX_PLACES], Float:PlaceToY[MAX_PLACES], Float:PlaceToZ[MAX_PLACES];
-new PlaceInt[MAX_PLACES], PlaceCount;
+new PlaceInt[MAX_PLACES], PlaceType[MAX_PLACES], PlaceCount;
 new PlayerPlace[MAX_PLAYERS] = {-1, ...};
-stock AddPlace(Float:x, Float:y, Float:z, Float:tox, Float:toy, Float:toz, int_id){
-    if(PlaceCount >= MAX_PLACES) return -1;
-    new pid = PlaceCount++;
-    PlaceX[pid] = x; PlaceY[pid] = y; PlaceZ[pid] = z;
-    PlaceToX[pid] = tox; PlaceToY[pid] = toy; PlaceToZ[pid] = toz;
-    PlaceInt[pid] = int_id;
-    PlaceActive[pid] = true;
-    new cell = GridXID(y) * CELL_ALL + GridXID(x);
-    PlaceNextFind[pid] = CellHead[cell];
-    CellHead[cell] = pid;
-    return pid;
-}
 stock FindPlaceForEnter(playerid){
     new Float:px, Float:py, Float:pz;
     GetPlayerPos(playerid, px, py, pz);
@@ -49,9 +37,22 @@ stock FindPlaceForEnter(playerid){
                 if(IsPlayerInRangeOfPoint(playerid, 2.5, PlaceX[id], PlaceY[id], PlaceZ[id])) return id;
             }
         }
-    }
-    return -1;
+    }return -1;
 }
+stock AddPlace(Float:x, Float:y, Float:z, Float:tox, Float:toy, Float:toz, int_id, type){
+    if(PlaceCount >= MAX_PLACES) return -1;
+    new pid = PlaceCount++;
+    PlaceX[pid] = x; PlaceY[pid] = y; PlaceZ[pid] = z;
+    PlaceToX[pid] = tox; PlaceToY[pid] = toy; PlaceToZ[pid] = toz;
+    PlaceInt[pid] = int_id;
+    PlaceType[pid] = type;
+    PlaceActive[pid] = true;
+    new cell = GridXID(y) * CELL_ALL + GridXID(x);
+    PlaceNextFind[pid] = CellHead[cell];
+    CellHead[cell] = pid;
+    return pid;
+}
+
 CMD:enter(playerid){
     if(PlayerPlace[playerid] != -1) return 1;
     new pid = FindPlaceForEnter(playerid);
@@ -74,7 +75,7 @@ CMD:exit(playerid){
     return 1;
 }
 CMD:create(playerid){
-	AddPlace(1438.953735, -2282.733398, 13.546875, 2233.918945, 1713.641967, 1012.194641, 1);
-	AddPlace(1439.229248, -2291.389648, 13.546875, 2017.879882, 1017.817138, 996.875000, 10);
+	AddPlace(1438.953735, -2282.733398, 13.546875, 2233.918945, 1713.641967, 1012.194641, 1, 0);
+	AddPlace(1439.229248, -2291.389648, 13.546875, 2017.879882, 1017.817138, 996.875000, 10, 0);
     return 1;
 }
