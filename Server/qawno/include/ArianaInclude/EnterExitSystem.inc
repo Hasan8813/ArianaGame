@@ -52,7 +52,20 @@ stock AddPlace(Float:x, Float:y, Float:z, Float:a, Float:tox, Float:toy, Float:t
     CellHead[cell] = pid;
     return pid;
 }
-
+stock RemovePlace(pid){
+    if(pid < 0 || pid >= PlaceCount || !PlaceActive[pid]) return 0;
+    PlaceActive[pid] = false;                      // اول غیرفعال کن تا کسی جدید وارد نشه
+    foreach(new p : Player){
+        if(PlayerPlace[p] != pid) continue;        // فقط کسانی که داخل همین مکانن
+        PlayerPlace[p] = -1;
+        SetPlayerInterior(p, 0);
+        SetPlayerVirtualWorld(p, 0);
+        SetPlayerPos(p, PlaceX[pid], PlaceY[pid], PlaceZ[pid]);   // بیرون در
+        SetPlayerFacingAngle(p, PlaceA[pid]);
+        SetCameraBehindPlayer(p);
+    }
+    return 1;
+}
 CMD:enter(playerid){
     new Tok = GetPlayerToken(playerid);
     if(PlayerPlace[playerid] != -1) return SendPM(playerid, PMError, "Shoma nazdike hich dare vorudi nistid", "You are not near any entrance valley", Tok);
