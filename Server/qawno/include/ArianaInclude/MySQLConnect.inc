@@ -42,6 +42,19 @@ stock MySQLConnectAndLogAndCreateTable(){
             pRefCode VARCHAR(10) UNIQUE,\
 			pSaveSeq INT DEFAULT 0\
         )");
+		mysql_tquery(sql, "CREATE TABLE IF NOT EXISTS biz (\
+            bid INT AUTO_INCREMENT PRIMARY KEY,\
+            x FLOAT NOT NULL,\
+            y FLOAT NOT NULL,\
+			z FLOAT NOT NULL,\
+			a FLOAT NOT NULL,\
+			tx FLOAT NOT NULL,\
+			ty FLOAT NOT NULL,\
+			tz FLOAT NOT NULL,\
+			ta FLOAT NOT NULL,\
+			intid INT NOT NULL,\
+			type INT DEFAULT 0\
+        )");
         mysql_tquery(sql, "CREATE TABLE IF NOT EXISTS MoneyLog (\
     		id INT AUTO_INCREMENT PRIMARY KEY,\
 			Money INT DEFAULT 0,\

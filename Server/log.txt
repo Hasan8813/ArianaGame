@@ -180085,3 +180085,807 @@ Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\com
 *** Streamer Plugin v2.9.6 by Incognito unloaded ***
 
 [2026-11-24T19:23:56+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-25T07:14:45+0000] [Info] 
+[2026-11-25T07:14:45+0000] [Info]  ===============================
+[2026-11-25T07:14:45+0000] [Info] 
+[2026-11-25T07:14:45+0000] [Info]      sscanf component loaded.   
+[2026-11-25T07:14:45+0000] [Info] 
+[2026-11-25T07:14:45+0000] [Info]          Version: 2.13.8
+[2026-11-25T07:14:45+0000] [Info] 
+[2026-11-25T07:14:45+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-25T07:14:45+0000] [Info] 
+[2026-11-25T07:14:45+0000] [Info]  ===============================
+[2026-11-25T07:14:45+0000] [Info] 
+[2026-11-25T07:14:45+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-25T07:14:45+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-25T07:14:45+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-25T07:14:45+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-25T07:14:45+0000] [Info] Loading plugin: mysql
+[2026-11-25T07:14:45+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-25T07:14:45+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-25T07:14:46+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-25T07:14:46+0000] [Info] Loading plugin: streamer
+[2026-11-25T07:14:46+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-25T07:14:46+0000] [Info] Loading plugin: PawnPlus
+[2026-11-25T07:14:46+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-25T07:14:46+0000] [Info]  Created by IS4
+[2026-11-25T07:14:46+0000] [Info]  
+[2026-11-25T07:14:46+0000] [Info] --------------------------------------
+[2026-11-25T07:14:46+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-25T07:14:46+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-25T07:14:46+0000] [Info]  Sazande: Nexius
+[2026-11-25T07:14:46+0000] [Info] --------------------------------------
+
+[2026-11-25T07:14:46+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-25T07:14:46+0000] [Info] Legacy Network started on port 7777
+[2026-11-25T07:15:10+0000] [Info] [connection] incoming connection: 2.147.195.18:38293 id: 0
+[2026-11-25T07:15:10+0000] [Info] [join] Mohamad has joined the server (0:2.147.195.18)
+[2026-11-25T07:17:51+0000] [Info] 315.753387, -142.920623, 999.601562, 180.395645
+[2026-11-25T07:18:20+0000] [Info] [death] Mohamad died 54
+[2026-11-25T07:18:21+0000] [Info] [chat] [Mohamad]: t
+[2026-11-25T07:18:22+0000] [Info] [chat] [Mohamad]: t
+[2026-11-25T07:18:24+0000] [Info] [chat] [Mohamad]: 5
+[2026-11-25T07:19:07+0000] [Info] 1368.490722, -1279.759155, 13.546875, 266.759582
+[2026-11-25T07:20:01+0000] [Info] 315.716735, -143.005462, 999.601562, 173.065078
+[2026-11-25T07:21:10+0000] [Info] [death] Mohamad died 54
+[2026-11-25T07:23:45+0000] [Info] 2176.974365, 925.194213, 11.099519, 2.118494
+[2026-11-25T07:25:41+0000] [Info] 285.363342, -41.202697, 1001.515625, 178.803848
+[2026-11-25T07:26:53+0000] [Info] [death] Mohamad died 54
+[2026-11-25T07:29:28+0000] [Info] -2626.583984, 208.435226, 4.812500, 178.782760
+[2026-11-25T07:30:28+0000] [Info] 285.791259, -86.175193, 1001.515625, 179.820861
+[2026-11-25T07:31:19+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-25T07:31:19+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-25T07:31:19+0000] [Info]  
+[2026-11-25T07:31:19+0000] [Info] --------------------------------------
+[2026-11-25T07:31:19+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-25T07:31:19+0000] [Info]  Detected and prevented:
+[2026-11-25T07:31:19+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-25T07:31:19+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-25T07:31:19+0000] [Info]   0 Talash Baraye Crash
+[2026-11-25T07:31:19+0000] [Info]   0 Talash Baraye Flood
+[2026-11-25T07:31:19+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-25T07:31:19+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-25T07:31:19+0000] [Info] --------------------------------------
+
+[2026-11-25T07:31:19+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-25T07:31:19+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-25T07:31:28+0000] [Info] 
+[2026-11-25T07:31:28+0000] [Info]  ===============================
+[2026-11-25T07:31:28+0000] [Info] 
+[2026-11-25T07:31:28+0000] [Info]      sscanf component loaded.   
+[2026-11-25T07:31:28+0000] [Info] 
+[2026-11-25T07:31:28+0000] [Info]          Version: 2.13.8
+[2026-11-25T07:31:28+0000] [Info] 
+[2026-11-25T07:31:28+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-25T07:31:28+0000] [Info] 
+[2026-11-25T07:31:28+0000] [Info]  ===============================
+[2026-11-25T07:31:28+0000] [Info] 
+[2026-11-25T07:31:28+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-25T07:31:28+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-25T07:31:28+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-25T07:31:28+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-25T07:31:28+0000] [Info] Loading plugin: mysql
+[2026-11-25T07:31:28+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-25T07:31:28+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-25T07:31:28+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-25T07:31:28+0000] [Info] Loading plugin: streamer
+[2026-11-25T07:31:28+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-25T07:31:28+0000] [Info] Loading plugin: PawnPlus
+[2026-11-25T07:31:28+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-25T07:31:28+0000] [Info]  Created by IS4
+[2026-11-25T07:31:28+0000] [Info]  
+[2026-11-25T07:31:28+0000] [Info] --------------------------------------
+[2026-11-25T07:31:28+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-25T07:31:28+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-25T07:31:28+0000] [Info]  Sazande: Nexius
+[2026-11-25T07:31:28+0000] [Info] --------------------------------------
+
+[2026-11-25T07:31:28+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-25T07:31:28+0000] [Info] Legacy Network started on port 7777
+[2026-11-25T07:31:41+0000] [Info] [connection] incoming connection: 2.147.195.18:38300 id: 0
+[2026-11-25T07:31:41+0000] [Info] [join] Mohamad has joined the server (0:2.147.195.18)
+[2026-11-25T07:37:09+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-25T07:37:09+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-25T07:37:09+0000] [Info]  
+[2026-11-25T07:37:09+0000] [Info] --------------------------------------
+[2026-11-25T07:37:09+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-25T07:37:09+0000] [Info]  Detected and prevented:
+[2026-11-25T07:37:09+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-25T07:37:09+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-25T07:37:09+0000] [Info]   0 Talash Baraye Crash
+[2026-11-25T07:37:09+0000] [Info]   0 Talash Baraye Flood
+[2026-11-25T07:37:09+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-25T07:37:09+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-25T07:37:09+0000] [Info] --------------------------------------
+
+[2026-11-25T07:37:09+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-25T07:37:09+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-25T07:54:43+0000] [Info] 
+[2026-11-25T07:54:43+0000] [Info]  ===============================
+[2026-11-25T07:54:43+0000] [Info] 
+[2026-11-25T07:54:43+0000] [Info]      sscanf component loaded.   
+[2026-11-25T07:54:43+0000] [Info] 
+[2026-11-25T07:54:43+0000] [Info]          Version: 2.13.8
+[2026-11-25T07:54:43+0000] [Info] 
+[2026-11-25T07:54:43+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-25T07:54:43+0000] [Info] 
+[2026-11-25T07:54:43+0000] [Info]  ===============================
+[2026-11-25T07:54:43+0000] [Info] 
+[2026-11-25T07:54:43+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-25T07:54:43+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-25T07:54:43+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-25T07:54:43+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-25T07:54:43+0000] [Info] Loading plugin: mysql
+[2026-11-25T07:54:43+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-25T07:54:43+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-25T07:54:43+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-25T07:54:43+0000] [Info] Loading plugin: streamer
+[2026-11-25T07:54:43+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-25T07:54:43+0000] [Info] Loading plugin: PawnPlus
+[2026-11-25T07:54:43+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-25T07:54:43+0000] [Info]  Created by IS4
+[2026-11-25T07:54:43+0000] [Info]  
+[2026-11-25T07:54:43+0000] [Info] --------------------------------------
+[2026-11-25T07:54:43+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-25T07:54:43+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-25T07:54:43+0000] [Info]  Sazande: Nexius
+[2026-11-25T07:54:43+0000] [Info] --------------------------------------
+
+[2026-11-25T07:54:43+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-25T07:54:43+0000] [Info] Legacy Network started on port 7777
+[2026-11-25T07:54:44+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-25T07:54:44+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-25T07:54:44+0000] [Info]  
+[2026-11-25T07:54:44+0000] [Info] --------------------------------------
+[2026-11-25T07:54:44+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-25T07:54:44+0000] [Info]  Detected and prevented:
+[2026-11-25T07:54:44+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-25T07:54:44+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-25T07:54:44+0000] [Info]   0 Talash Baraye Crash
+[2026-11-25T07:54:44+0000] [Info]   0 Talash Baraye Flood
+[2026-11-25T07:54:44+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-25T07:54:44+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-25T07:54:44+0000] [Info] --------------------------------------
+
+[2026-11-25T07:54:44+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-25T07:54:44+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-25T08:00:41+0000] [Info] 
+[2026-11-25T08:00:41+0000] [Info]  ===============================
+[2026-11-25T08:00:41+0000] [Info] 
+[2026-11-25T08:00:41+0000] [Info]      sscanf component loaded.   
+[2026-11-25T08:00:42+0000] [Info] 
+[2026-11-25T08:00:42+0000] [Info]          Version: 2.13.8
+[2026-11-25T08:00:42+0000] [Info] 
+[2026-11-25T08:00:42+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-25T08:00:42+0000] [Info] 
+[2026-11-25T08:00:42+0000] [Info]  ===============================
+[2026-11-25T08:00:42+0000] [Info] 
+[2026-11-25T08:00:42+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-25T08:00:42+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-25T08:00:42+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-25T08:00:42+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-25T08:00:42+0000] [Info] Loading plugin: mysql
+[2026-11-25T08:00:42+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-25T08:00:42+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-25T08:00:42+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-25T08:00:42+0000] [Info] Loading plugin: streamer
+[2026-11-25T08:00:42+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-25T08:00:42+0000] [Info] Loading plugin: PawnPlus
+[2026-11-25T08:00:42+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-25T08:00:42+0000] [Info]  Created by IS4
+[2026-11-25T08:00:42+0000] [Info]  
+[2026-11-25T08:00:42+0000] [Info] --------------------------------------
+[2026-11-25T08:00:42+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-25T08:00:42+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-25T08:00:42+0000] [Info]  Sazande: Nexius
+[2026-11-25T08:00:42+0000] [Info] --------------------------------------
+
+[2026-11-25T08:00:42+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-25T08:00:42+0000] [Info] Legacy Network started on port 7777
+[2026-11-25T08:00:43+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-25T08:00:43+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-25T08:00:43+0000] [Info]  
+[2026-11-25T08:00:43+0000] [Info] --------------------------------------
+[2026-11-25T08:00:43+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-25T08:00:43+0000] [Info]  Detected and prevented:
+[2026-11-25T08:00:43+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-25T08:00:43+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-25T08:00:43+0000] [Info]   0 Talash Baraye Crash
+[2026-11-25T08:00:43+0000] [Info]   0 Talash Baraye Flood
+[2026-11-25T08:00:43+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-25T08:00:43+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-25T08:00:43+0000] [Info] --------------------------------------
+
+[2026-11-25T08:00:43+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-25T08:00:43+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-25T08:08:11+0000] [Info] 
+[2026-11-25T08:08:11+0000] [Info]  ===============================
+[2026-11-25T08:08:11+0000] [Info] 
+[2026-11-25T08:08:11+0000] [Info]      sscanf component loaded.   
+[2026-11-25T08:08:11+0000] [Info] 
+[2026-11-25T08:08:11+0000] [Info]          Version: 2.13.8
+[2026-11-25T08:08:11+0000] [Info] 
+[2026-11-25T08:08:11+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-25T08:08:11+0000] [Info] 
+[2026-11-25T08:08:11+0000] [Info]  ===============================
+[2026-11-25T08:08:11+0000] [Info] 
+[2026-11-25T08:08:11+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-25T08:08:11+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-25T08:08:11+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-25T08:08:11+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-25T08:08:11+0000] [Info] Loading plugin: mysql
+[2026-11-25T08:08:11+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-25T08:08:11+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-25T08:08:11+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-25T08:08:11+0000] [Info] Loading plugin: streamer
+[2026-11-25T08:08:11+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-25T08:08:11+0000] [Info] Loading plugin: PawnPlus
+[2026-11-25T08:08:11+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-25T08:08:11+0000] [Info]  Created by IS4
+[2026-11-25T08:08:11+0000] [Info]  
+[2026-11-25T08:08:11+0000] [Info] --------------------------------------
+[2026-11-25T08:08:11+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-25T08:08:11+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-25T08:08:11+0000] [Info]  Sazande: Nexius
+[2026-11-25T08:08:11+0000] [Info] --------------------------------------
+
+[2026-11-25T08:08:11+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-25T08:08:11+0000] [Info] Legacy Network started on port 7777
+[2026-11-25T08:08:34+0000] [Info] [connection] incoming connection: 2.147.195.18:39044 id: 0
+[2026-11-25T08:08:34+0000] [Info] [join] Mohamad has joined the server (0:2.147.195.18)
+[2026-11-25T08:09:15+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-25T08:09:15+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-25T08:09:15+0000] [Info]  
+[2026-11-25T08:09:15+0000] [Info] --------------------------------------
+[2026-11-25T08:09:15+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-25T08:09:15+0000] [Info]  Detected and prevented:
+[2026-11-25T08:09:15+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-25T08:09:15+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-25T08:09:15+0000] [Info]   0 Talash Baraye Crash
+[2026-11-25T08:09:15+0000] [Info]   0 Talash Baraye Flood
+[2026-11-25T08:09:15+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-25T08:09:15+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-25T08:09:15+0000] [Info] --------------------------------------
+
+[2026-11-25T08:09:15+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-25T08:09:15+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-25T08:40:29+0000] [Info] 
+[2026-11-25T08:40:29+0000] [Info]  ===============================
+[2026-11-25T08:40:29+0000] [Info] 
+[2026-11-25T08:40:29+0000] [Info]      sscanf component loaded.   
+[2026-11-25T08:40:29+0000] [Info] 
+[2026-11-25T08:40:29+0000] [Info]          Version: 2.13.8
+[2026-11-25T08:40:29+0000] [Info] 
+[2026-11-25T08:40:29+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-25T08:40:29+0000] [Info] 
+[2026-11-25T08:40:29+0000] [Info]  ===============================
+[2026-11-25T08:40:29+0000] [Info] 
+[2026-11-25T08:40:29+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-25T08:40:29+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-25T08:40:29+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-25T08:40:29+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-25T08:40:29+0000] [Info] Loading plugin: mysql
+[2026-11-25T08:40:29+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-25T08:40:29+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-25T08:40:29+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-25T08:40:29+0000] [Info] Loading plugin: streamer
+[2026-11-25T08:40:29+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-25T08:40:29+0000] [Info] Loading plugin: PawnPlus
+[2026-11-25T08:40:29+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-25T08:40:29+0000] [Info]  Created by IS4
+[2026-11-25T08:40:29+0000] [Info]  
+[2026-11-25T08:40:29+0000] [Info] --------------------------------------
+[2026-11-25T08:40:29+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-25T08:40:29+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-25T08:40:29+0000] [Info]  Sazande: Nexius
+[2026-11-25T08:40:29+0000] [Info] --------------------------------------
+
+[2026-11-25T08:40:29+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-25T08:40:29+0000] [Info] Legacy Network started on port 7777
+[2026-11-25T08:40:29+0000] [Info] Biz id: 0 loaded
+[2026-11-25T08:40:29+0000] [Info] Biz id: 1 loaded
+[2026-11-25T08:40:29+0000] [Info] Biz id: 2 loaded
+[2026-11-25T08:40:48+0000] [Info] [connection] incoming connection: 2.147.178.129:42966 id: 0
+[2026-11-25T08:40:48+0000] [Info] [join] Mohamad has joined the server (0:2.147.178.129)
+[2026-11-25T08:41:15+0000] [Info] [Nex-AC debug] Veh model: 522, veh: 1, dist: 23.849145, ispassenger: 0, playerid: 0
+[2026-11-25T08:41:15+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 005 (3)
+[2026-11-25T08:41:15+0000] [Info] [Nex-AC debug] Veh model: 522, veh: 1, dist: 24.640916, ispassenger: 0, playerid: 0
+[2026-11-25T08:41:15+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 005 (3)
+[2026-11-25T08:42:39+0000] [Info] [Nex-AC debug] AC veh health: 978.708251, veh health: 1000.000000, veh: 1, playerid: 0
+[2026-11-25T08:42:39+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-25T08:49:35+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-25T08:49:35+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-25T08:49:35+0000] [Info]  
+[2026-11-25T08:49:35+0000] [Info] --------------------------------------
+[2026-11-25T08:49:35+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-25T08:49:35+0000] [Info]  Detected and prevented:
+[2026-11-25T08:49:35+0000] [Info]   3 Talash Baraye  Cheat
+[2026-11-25T08:49:35+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-25T08:49:35+0000] [Info]   0 Talash Baraye Crash
+[2026-11-25T08:49:35+0000] [Info]   0 Talash Baraye Flood
+[2026-11-25T08:49:35+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-25T08:49:35+0000] [Info]  3 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-25T08:49:35+0000] [Info] --------------------------------------
+
+[2026-11-25T08:49:35+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-25T08:49:35+0000] [Info] plugin.mysql: Unloading plugin...

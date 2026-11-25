@@ -75,7 +75,7 @@ public OnGameModeInit(){
 	UpdateTimeAndWeather(); SetTimer("UpdateTimeAndWeather", 8000, true);//Timer update doreyi ab va havaye server
 	StartTimerUpdateData();
 	LoadAllZoneArea();//Sakhte zone(Mantaghe ha) mesle area69 ke vaghti beri tush ekhtar migiri
-	LoadAllSpecialBiz();//Load kardane hameye special biz ha
+	LoadAllBiz();//Load kardane hameye special biz ha
 	SetTimer("RefreshDataBase", 60000, true);//Recresh data base mesle time premium ha
 	//StartRefreshGoldPrice();//Start gheymat gozari bar asase gheymate lahzeyiye tala
 	LoadAllMap();//Load All Maperis
@@ -494,22 +494,27 @@ CMD:cancel(playerid, params[]){
 	return 1;
 }
 CMD:int1(playerid){
-	SetPlayerInterior(playerid, 3);
-	SetPlayerPos(playerid, 234.6087, 1187.8195, 1080.2578);
+	SetPlayerInterior(playerid, 7);
+	SetPlayerPos(playerid, 315.244, -140.8858, 999.6016);
 	return 1;
 }
 CMD:int2(playerid){
-	SetPlayerInterior(playerid, 2);
-	SetPlayerPos(playerid, 225.5707, 1240.0643, 1082.1406);
+	SetPlayerInterior(playerid, 1);
+	SetPlayerPos(playerid, 285.8361, -39.0166, 1001.5156);
 	return 1;
 }
 CMD:int3(playerid){
-	SetPlayerInterior(playerid, 1);
-	SetPlayerPos(playerid, 224.288, 1289.1907, 1082.1406);
+	SetPlayerInterior(playerid, 4);
+	SetPlayerPos(playerid, 291.7626, -80.1306, 1001.5156);
 	return 1;
 }
 CMD:int4(playerid){
-	SetPlayerInterior(playerid, 5);
-	SetPlayerPos(playerid, 239.2819, 1114.1991, 1080.9922);
+	SetPlayerInterior(playerid, 6);
+	SetPlayerPos(playerid, 297.144, -109.8702, 1001.5156);
+	return 1;
+}
+CMD:int5(playerid){
+	SetPlayerInterior(playerid, 6);
+	SetPlayerPos(playerid, 316.5025, -167.6272, 999.5938);
 	return 1;
 }
