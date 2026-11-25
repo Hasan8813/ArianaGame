@@ -493,28 +493,15 @@ CMD:cancel(playerid, params[]){
 	}
 	return 1;
 }
+CMD:int0(playerid){
+	UpdateBizLabel(0);
+	return 1;
+}
 CMD:int1(playerid){
-	SetPlayerInterior(playerid, 7);
-	SetPlayerPos(playerid, 315.244, -140.8858, 999.6016);
+	UpdateBizLabel(1);
 	return 1;
 }
 CMD:int2(playerid){
-	SetPlayerInterior(playerid, 1);
-	SetPlayerPos(playerid, 285.8361, -39.0166, 1001.5156);
-	return 1;
-}
-CMD:int3(playerid){
-	SetPlayerInterior(playerid, 4);
-	SetPlayerPos(playerid, 291.7626, -80.1306, 1001.5156);
-	return 1;
-}
-CMD:int4(playerid){
-	SetPlayerInterior(playerid, 6);
-	SetPlayerPos(playerid, 297.144, -109.8702, 1001.5156);
-	return 1;
-}
-CMD:int5(playerid){
-	SetPlayerInterior(playerid, 6);
-	SetPlayerPos(playerid, 316.5025, -167.6272, 999.5938);
+	UpdateBizLabel(2);
 	return 1;
 }

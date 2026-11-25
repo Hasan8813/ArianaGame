@@ -4,6 +4,7 @@
 #define _SPECIAL_BIZ_BY_MAMAD_PERSIAN_INC
 
 #define                                 MAX_BIZ                            500
+new BizID[MAX_BIZ], BizType[MAX_BIZ], BizName[MAX_BIZ][41], Text3D:BizLabel[MAX_BIZ];
 new BizCount;
 
 
@@ -20,8 +21,8 @@ public LoadedAllBiz(){
     new rows = cache_num_rows();
     for(new i; i < rows; i++){
         if(BizCount >= MAX_BIZ){print("[Warning]: Biz haye sakhte shode bishtar az meghdare ta'rif shode hastand!"); break;}
-        new bid, Float:x, Float:y, Float:z, Float:a, Float:tx, Float:ty, Float:tz, Float:ta, intid, mapicon, type, NameeB[41];
-        cache_get_value_name_int(i, "bid", bid);
+        new Float:x, Float:y, Float:z, Float:a, Float:tx, Float:ty, Float:tz, Float:ta, intid, mapicon;
+        cache_get_value_name_int(i, "bid", BizID[i]);
         cache_get_value_name_float(i, "x", x);
         cache_get_value_name_float(i, "y", y);
         cache_get_value_name_float(i, "z", z);
@@ -32,11 +33,18 @@ public LoadedAllBiz(){
         cache_get_value_name_float(i, "ta", ta);
         cache_get_value_name_int(i, "intid", intid);
         cache_get_value_name_int(i, "mapicon", mapicon);
-        cache_get_value_name_int(i, "type", type);
-        cache_get_value_name(i, "bname", NameeB, sizeof(NameeB));
-        Create3DTextLabel("Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}None\nUse /Enter to enter", 0x36F5A5FF, x, y, z, 8.0, 0, true, i, NameeB);
+        cache_get_value_name_int(i, "type", BizType[i]);
+        cache_get_value_name(i, "bname", BizName[i]);
+        new StrLabel[200];
+        format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}None\nUse /Enter to enter", i, BizName[i]);
+        BizLabel[i] =  CreateDynamic3DTextLabel(StrLabel, 0x36F5A5FF, x, y, z, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, true, 0, 0, -1, 150.0);
         if(mapicon > 0) CreateDynamicMapIcon(x, y, z, mapicon, 0, 0, 0, -1, 2000.0);
         CreateDynamicPickup(1239, 1, x, y, z, 0, 0, -1, 150.0);
-        AddPlace(x, y, z, a, tx, ty, tz, ta, intid, type);
+        AddPlace(x, y, z, a, tx, ty, tz, ta, intid, BizType[i]);
+        BizCount++;
     }return 1;
+}
+stock UpdateBizLabel(BID){
+    UpdateDynamic3DTextLabelText(BizLabel[BID], 0x36F5A5FF, "Loading...");
+    return 1;
 }
