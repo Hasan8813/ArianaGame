@@ -53,7 +53,9 @@ stock MySQLConnectAndLogAndCreateTable(){
 			tz FLOAT NOT NULL,\
 			ta FLOAT NOT NULL,\
 			intid INT NOT NULL,\
-			type INT DEFAULT 0\
+			mapicon INT DEFAULT 0,\
+			type INT DEFAULT 0,\
+			bname VARCHAR(40) NOT NULL\
         )");
         mysql_tquery(sql, "CREATE TABLE IF NOT EXISTS MoneyLog (\
     		id INT AUTO_INCREMENT PRIMARY KEY,\

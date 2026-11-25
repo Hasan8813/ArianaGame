@@ -93,14 +93,9 @@ CMD:exit(playerid){
     SetCameraBehindPlayer(playerid);
     return 1;
 }
-//Type Enter Exit interiors
-#define                 INT_TYPE_GUNSHOP                1
 CMD:create(playerid){
-    //AddPlace(1368.490722, -1279.759155, 13.546875, 270.0, 315.716735, -143.005462, 999.601562, 180.0, 7, INT_TYPE_GUNSHOP);
-    //AddPlace(2176.974365, 925.194213, 11.099519, 0.0, 285.363342, -41.202697, 1001.515625, 180.0, 1, INT_TYPE_GUNSHOP);
-    //AddPlace(-2626.583984, 208.435226, 4.812500, 180.0, 285.791259, -86.175193, 1001.515625, 180.0, 4, INT_TYPE_GUNSHOP);
-    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, type) VALUES (1368.490722, -1279.759155, 13.546875, 270.0, 315.716735, -143.005462, 999.601562, 180.0, 7, 1)");
-    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, type) VALUES (2176.974365, 925.194213, 11.099519, 0.0, 285.363342, -41.202697, 1001.515625, 180.0, 1, 1)");
-    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, type) VALUES (-2626.583984, 208.435226, 4.812500, 180.0, 285.791259, -86.175193, 1001.515625, 180.0, 4, 1)");
+    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon, type, bname) VALUES (1368.490722, -1279.759155, 13.546875, 270.0, 315.716735, -143.005462, 999.601562, 180.0, 7, 6, 1, 'Los Santos')");
+    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon,  type, bname) VALUES (2176.974365, 925.194213, 11.099519, 0.0, 285.363342, -41.202697, 1001.515625, 180.0, 1, 6, 1, 'Los Ventos')");
+    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon,  type, bname) VALUES (-2626.583984, 208.435226, 4.812500, 180.0, 285.791259, -86.175193, 1001.515625, 180.0, 4, 6, 1, 'San Fracisco')");
     return 1;
 }
