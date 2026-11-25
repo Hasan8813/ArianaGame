@@ -54,17 +54,16 @@ stock AddPlace(Float:x, Float:y, Float:z, Float:a, Float:tox, Float:toy, Float:t
 }
 stock RemovePlace(pid){
     if(pid < 0 || pid >= PlaceCount || !PlaceActive[pid]) return 0;
-    PlaceActive[pid] = false;                      // اول غیرفعال کن تا کسی جدید وارد نشه
+    PlaceActive[pid] = false;
     foreach(new p : Player){
-        if(PlayerPlace[p] != pid) continue;        // فقط کسانی که داخل همین مکانن
+        if(PlayerPlace[p] != pid) continue;
         PlayerPlace[p] = -1;
         SetPlayerInterior(p, 0);
         SetPlayerVirtualWorld(p, 0);
-        SetPlayerPos(p, PlaceX[pid], PlaceY[pid], PlaceZ[pid]);   // بیرون در
+        SetPlayerPos(p, PlaceX[pid], PlaceY[pid], PlaceZ[pid]);
         SetPlayerFacingAngle(p, PlaceA[pid]);
         SetCameraBehindPlayer(p);
-    }
-    return 1;
+    }return 1;
 }
 CMD:enter(playerid){
     new Tok = GetPlayerToken(playerid);
