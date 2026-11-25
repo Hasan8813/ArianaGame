@@ -44,6 +44,7 @@
 #include 								<ArianaInclude/ItemsPrice.inc>//Systeme gheymat gozari mesle gheymate gold
 #include 								<ArianaInclude/XpAndLevel.inc>//Systeme level va xp
 #include 								<ArianaInclude/SystemeExam.inc>//Systeme exam
+#include 								<ArianaInclude/SpecialBiz.inc>
 // 									**************************************** 							//
 
 // 								Security 								//
@@ -74,6 +75,7 @@ public OnGameModeInit(){
 	UpdateTimeAndWeather(); SetTimer("UpdateTimeAndWeather", 8000, true);//Timer update doreyi ab va havaye server
 	StartTimerUpdateData();
 	LoadAllZoneArea();//Sakhte zone(Mantaghe ha) mesle area69 ke vaghti beri tush ekhtar migiri
+	LoadAllSpecialBiz();//Load kardane hameye special biz ha
 	SetTimer("RefreshDataBase", 60000, true);//Recresh data base mesle time premium ha
 	//StartRefreshGoldPrice();//Start gheymat gozari bar asase gheymate lahzeyiye tala
 	LoadAllMap();//Load All Maperis
