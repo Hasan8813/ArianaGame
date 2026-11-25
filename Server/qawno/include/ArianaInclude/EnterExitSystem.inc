@@ -22,7 +22,7 @@ stock GridXID(Float:Val){
 
 new Float:PlaceX[MAX_PLACES], Float:PlaceY[MAX_PLACES], Float:PlaceZ[MAX_PLACES], Float:PlaceA[MAX_PLACES];
 new Float:PlaceToX[MAX_PLACES], Float:PlaceToY[MAX_PLACES], Float:PlaceToZ[MAX_PLACES], Float:PlaceToA[MAX_PLACES];
-new PlaceInt[MAX_PLACES], PlaceType[MAX_PLACES], PlaceCount;
+new PlaceInt[MAX_PLACES], PlaceType[MAX_PLACES], BizForThisPlace[MAX_PLACES], PlaceCount;
 new PlayerPlace[MAX_PLAYERS] = {-1, ...};
 stock FindPlaceForEnter(playerid){
     new Float:px, Float:py, Float:pz;
@@ -39,13 +39,14 @@ stock FindPlaceForEnter(playerid){
         }
     }return -1;
 }
-stock AddPlace(Float:x, Float:y, Float:z, Float:a, Float:tox, Float:toy, Float:toz, Float:toa, int_id, type){
+stock AddPlace(Float:x, Float:y, Float:z, Float:a, Float:tox, Float:toy, Float:toz, Float:toa, int_id, type, PlaceForBiz = -1){
     if(PlaceCount >= MAX_PLACES) return -1;
     new pid = PlaceCount++;
     PlaceX[pid] = x; PlaceY[pid] = y; PlaceZ[pid] = z; PlaceA [pid] = a;
     PlaceToX[pid] = tox; PlaceToY[pid] = toy; PlaceToZ[pid] = toz, PlaceToA[pid] = toa;
     PlaceInt[pid] = int_id;
     PlaceType[pid] = type;
+    BizForThisPlace[pid] = PlaceForBiz;
     PlaceActive[pid] = true;
     new cell = GridXID(y) * CELL_ALL + GridXID(x);
     PlaceNextFind[pid] = CellHead[cell];
