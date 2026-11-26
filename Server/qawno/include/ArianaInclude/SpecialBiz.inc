@@ -4,7 +4,7 @@
 #define _SPECIAL_BIZ_BY_MAMAD_PERSIAN_INC
 
 #define                                 MAX_BIZ                            500
-new BizID[MAX_BIZ], BizType[MAX_BIZ], BizName[MAX_BIZ][41], Text3D:BizLabel[MAX_BIZ], PlaceForThisBiz[MAX_BIZ], BizStandardPrice[MAX_BIZ], BizForSellPrice[MAX_BIZ], BizOwnerPID[MAX_BIZ], BizOwnerName[MAX_BIZ][25], BizFund[MAX_BIZ];
+new BizID[MAX_BIZ], BizType[MAX_BIZ], BizName[MAX_BIZ][41], Text3D:BizLabel[MAX_BIZ], PlaceForThisBiz[MAX_BIZ], BizStandardPrice[MAX_BIZ], BizForSellPrice[MAX_BIZ], BizOwnerPID[MAX_BIZ], BizOwnerName[MAX_BIZ][25], BizFund[MAX_BIZ], BizReqLevel[MAX_BIZ];
 
 
 //Type Enter Exit interiors
@@ -12,12 +12,14 @@ new BizID[MAX_BIZ], BizType[MAX_BIZ], BizName[MAX_BIZ][41], Text3D:BizLabel[MAX_
 
 
 stock LoadAllBiz(){
-    mysql_tquery(sql, "SELECT bid, x, y, z, a, tx, ty, tz, ta, intid, mapicon, type, bname, stanprice, owner_pid, owner_name, bizfsprice, bizfund FROM biz ORDER by bid", "LoadedAllBiz");
+    mysql_tquery(sql, "SELECT bid, x, y, z, a, tx, ty, tz, ta, intid, mapicon, type, bname, stanprice, reqlevel, owner_pid, owner_name, bizfsprice, bizfund FROM biz ORDER by bid", "LoadedAllBiz");
     return 1;
 }
 stock UpdateBizLabel(BID, bool:create = false){
-    new StrLabel[200];
-    format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{36F5A5}Business Price: {1A7936}$%d\n{F3F3F3}Use /Enter to enter", BizID[BID], BizName[BID], BizOwnerName[BID], BizStandardPrice[BID]);
+    new StrLabel[400];
+    if(BizOwnerPID[BID] == -1) format(StrLabel, sizeof(StrLabel), "Business ID %d\n{36F5A5}Business Price: {1A7936}$%d\n{36F5A5}Required Level: {F3F3F3}%d\n{36F5A5}Use the {F3F3F3}/buybiz {36F5A5}command to purchase this business\n{F3F3F3}Use /Enter to enter", BizID[BID], BizStandardPrice[BID], BizReqLevel[BID]);
+    else if(BizForSellPrice[BID] > 0) format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{36F5A5}Business Price: {1A7936}$%d\n{36F5A5}Required Level: {F3F3F3}%d\n{36F5A5}Use the {F3F3F3}/buybiz {36F5A5}command to purchase this business\n{F3F3F3}Use /Enter to enter", BizID[BID], BizName[BID], BizOwnerName[BID], BizForSellPrice[BID], BizReqLevel[BID]);
+    else format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{F3F3F3}Use /Enter to enter", BizID[BID], BizName[BID], BizOwnerName[BID]);
     if(create){
         BizLabel[BID] =  CreateDynamic3DTextLabel(StrLabel, 0x36F5A5FF, PlaceX[PlaceForThisBiz[BID]], PlaceY[PlaceForThisBiz[BID]], PlaceZ[PlaceForThisBiz[BID]], 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, true, 0, 0, -1, 150.0);
         return 1;
@@ -44,6 +46,7 @@ public LoadedAllBiz(){
         cache_get_value_name_int(i, "type", BizType[i]);
         cache_get_value_name(i, "bname", BizName[i]);
         cache_get_value_name_int(i, "stanprice", BizStandardPrice[i]);
+        cache_get_value_name_int(i, "reqlevel", BizReqLevel[i]);
         cache_get_value_name_int(i, "owner_pid", BizOwnerPID[i]);
         cache_get_value_name(i, "owner_name", BizOwnerName[i]);
         cache_get_value_name_int(i, "bizfsprice", BizForSellPrice[i]);

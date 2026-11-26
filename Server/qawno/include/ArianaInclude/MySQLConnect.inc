@@ -57,6 +57,7 @@ stock MySQLConnectAndLogAndCreateTable(){
 			type INT DEFAULT 0,\
 			bname VARCHAR(40) NOT NULL,\
 			stanprice INT NOT NULL,\
+			reqlevel INT NOT NULL,\
 			owner_pid INT DEFAULT -1,\
 			owner_name VARCHAR(25) NOT NULL DEFAULT 'None',\
 			bizfsprice INT DEFAULT 0,\
