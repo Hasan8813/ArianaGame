@@ -20,11 +20,8 @@ stock UpdateBizLabel(BID, bool:create = false){
     if(BizOwnerPID[BID] == -1) format(StrLabel, sizeof(StrLabel), "Business ID %d\n{36F5A5}Business Price: {1A7936}$%d\n{36F5A5}Required Level: {F3F3F3}%d\n{36F5A5}Use the {F3F3F3}/buybiz {36F5A5}command to purchase this business\n{F3F3F3}Use /Enter to enter", BizID[BID], BizStandardPrice[BID], BizReqLevel[BID]);
     else if(BizForSellPrice[BID] > 0) format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{36F5A5}Business Price: {1A7936}$%d\n{36F5A5}Required Level: {F3F3F3}%d\n{36F5A5}Use the {F3F3F3}/buybiz {36F5A5}command to purchase this business\n{F3F3F3}Use /Enter to enter", BizID[BID], BizName[BID], BizOwnerName[BID], BizForSellPrice[BID], BizReqLevel[BID]);
     else format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{F3F3F3}Use /Enter to enter", BizID[BID], BizName[BID], BizOwnerName[BID]);
-    if(create){
-        BizLabel[BID] =  CreateDynamic3DTextLabel(StrLabel, 0x36F5A5FF, PlaceX[PlaceForThisBiz[BID]], PlaceY[PlaceForThisBiz[BID]], PlaceZ[PlaceForThisBiz[BID]], 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, true, 0, 0, -1, 150.0);
-        return 1;
-    }
-    UpdateDynamic3DTextLabelText(BizLabel[BID], 0x36F5A5FF, StrLabel);
+    if(create) BizLabel[BID] =  CreateDynamic3DTextLabel(StrLabel, 0x36F5A5FF, PlaceX[PlaceForThisBiz[BID]], PlaceY[PlaceForThisBiz[BID]], PlaceZ[PlaceForThisBiz[BID]], 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, true, 0, 0, -1, 150.0);
+    else UpdateDynamic3DTextLabelText(BizLabel[BID], 0x36F5A5FF, StrLabel);
     return 1;
 }
 forward LoadedAllBiz();
