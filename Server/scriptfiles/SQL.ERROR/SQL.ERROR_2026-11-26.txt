@@ -1,2 +1,4 @@
 [08:19:06] Unknown column 'None' in 'VALUES'
 [08:19:06] Unknown column 'None' in 'VALUES'
+[08:50:22] Unknown column 'standprice' in 'SELECT'
+[08:51:32] Unknown column 'standprice' in 'SELECT'

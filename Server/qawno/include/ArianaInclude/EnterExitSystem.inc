@@ -95,8 +95,8 @@ CMD:exit(playerid){
     return 1;
 }
 CMD:create(playerid){
-    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon, type, bname, stanprice, owner_pid, owner_name) VALUES (1368.490722, -1279.759155, 13.546875, 270.0, 315.716735, -143.005462, 999.601562, 180.0, 7, 6, 1, 'Los Santos', 1000, -1, 'None')");
-    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon,  type, bname, stanprice, owner_pid, owner_name) VALUES (2176.974365, 925.194213, 11.099519, 0.0, 285.363342, -41.202697, 1001.515625, 180.0, 1, 6, 1, 'Los Ventos', 2000, -1, 'None')");
-    mysql_pquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon,  type, bname, stanprice, owner_pid, owner_name) VALUES (-2626.583984, 208.435226, 4.812500, 180.0, 285.791259, -86.175193, 1001.515625, 180.0, 4, 6, 1, 'San Fracisco', 3000, -1, 'None')");
+    mysql_tquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon, type, bname, stanprice, owner_pid, owner_name) VALUES (1368.490722, -1279.759155, 13.546875, 270.0, 315.716735, -143.005462, 999.601562, 180.0, 7, 6, 1, 'Los Santos', 1000, -1, 'None')");
+    mysql_tquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon,  type, bname, stanprice, owner_pid, owner_name) VALUES (2176.974365, 925.194213, 11.099519, 0.0, 285.363342, -41.202697, 1001.515625, 180.0, 1, 6, 1, 'Los Ventos', 2000, -1, 'None')");
+    mysql_tquery(sql, "INSERT INTO biz (x, y, z, a, tx, ty, tz, ta, intid, mapicon,  type, bname, stanprice, owner_pid, owner_name) VALUES (-2626.583984, 208.435226, 4.812500, 180.0, 285.791259, -86.175193, 1001.515625, 180.0, 4, 6, 1, 'San Fracisco', 3000, -1, 'None')");
     return 1;
 }

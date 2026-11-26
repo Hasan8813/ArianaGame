@@ -12,7 +12,17 @@ new BizID[MAX_BIZ], BizType[MAX_BIZ], BizName[MAX_BIZ][41], Text3D:BizLabel[MAX_
 
 
 stock LoadAllBiz(){
-    mysql_tquery(sql, "SELECT bid, x, y, z, a, tx, ty, tz, ta, intid, mapicon, type, bname, standprice, owner_pid, owner_name, bizfsprice, bizfund FROM biz ORDER by bid", "LoadedAllBiz");
+    mysql_tquery(sql, "SELECT bid, x, y, z, a, tx, ty, tz, ta, intid, mapicon, type, bname, stanprice, owner_pid, owner_name, bizfsprice, bizfund FROM biz ORDER by bid", "LoadedAllBiz");
+    return 1;
+}
+stock UpdateBizLabel(BID, bool:create = false){
+    new StrLabel[200];
+    format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{36F5A5}Business Price: {1A7936}$%d\n{F3F3F3}Use /Enter to enter", BizID[BID], BizName[BID], BizOwnerName[BID], BizStandardPrice[BID]);
+    if(create){
+        BizLabel[BID] =  CreateDynamic3DTextLabel(StrLabel, 0x36F5A5FF, PlaceX[PlaceForThisBiz[BID]], PlaceY[PlaceForThisBiz[BID]], PlaceZ[PlaceForThisBiz[BID]], 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, true, 0, 0, -1, 150.0);
+        return 1;
+    }
+    UpdateDynamic3DTextLabelText(BizLabel[BID], 0x36F5A5FF, StrLabel);
     return 1;
 }
 forward LoadedAllBiz();
@@ -20,7 +30,7 @@ public LoadedAllBiz(){
     new rows = cache_num_rows();
     for(new i; i < rows; i++){
         new Float:x, Float:y, Float:z, Float:a, Float:tx, Float:ty, Float:tz, Float:ta, intid, mapicon;
-        cache_get_value_name_int(i, "bid", BizID[i]);
+        cache_get_value_name_int(i, "bid", BizID[i]); BizID[i]-=1;
         cache_get_value_name_float(i, "x", x);
         cache_get_value_name_float(i, "y", y);
         cache_get_value_name_float(i, "z", z);
@@ -38,28 +48,20 @@ public LoadedAllBiz(){
         cache_get_value_name(i, "owner_name", BizOwnerName[i]);
         cache_get_value_name_int(i, "bizfsprice", BizForSellPrice[i]);
         cache_get_value_name_int(i, "bizfund", BizFund[i]);
-        new StrLabel[200];
-        format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{36F5A5}Business Price: {1A7936}$%d\n{F3F3F3}Use /Enter to enter", BizID[i], BizName[i], BizOwnerName[i], BizStandardPrice[i]);
-        BizLabel[i] =  CreateDynamic3DTextLabel(StrLabel, 0x36F5A5FF, x, y, z, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, true, 0, 0, -1, 150.0);
         if(mapicon > 0) CreateDynamicMapIcon(x, y, z, mapicon, 0, 0, 0, -1, 2000.0);
         CreateDynamicPickup(1239, 1, x, y, z, 0, 0, -1, 150.0);
         PlaceForThisBiz[i] = AddPlace(x, y, z, a, tx, ty, tz, ta, intid, BizType[i], i);
+        UpdateBizLabel(BizID[i], true);
     }return 1;
 }
-stock UpdateBizLabel(BID){
-    new StrLabel[200];
-    format(StrLabel, sizeof(StrLabel), "Business ID %d\n{F3F3F3}%s\n{36F5A5}The owner of this business: {F3F3F3}%s\n{36F5A5}Business Price: {1A7936}$%d\n{F3F3F3}Use /Enter to enter", BizID[BID], BizName[BID], BizOwnerName[BID], BizStandardPrice[BID]);
-    UpdateDynamic3DTextLabelText(BizLabel[BID], 0x36F5A5FF, StrLabel);
-    return 1;
-}
 stock SetBizName(Biz, const NameB[]){
-    format(BizName[Biz-1], sizeof(BizName), "%s", NameB);
-    UpdateBizLabel(Biz-1);
+    format(BizName[Biz], sizeof(BizName), "%s", NameB);
+    UpdateBizLabel(Biz);
     return 1;
 }
 stock SetBizStandardPrice(Biz, Price){
-    BizStandardPrice[Biz-1] = Price;
-    UpdateBizLabel(Biz-1);
+    BizStandardPrice[Biz] = Price;
+    UpdateBizLabel(Biz);
     return 1;
 }
 CMD:bizinfo(playerid){
