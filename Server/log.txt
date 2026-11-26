@@ -192362,3 +192362,1859 @@ Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\com
 *** Streamer Plugin v2.9.6 by Incognito unloaded ***
 
 [2026-11-26T13:22:45+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:30:48+0000] [Info] 
+[2026-11-26T13:30:48+0000] [Info]  ===============================
+[2026-11-26T13:30:48+0000] [Info] 
+[2026-11-26T13:30:48+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:30:48+0000] [Info] 
+[2026-11-26T13:30:48+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:30:48+0000] [Info] 
+[2026-11-26T13:30:48+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:30:48+0000] [Info] 
+[2026-11-26T13:30:48+0000] [Info]  ===============================
+[2026-11-26T13:30:48+0000] [Info] 
+[2026-11-26T13:30:48+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:30:48+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:30:48+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:30:48+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:30:48+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:30:48+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:30:48+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:30:48+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:30:48+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:30:48+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:30:48+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:30:48+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:30:48+0000] [Info]  Created by IS4
+[2026-11-26T13:30:48+0000] [Info]  
+[2026-11-26T13:30:48+0000] [Info] --------------------------------------
+[2026-11-26T13:30:48+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:30:48+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:30:48+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:30:48+0000] [Info] --------------------------------------
+
+[2026-11-26T13:30:48+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:30:48+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:30:51+0000] [Info] [connection] incoming connection: 2.147.69.120:29276 id: 0
+[2026-11-26T13:30:51+0000] [Info] [join] Mohamad has joined the server (0:2.147.69.120)
+[2026-11-26T13:31:09+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:31:09+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:31:09+0000] [Info]  
+[2026-11-26T13:31:09+0000] [Info] --------------------------------------
+[2026-11-26T13:31:09+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:31:09+0000] [Info]  Detected and prevented:
+[2026-11-26T13:31:09+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:31:09+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:31:09+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:31:09+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:31:09+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:31:09+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:31:09+0000] [Info] --------------------------------------
+
+[2026-11-26T13:31:09+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:31:09+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:33:54+0000] [Info] 
+[2026-11-26T13:33:54+0000] [Info]  ===============================
+[2026-11-26T13:33:54+0000] [Info] 
+[2026-11-26T13:33:54+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:33:54+0000] [Info] 
+[2026-11-26T13:33:54+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:33:54+0000] [Info] 
+[2026-11-26T13:33:54+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:33:54+0000] [Info] 
+[2026-11-26T13:33:54+0000] [Info]  ===============================
+[2026-11-26T13:33:54+0000] [Info] 
+[2026-11-26T13:33:54+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:33:54+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:33:55+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:33:55+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:33:55+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:33:55+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:33:55+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:33:55+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:33:55+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:33:55+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:33:55+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:33:55+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:33:55+0000] [Info]  Created by IS4
+[2026-11-26T13:33:55+0000] [Info]  
+[2026-11-26T13:33:55+0000] [Info] --------------------------------------
+[2026-11-26T13:33:55+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:33:55+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:33:55+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:33:55+0000] [Info] --------------------------------------
+
+[2026-11-26T13:33:55+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:33:55+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:33:58+0000] [Info] [connection] incoming connection: 2.147.69.120:29283 id: 0
+[2026-11-26T13:33:58+0000] [Info] [join] Mohamad has joined the server (0:2.147.69.120)
+[2026-11-26T13:34:22+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:34:22+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:34:22+0000] [Info]  
+[2026-11-26T13:34:22+0000] [Info] --------------------------------------
+[2026-11-26T13:34:22+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:34:22+0000] [Info]  Detected and prevented:
+[2026-11-26T13:34:22+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:34:22+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:34:22+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:34:22+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:34:22+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:34:22+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:34:22+0000] [Info] --------------------------------------
+
+[2026-11-26T13:34:22+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:34:22+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:36:28+0000] [Info] 
+[2026-11-26T13:36:28+0000] [Info]  ===============================
+[2026-11-26T13:36:28+0000] [Info] 
+[2026-11-26T13:36:28+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:36:28+0000] [Info] 
+[2026-11-26T13:36:28+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:36:28+0000] [Info] 
+[2026-11-26T13:36:28+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:36:28+0000] [Info] 
+[2026-11-26T13:36:28+0000] [Info]  ===============================
+[2026-11-26T13:36:28+0000] [Info] 
+[2026-11-26T13:36:28+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:36:28+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:36:28+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:36:28+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:36:28+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:36:28+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:36:28+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:36:28+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:36:28+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:36:28+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:36:28+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:36:28+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:36:28+0000] [Info]  Created by IS4
+[2026-11-26T13:36:28+0000] [Info]  
+[2026-11-26T13:36:28+0000] [Info] --------------------------------------
+[2026-11-26T13:36:28+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:36:28+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:36:28+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:36:28+0000] [Info] --------------------------------------
+
+[2026-11-26T13:36:28+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:36:28+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:36:31+0000] [Info] [connection] incoming connection: 2.147.69.120:29286 id: 0
+[2026-11-26T13:36:31+0000] [Info] [join] Mohamad has joined the server (0:2.147.69.120)
+[2026-11-26T13:36:47+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:36:47+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:36:47+0000] [Info]  
+[2026-11-26T13:36:47+0000] [Info] --------------------------------------
+[2026-11-26T13:36:47+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:36:47+0000] [Info]  Detected and prevented:
+[2026-11-26T13:36:47+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:36:47+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:36:47+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:36:47+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:36:47+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:36:47+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:36:47+0000] [Info] --------------------------------------
+
+[2026-11-26T13:36:47+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:36:47+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:37:47+0000] [Info] 
+[2026-11-26T13:37:47+0000] [Info]  ===============================
+[2026-11-26T13:37:47+0000] [Info] 
+[2026-11-26T13:37:47+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:37:47+0000] [Info] 
+[2026-11-26T13:37:47+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:37:47+0000] [Info] 
+[2026-11-26T13:37:47+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:37:47+0000] [Info] 
+[2026-11-26T13:37:47+0000] [Info]  ===============================
+[2026-11-26T13:37:47+0000] [Info] 
+[2026-11-26T13:37:47+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:37:47+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:37:47+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:37:47+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:37:47+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:37:47+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:37:47+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:37:47+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:37:47+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:37:47+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:37:47+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:37:47+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:37:47+0000] [Info]  Created by IS4
+[2026-11-26T13:37:47+0000] [Info]  
+[2026-11-26T13:37:47+0000] [Info] --------------------------------------
+[2026-11-26T13:37:47+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:37:47+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:37:47+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:37:47+0000] [Info] --------------------------------------
+
+[2026-11-26T13:37:47+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:37:47+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:37:50+0000] [Info] [connection] incoming connection: 2.147.69.120:29289 id: 0
+[2026-11-26T13:37:50+0000] [Info] [join] Mohamad has joined the server (0:2.147.69.120)
+[2026-11-26T13:38:48+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:38:48+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:38:48+0000] [Info]  
+[2026-11-26T13:38:48+0000] [Info] --------------------------------------
+[2026-11-26T13:38:48+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:38:48+0000] [Info]  Detected and prevented:
+[2026-11-26T13:38:48+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:38:48+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:38:48+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:38:48+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:38:48+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:38:48+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:38:48+0000] [Info] --------------------------------------
+
+[2026-11-26T13:38:48+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:38:48+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:40:14+0000] [Info] 
+[2026-11-26T13:40:14+0000] [Info]  ===============================
+[2026-11-26T13:40:14+0000] [Info] 
+[2026-11-26T13:40:14+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:40:14+0000] [Info] 
+[2026-11-26T13:40:14+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:40:14+0000] [Info] 
+[2026-11-26T13:40:14+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:40:14+0000] [Info] 
+[2026-11-26T13:40:14+0000] [Info]  ===============================
+[2026-11-26T13:40:14+0000] [Info] 
+[2026-11-26T13:40:14+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:40:14+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:40:14+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:40:14+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:40:14+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:40:14+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:40:14+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:40:14+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:40:14+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:40:14+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:40:14+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:40:14+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:40:14+0000] [Info]  Created by IS4
+[2026-11-26T13:40:14+0000] [Info]  
+[2026-11-26T13:40:14+0000] [Info] --------------------------------------
+[2026-11-26T13:40:14+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:40:14+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:40:14+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:40:14+0000] [Info] --------------------------------------
+
+[2026-11-26T13:40:14+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:40:14+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:40:17+0000] [Info] [connection] incoming connection: 2.147.69.120:29293 id: 0
+[2026-11-26T13:40:17+0000] [Info] [join] Mohamad has joined the server (0:2.147.69.120)
+[2026-11-26T13:41:13+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:41:13+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:41:13+0000] [Info]  
+[2026-11-26T13:41:13+0000] [Info] --------------------------------------
+[2026-11-26T13:41:13+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:41:13+0000] [Info]  Detected and prevented:
+[2026-11-26T13:41:13+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:41:13+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:41:13+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:41:13+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:41:13+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:41:13+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:41:13+0000] [Info] --------------------------------------
+
+[2026-11-26T13:41:13+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:41:13+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:42:12+0000] [Info] 
+[2026-11-26T13:42:12+0000] [Info]  ===============================
+[2026-11-26T13:42:12+0000] [Info] 
+[2026-11-26T13:42:12+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:42:12+0000] [Info] 
+[2026-11-26T13:42:12+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:42:12+0000] [Info] 
+[2026-11-26T13:42:12+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:42:12+0000] [Info] 
+[2026-11-26T13:42:12+0000] [Info]  ===============================
+[2026-11-26T13:42:12+0000] [Info] 
+[2026-11-26T13:42:12+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:42:12+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:42:12+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:42:12+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:42:12+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:42:12+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:42:12+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:42:12+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:42:12+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:42:12+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:42:12+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:42:12+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:42:12+0000] [Info]  Created by IS4
+[2026-11-26T13:42:12+0000] [Info]  
+[2026-11-26T13:42:12+0000] [Info] --------------------------------------
+[2026-11-26T13:42:12+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:42:12+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:42:12+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:42:12+0000] [Info] --------------------------------------
+
+[2026-11-26T13:42:12+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:42:12+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:42:15+0000] [Info] [connection] incoming connection: 2.147.69.120:29294 id: 0
+[2026-11-26T13:42:15+0000] [Info] [join] Mohamad has joined the server (0:2.147.69.120)
+[2026-11-26T13:42:36+0000] [Info] [connection] incoming connection: 91.251.87.242:19733 id: 1
+[2026-11-26T13:42:36+0000] [Info] [join] Peyman has joined the server (1:91.251.87.242)
+[2026-11-26T13:42:51+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:42:51+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:42:51+0000] [Info]  
+[2026-11-26T13:42:51+0000] [Info] --------------------------------------
+[2026-11-26T13:42:51+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:42:51+0000] [Info]  Detected and prevented:
+[2026-11-26T13:42:51+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:42:51+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:42:51+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:42:51+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:42:51+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:42:51+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:42:51+0000] [Info] --------------------------------------
+
+[2026-11-26T13:42:51+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:42:51+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:42:58+0000] [Info] 
+[2026-11-26T13:42:58+0000] [Info]  ===============================
+[2026-11-26T13:42:58+0000] [Info] 
+[2026-11-26T13:42:58+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:42:58+0000] [Info] 
+[2026-11-26T13:42:58+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:42:58+0000] [Info] 
+[2026-11-26T13:42:58+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:42:58+0000] [Info] 
+[2026-11-26T13:42:58+0000] [Info]  ===============================
+[2026-11-26T13:42:58+0000] [Info] 
+[2026-11-26T13:42:58+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:42:58+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:42:58+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:42:58+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:42:58+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:42:58+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:42:58+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:42:58+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:42:58+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:42:58+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:42:58+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:42:58+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:42:58+0000] [Info]  Created by IS4
+[2026-11-26T13:42:58+0000] [Info]  
+[2026-11-26T13:42:58+0000] [Info] --------------------------------------
+[2026-11-26T13:42:58+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:42:58+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:42:58+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:42:58+0000] [Info] --------------------------------------
+
+[2026-11-26T13:42:58+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:42:58+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:43:09+0000] [Info] [connection] incoming connection: 91.251.87.242:19735 id: 0
+[2026-11-26T13:43:09+0000] [Info] [join] Peyman has joined the server (0:91.251.87.242)
+[2026-11-26T13:43:11+0000] [Info] [connection] incoming connection: 2.147.69.120:29296 id: 1
+[2026-11-26T13:43:11+0000] [Info] [join] Mohamad has joined the server (1:2.147.69.120)
+[2026-11-26T13:43:20+0000] [Info] [chat] [Mohamad]: ridammm
+[2026-11-26T13:43:22+0000] [Info] [chat] [Mohamad]: xd
+[2026-11-26T13:43:24+0000] [Info] [chat] [Peyman]: Chera
+[2026-11-26T13:43:25+0000] [Info] [chat] [Mohamad]: Haji tarsidam xddd
+[2026-11-26T13:43:32+0000] [Info] [chat] [Peyman]: Vas xhi xd
+[2026-11-26T13:43:35+0000] [Info] [chat] [Mohamad]: Na ta alan hishki inja nabude
+[2026-11-26T13:43:37+0000] [Info] [chat] [Peyman]: chi*
+[2026-11-26T13:43:40+0000] [Info] [chat] [Mohamad]: Yedafe ridam xd
+[2026-11-26T13:43:42+0000] [Info] [chat] [Peyman]: xdd
+[2026-11-26T13:43:47+0000] [Info] [chat] [Mohamad]: Dahane5 service xd
+[2026-11-26T13:44:02+0000] [Info] [chat] [Mohamad]: Dashtam biz misakhtam
+[2026-11-26T13:44:07+0000] [Info] [chat] [Peyman]: Chera hichi cmd nadare xd
+[2026-11-26T13:44:14+0000] [Info] [chat] [Mohamad]: Dare
+[2026-11-26T13:44:32+0000] [Info] [chat] [Mohamad]: ./bizinfo
+[2026-11-26T13:44:47+0000] [Info] [chat] [Mohamad]: ./pos
+[2026-11-26T13:44:58+0000] [Info] [chat] [Mohamad]: ./account
+[2026-11-26T13:45:03+0000] [Info] [chat] [Peyman]: Aow
+[2026-11-26T13:45:31+0000] [Info] [chat] [Mohamad]: Yejuri daram bizaro misazam
+[2026-11-26T13:45:35+0000] [Info] [chat] [Peyman]: Um
+[2026-11-26T13:45:44+0000] [Info] [chat] [Mohamad]: Faghat bizaye hamun shahr tu mini map neshun kide
+[2026-11-26T13:45:47+0000] [Info] [chat] [Mohamad]: Faghat bizaye hamun shahr tu mini map neshun mide
+[2026-11-26T13:45:56+0000] [Info] [chat] [Peyman]: Ow jaleb shod
+[2026-11-26T13:46:14+0000] [Info] [chat] [Mohamad]: Haha
+[2026-11-26T13:46:27+0000] [Info] [chat] [Mohamad]: Testa tu gunshop
+[2026-11-26T13:46:31+0000] [Info] [chat] [Peyman]: buygun nadare
+[2026-11-26T13:46:34+0000] [Info] [chat] [Peyman]: Oom
+[2026-11-26T13:46:43+0000] [Info] [chat] [Mohamad]: Taze baw enghadresho sakhtam
+[2026-11-26T13:46:50+0000] [Info] [chat] [Peyman]: Xd
+[2026-11-26T13:46:56+0000] [Info] [chat] [Mohamad]: Alan daram matne dame bizaro dorost mikonam
+[2026-11-26T13:46:58+0000] [Info] [chat] [Mohamad]: biya
+[2026-11-26T13:47:11+0000] [Info] [chat] [Mohamad]: exit
+[2026-11-26T13:47:31+0000] [Info] [chat] [Peyman]: Migam f mizanam kar nemikone xd
+[2026-11-26T13:47:31+0000] [Info] [chat] [Mohamad]: intoriye
+[2026-11-26T13:47:36+0000] [Info] [chat] [Mohamad]: Na baw faghat entere
+[2026-11-26T13:47:42+0000] [Info] [chat] [Mohamad]: f o dorost ni
+[2026-11-26T13:47:48+0000] [Info] [chat] [Peyman]: Um
+[2026-11-26T13:47:49+0000] [Info] [chat] [Mohamad]: Matnesh khube ?
+[2026-11-26T13:48:06+0000] [Info] [chat] [Peyman]: Matne chish
+[2026-11-26T13:48:10+0000] [Info] [chat] [Mohamad]: Dame biz
+[2026-11-26T13:48:13+0000] [Info] [chat] [Mohamad]: In
+[2026-11-26T13:48:15+0000] [Info] [chat] [Peyman]: Aha are.
+[2026-11-26T13:48:34+0000] [Info] [chat] [Mohamad]: biya
+[2026-11-26T13:49:12+0000] [Info] [chat] [Mohamad]: ye cmd bezan alaki
+[2026-11-26T13:49:18+0000] [Info] [chat] [Peyman]: Chi masalan
+[2026-11-26T13:49:22+0000] [Info] [chat] [Mohamad]: wisnjsjs
+[2026-11-26T13:49:26+0000] [Info] [chat] [Mohamad]: alaki
+[2026-11-26T13:49:28+0000] [Info] [chat] [Mohamad]: bezan
+[2026-11-26T13:49:32+0000] [Info] [chat] [Mohamad]: erroro
+[2026-11-26T13:49:34+0000] [Info] [chat] [Mohamad]: bebin
+[2026-11-26T13:49:36+0000] [Info] [chat] [Peyman]: Vojud nadarad
+[2026-11-26T13:49:43+0000] [Info] [chat] [Mohamad]: Sedash vasat pakhsh shod?
+[2026-11-26T13:49:48+0000] [Info] [chat] [Peyman]: Na
+[2026-11-26T13:49:54+0000] [Info] [chat] [Mohamad]: Ba androdii?
+[2026-11-26T13:49:57+0000] [Info] [chat] [Peyman]: Are
+[2026-11-26T13:50:06+0000] [Info] [chat] [Mohamad]: Clientet poshtabinani nemikone
+[2026-11-26T13:50:14+0000] [Info] [chat] [Peyman]: Hamun sampe khodete
+[2026-11-26T13:50:20+0000] [Info] [chat] [Peyman]: Thunder
+[2026-11-26T13:50:26+0000] [Info] [chat] [Mohamad]: Vaghti yechizi vasat error mide ye ahangi pakhsh mishe
+[2026-11-26T13:50:33+0000] [Info] [chat] [Mohamad]: Mige ding
+[2026-11-26T13:50:36+0000] [Info] [chat] [Peyman]: Nis vala
+[2026-11-26T13:50:44+0000] [Info] [chat] [Peyman]: Azhir ino off kon
+[2026-11-26T13:50:47+0000] [Info] [chat] [Peyman]: bebinam
+[2026-11-26T13:51:05+0000] [Info] [chat] [Peyman]: Aha pakhsh mikone xd
+[2026-11-26T13:51:10+0000] [Info] [chat] [Mohamad]: shod?
+[2026-11-26T13:51:14+0000] [Info] [chat] [Peyman]: sfx am payine
+[2026-11-26T13:51:17+0000] [Info] [chat] [Mohamad]: Hal mikoni
+[2026-11-26T13:51:19+0000] [Info] [chat] [Peyman]: sedash ksm buf
+[2026-11-26T13:51:22+0000] [Info] [chat] [Peyman]: kam
+[2026-11-26T13:51:25+0000] [Info] [chat] [Peyman]: d
+[2026-11-26T13:51:51+0000] [Info] [chat] [Mohamad]: ./account ham zabano englis koni hamechi english mishe
+[2026-11-26T13:52:00+0000] [Info] [chat] [Peyman]: Ow
+[2026-11-26T13:52:00+0000] [Info] [chat] [Mohamad]: Vagheyi
+[2026-11-26T13:52:30+0000] [Info] [chat] [Mohamad]: Govahiname nagerefti?
+[2026-11-26T13:52:40+0000] [Info] [chat] [Peyman]: agereftam
+[2026-11-26T13:52:51+0000] [Info] [chat] [Mohamad]: beshin
+[2026-11-26T13:52:57+0000] [Info] [chat] [Mohamad]: boro tu are
+[2026-11-26T13:52:59+0000] [Info] [chat] [Mohamad]: boro tu area
+[2026-11-26T13:53:15+0000] [Info] [chat] [Mohamad]: in chiye andakhti
+[2026-11-26T13:53:18+0000] [Info] [chat] [Peyman]: nrg chande
+[2026-11-26T13:53:22+0000] [Info] [chat] [Mohamad]: 522
+[2026-11-26T13:53:43+0000] [Info] [chat] [Peyman]: ow
+[2026-11-26T13:53:46+0000] [Info] [chat] [Mohamad]: :)
+[2026-11-26T13:53:51+0000] [Info] [chat] [Mohamad]: Shekaret mikone
+[2026-11-26T13:54:07+0000] [Info] [chat] [Mohamad]: Good bye
+[2026-11-26T13:54:12+0000] [Info] [chat] [Mohamad]: Alan 2 ta mindaze vasamun
+[2026-11-26T13:54:12+0000] [Info] [chat] [Peyman]: haha
+[2026-11-26T13:54:15+0000] [Info] [death] Mohamad died 255
+[2026-11-26T13:54:17+0000] [Info] [chat] [Mohamad]: gooz
+[2026-11-26T13:54:27+0000] [Info] [death] Peyman died 255
+[2026-11-26T13:54:39+0000] [Info] [chat] [Peyman]: heh
+[2026-11-26T13:54:43+0000] [Info] [chat] [Mohamad]: Mordi
+[2026-11-26T13:54:46+0000] [Info] [chat] [Peyman]: y
+[2026-11-26T13:54:59+0000] [Info] [chat] [Mohamad]: Sabr levelto bokonam 3
+[2026-11-26T13:55:05+0000] [Info] [chat] [Mohamad]: teste fly o sail am bebini
+[2026-11-26T13:55:10+0000] [Info] [chat] [Peyman]: Cmd modiriyati nadare?
+[2026-11-26T13:55:16+0000] [Info] [chat] [Mohamad]: Sabr
+[2026-11-26T13:55:52+0000] [Info] [chat] [Mohamad]: Restart midam chun az database taghir midam levelo
+[2026-11-26T13:55:59+0000] [Info] [chat] [Peyman]: halle
+[2026-11-26T13:56:05+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:56:05+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:56:05+0000] [Info]  
+[2026-11-26T13:56:05+0000] [Info] --------------------------------------
+[2026-11-26T13:56:05+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:56:05+0000] [Info]  Detected and prevented:
+[2026-11-26T13:56:05+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:56:05+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:56:05+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:56:05+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:56:05+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:56:05+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:56:05+0000] [Info] --------------------------------------
+
+[2026-11-26T13:56:05+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:56:05+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:56:29+0000] [Info] 
+[2026-11-26T13:56:29+0000] [Info]  ===============================
+[2026-11-26T13:56:29+0000] [Info] 
+[2026-11-26T13:56:29+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:56:29+0000] [Info] 
+[2026-11-26T13:56:29+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:56:29+0000] [Info] 
+[2026-11-26T13:56:29+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:56:29+0000] [Info] 
+[2026-11-26T13:56:29+0000] [Info]  ===============================
+[2026-11-26T13:56:29+0000] [Info] 
+[2026-11-26T13:56:29+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:56:29+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:56:29+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:56:29+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:56:29+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:56:29+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:56:29+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:56:29+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:56:29+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:56:29+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:56:29+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:56:29+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:56:29+0000] [Info]  Created by IS4
+[2026-11-26T13:56:29+0000] [Info]  
+[2026-11-26T13:56:29+0000] [Info] --------------------------------------
+[2026-11-26T13:56:29+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:56:29+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:56:29+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:56:29+0000] [Info] --------------------------------------
+
+[2026-11-26T13:56:29+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:56:29+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:56:31+0000] [Info] [connection] incoming connection: 91.251.87.242:20479 id: 0
+[2026-11-26T13:56:31+0000] [Info] [join] Peyman has joined the server (0:91.251.87.242)
+[2026-11-26T13:56:32+0000] [Info] [connection] incoming connection: 2.147.69.120:30032 id: 1
+[2026-11-26T13:56:32+0000] [Info] [join] Mohamad has joined the server (1:2.147.69.120)
+[2026-11-26T13:56:41+0000] [Info] [chat] [Mohamad]: Khob
+[2026-11-26T13:56:41+0000] [Info] [chat] [Peyman]: 1 an
+[2026-11-26T13:56:45+0000] [Info] [chat] [Peyman]: m
+[2026-11-26T13:56:54+0000] [Info] [chat] [Mohamad]: e ridam khodam dadam
+[2026-11-26T13:56:57+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T13:57:12+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T13:57:12+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T13:57:12+0000] [Info]  
+[2026-11-26T13:57:12+0000] [Info] --------------------------------------
+[2026-11-26T13:57:12+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T13:57:12+0000] [Info]  Detected and prevented:
+[2026-11-26T13:57:12+0000] [Info]   0 Talash Baraye  Cheat
+[2026-11-26T13:57:12+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T13:57:12+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T13:57:12+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T13:57:12+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T13:57:12+0000] [Info]  0 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T13:57:12+0000] [Info] --------------------------------------
+
+[2026-11-26T13:57:12+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T13:57:12+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T13:57:37+0000] [Info] 
+[2026-11-26T13:57:37+0000] [Info]  ===============================
+[2026-11-26T13:57:37+0000] [Info] 
+[2026-11-26T13:57:37+0000] [Info]      sscanf component loaded.   
+[2026-11-26T13:57:37+0000] [Info] 
+[2026-11-26T13:57:37+0000] [Info]          Version: 2.13.8
+[2026-11-26T13:57:37+0000] [Info] 
+[2026-11-26T13:57:37+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T13:57:37+0000] [Info] 
+[2026-11-26T13:57:37+0000] [Info]  ===============================
+[2026-11-26T13:57:37+0000] [Info] 
+[2026-11-26T13:57:37+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T13:57:37+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T13:57:37+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T13:57:37+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T13:57:37+0000] [Info] Loading plugin: mysql
+[2026-11-26T13:57:37+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T13:57:37+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T13:57:37+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T13:57:37+0000] [Info] Loading plugin: streamer
+[2026-11-26T13:57:37+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T13:57:37+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T13:57:37+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T13:57:37+0000] [Info]  Created by IS4
+[2026-11-26T13:57:37+0000] [Info]  
+[2026-11-26T13:57:37+0000] [Info] --------------------------------------
+[2026-11-26T13:57:37+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T13:57:37+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T13:57:37+0000] [Info]  Sazande: Nexius
+[2026-11-26T13:57:37+0000] [Info] --------------------------------------
+
+[2026-11-26T13:57:37+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T13:57:37+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T13:57:38+0000] [Info] [connection] incoming connection: 91.251.87.242:20482 id: 0
+[2026-11-26T13:57:38+0000] [Info] [join] Peyman has joined the server (0:91.251.87.242)
+[2026-11-26T13:57:40+0000] [Info] [connection] incoming connection: 2.147.69.120:30033 id: 1
+[2026-11-26T13:57:40+0000] [Info] [join] Mohamad has joined the server (1:2.147.69.120)
+[2026-11-26T13:57:47+0000] [Info] [chat] [Mohamad]: Shod?
+[2026-11-26T13:57:49+0000] [Info] [chat] [Peyman]: ow
+[2026-11-26T13:57:51+0000] [Info] [chat] [Peyman]: ye
+[2026-11-26T13:57:54+0000] [Info] [chat] [Mohamad]: Gold am dadam
+[2026-11-26T13:58:03+0000] [Info] [chat] [Peyman]: be che dardi mikhore
+[2026-11-26T13:58:16+0000] [Info] [chat] [Mohamad]: Felan faghat mituni bebinishun xd
+[2026-11-26T13:58:19+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T13:58:32+0000] [Info] [chat] [Peyman]: Voice chat nadare?
+[2026-11-26T13:58:41+0000] [Info] [chat] [Mohamad]: Account bezan avvalin gozine refferal am onyori sakhtam
+[2026-11-26T13:58:44+0000] [Info] [chat] [Mohamad]: Voic nadare
+[2026-11-26T13:59:18+0000] [Info] [chat] [Peyman]: om
+[2026-11-26T13:59:59+0000] [Info] [chat] [Mohamad]: rente mashine sf baladi?
+[2026-11-26T14:00:03+0000] [Info] [chat] [Peyman]: na
+[2026-11-26T14:00:09+0000] [Info] [chat] [Peyman]: map click kon
+[2026-11-26T14:00:10+0000] [Info] [chat] [Mohamad]: baw tu arsacia e
+[2026-11-26T14:00:14+0000] [Info] [chat] [Peyman]: Aha
+[2026-11-26T14:00:16+0000] [Info] [chat] [Mohamad]: Are bokon onja
+[2026-11-26T14:00:16+0000] [Info] [chat] [Peyman]: are
+[2026-11-26T14:00:52+0000] [Info] [chat] [Mohamad]: g
+[2026-11-26T14:01:31+0000] [Info] [chat] [Mohamad]: bezan
+[2026-11-26T14:01:38+0000] [Info] [chat] [Peyman]: Owww
+[2026-11-26T14:01:58+0000] [Info] [chat] [Mohamad]: Intorie
+[2026-11-26T14:02:41+0000] [Info] [chat] [Mohamad]: He
+[2026-11-26T14:02:45+0000] [Info] [chat] [Mohamad]: Sakhte na
+[2026-11-26T14:02:45+0000] [Info] [chat] [Peyman]: baw
+[2026-11-26T14:02:48+0000] [Info] [chat] [Peyman]: sakhte xd
+[2026-11-26T14:02:56+0000] [Info] [chat] [Mohamad]: Mage lic moftiye
+[2026-11-26T14:03:04+0000] [Info] [chat] [Mohamad]: xp gerefti?
+[2026-11-26T14:03:08+0000] [Info] [chat] [Peyman]: y
+[2026-11-26T14:03:23+0000] [Info] [chat] [Mohamad]: xd
+[2026-11-26T14:03:31+0000] [Info] [chat] [Mohamad]: Hala halaha munde yad begiri
+[2026-11-26T14:03:43+0000] [Info] [chat] [Peyman]: nazdik chidi xd
+[2026-11-26T14:03:43+0000] [Info] [chat] [Mohamad]: Alan timet tamum mishe
+[2026-11-26T14:03:53+0000] [Info] [chat] [Mohamad]: Az ghasd bud
+[2026-11-26T14:04:06+0000] [Info] [chat] [Mohamad]: Ta ziyad bepichi
+[2026-11-26T14:04:21+0000] [Info] [chat] [Mohamad]: he
+[2026-11-26T14:04:37+0000] [Info] [chat] [Mohamad]: Barikala
+[2026-11-26T14:04:38+0000] [Info] [chat] [Peyman]: kir toosh
+[2026-11-26T14:04:40+0000] [Info] [chat] [Mohamad]: xd
+[2026-11-26T14:04:41+0000] [Info] [chat] [Peyman]: sakhte
+[2026-11-26T14:04:51+0000] [Info] [chat] [Mohamad]: aaa pool nadaram man
+[2026-11-26T14:05:50+0000] [Info] [chat] [Mohamad]: Um
+[2026-11-26T14:06:40+0000] [Info] [chat] [Mohamad]: Cheghad ko... dasti
+[2026-11-26T14:06:45+0000] [Info] [chat] [Mohamad]: Boro dige
+[2026-11-26T14:07:01+0000] [Info] [chat] [Mohamad]: Vay
+[2026-11-26T14:07:33+0000] [Info] [Nex-AC debug] Speed: 216, speed x, y: 212, vel z: 0.234834, pos diff z: 0.009229, old speed: 241
+[2026-11-26T14:07:33+0000] [Info] [Nex-AC] ID 1 Mashkook Mibashad. Dalil: 009 (2)
+[2026-11-26T14:07:33+0000] [Info] [Nex-AC debug] Speed: 211, speed x, y: 208, vel z: 0.175006, pos diff z: 0.011236, old speed: 196
+[2026-11-26T14:07:33+0000] [Info] [Nex-AC] ID 1 Mashkook Mibashad. Dalil: 009 (2)
+[2026-11-26T14:07:34+0000] [Info] [Nex-AC debug] Speed: 200, speed x, y: 199, vel z: 0.106239, pos diff z: 0.175071, old speed: 202
+[2026-11-26T14:07:34+0000] [Info] [Nex-AC] ID 1 Mashkook Mibashad. Dalil: 009 (2)
+[2026-11-26T14:07:34+0000] [Info] [Nex-AC debug] Speed: 191, speed x, y: 190, vel z: 0.048853, pos diff z: 0.084331, old speed: 193
+[2026-11-26T14:07:34+0000] [Info] [Nex-AC] ID 1 Mashkook Mibashad. Dalil: 009 (2)
+[2026-11-26T14:07:34+0000] [Info] [Nex-AC debug] Speed: 183, speed x, y: 183, vel z: -0.004683, pos diff z: -0.002385, old speed: 185
+[2026-11-26T14:07:34+0000] [Info] [Nex-AC] ID 1 Mashkook Mibashad. Dalil: 009 (2)
+[2026-11-26T14:07:37+0000] [Info] [chat] [Peyman]: Deeewe
+[2026-11-26T14:07:43+0000] [Info] [chat] [Peyman]: Kir toosh
+[2026-11-26T14:07:48+0000] [Info] [chat] [Mohamad]: Velesh kon
+[2026-11-26T14:07:51+0000] [Info] [chat] [Peyman]: Pool nadaram xd
+[2026-11-26T14:07:55+0000] [Info] [chat] [Mohamad]: Alan skte mikoni
+[2026-11-26T14:08:06+0000] [Info] [chat] [Mohamad]: Sabr pool bedam fly khube
+[2026-11-26T14:08:09+0000] [Info] [chat] [Peyman]: Cp hash nazdik sakhti k1riye
+[2026-11-26T14:08:32+0000] [Info] [Pawn.RakNet] plugin unloaded
+[2026-11-26T14:08:32+0000] [Info] [Pawn.CMD] plugin unloaded
+[2026-11-26T14:08:32+0000] [Info]  
+[2026-11-26T14:08:32+0000] [Info] --------------------------------------
+[2026-11-26T14:08:32+0000] [Info]  Amare Anticheat Nex-AC
+[2026-11-26T14:08:32+0000] [Info]  Detected and prevented:
+[2026-11-26T14:08:32+0000] [Info]   5 Talash Baraye  Cheat
+[2026-11-26T14:08:32+0000] [Info]   0 Talash Baraye  Hack
+[2026-11-26T14:08:32+0000] [Info]   0 Talash Baraye Crash
+[2026-11-26T14:08:32+0000] [Info]   0 Talash Baraye Flood
+[2026-11-26T14:08:32+0000] [Info]   0 Talash Baraye Hamle
+[2026-11-26T14:08:32+0000] [Info]  5 Cheater Tashkhis Dade Va Mojazat Shod
+[2026-11-26T14:08:32+0000] [Info] --------------------------------------
+
+[2026-11-26T14:08:32+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito unloaded ***
+
+[2026-11-26T14:08:32+0000] [Info] plugin.mysql: Unloading plugin...
+Starting open.mp server (1.6.7.3218) from commit 3d20f3dc0e26917264cdc8585c65913e080a143c
+Loading component $CAPI.dll
+	Successfully loaded component C-API (1.6.7.3218) with UID 10467dd8d4c56fc6
+Loading component Actors.dll
+	Successfully loaded component Actors (1.6.7.3218) with UID c81ca021eae2ad5c
+Loading component Checkpoints.dll
+	Successfully loaded component Checkpoints (1.6.7.3218) with UID 44a937350d611dde
+Loading component Classes.dll
+	Successfully loaded component Classes (1.6.7.3218) with UID 8cfb3183976da208
+Loading component Console.dll
+	Successfully loaded component Console (1.6.7.3218) with UID bfa24e49d0c95ee4
+Loading component CustomModels.dll
+	Successfully loaded component CustomModels (1.6.7.3218) with UID 15e3cb1e7c77ffff
+Loading component Databases.dll
+	Successfully loaded component Databases (1.6.7.3218) with UID 80092e7eb5821a96
+Loading component Dialogs.dll
+	Successfully loaded component Dialogs (1.6.7.3218) with UID 44a111350d611dde
+Loading component GangZones.dll
+	Successfully loaded component GangZones (1.6.7.3218) with UID b3351d11ee8d8056
+Loading component LegacyConfig.dll
+	Successfully loaded component LegacyConfig (1.6.7.3218) with UID 24ef6216838f9ffc
+Loading component LegacyNetwork.dll
+	Successfully loaded component RakNetLegacyNetwork (1.6.7.3218) with UID ea9799fd79cf8442
+Loading component Menus.dll
+	Successfully loaded component Menus (1.6.7.3218) with UID 621e219eb97ee0b2
+Loading component NPCs.dll
+	Successfully loaded component NPCs (1.6.7.3218) with UID 3d0e59e87f4e90bc
+Loading component Objects.dll
+	Successfully loaded component Objects (1.6.7.3218) with UID 59f8415f72da6160
+Loading component Pawn.dll
+	Successfully loaded component Pawn (1.6.7.3218) with UID 78906cd9f19c36a6
+Loading component pawncmd.dll
+	Successfully loaded component Pawn.CMD (0.3.4.0) with UID a03b47c907a96c29
+Loading component pawnraknet.dll
+	Successfully loaded component Pawn.RakNet (0.1.6.0) with UID 4a8b15c16d23e42f
+Loading component Pickups.dll
+	Successfully loaded component Pickups (1.6.7.3218) with UID cf304faa363dd971
+Loading component Recordings.dll
+	Successfully loaded component Recordings (1.6.7.3218) with UID 871144d399f5f613
+Loading component sscanf.dll
+	Successfully loaded component sscanf (2.13.8.0) with UID a1e7c01e55caa1f2
+Loading component TextDraws.dll
+	Successfully loaded component TextDraws (1.6.7.3218) with UID 9b5dc2b1d15c992a
+Loading component TextLabels.dll
+	Successfully loaded component TextLabels (1.6.7.3218) with UID a0c57ea80a009742
+Loading component Timers.dll
+	Successfully loaded component Timers (1.6.7.3218) with UID 2ad8124c5ea257a3
+Loading component Variables.dll
+	Successfully loaded component Variables (1.6.7.3218) with UID 75e121848bc01fa2
+Loading component Vehicles.dll
+	Successfully loaded component Vehicles (1.6.7.3218) with UID 3f1f62ee9e22ab19
+Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\components
+[2026-11-26T14:08:42+0000] [Info] 
+[2026-11-26T14:08:42+0000] [Info]  ===============================
+[2026-11-26T14:08:42+0000] [Info] 
+[2026-11-26T14:08:42+0000] [Info]      sscanf component loaded.   
+[2026-11-26T14:08:42+0000] [Info] 
+[2026-11-26T14:08:42+0000] [Info]          Version: 2.13.8
+[2026-11-26T14:08:42+0000] [Info] 
+[2026-11-26T14:08:42+0000] [Info]    (c) 2022 Alex "Y_Less" Cole  
+[2026-11-26T14:08:42+0000] [Info] 
+[2026-11-26T14:08:42+0000] [Info]  ===============================
+[2026-11-26T14:08:42+0000] [Info] 
+[2026-11-26T14:08:42+0000] [Info] [Pawn.RakNet] plugin v1.6.0 loading...
+[2026-11-26T14:08:42+0000] [Info] [Pawn.RakNet] 
+
+    | Pawn.RakNet 1.6.0 | open.mp | 2016 - 2023
+    |--------------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 16:51:14
+    |--------------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.RakNet/tree/omp
+    |--------------------------------------------------------------
+    | Wiki: https://github.com/katursis/Pawn.RakNet/wiki
+
+[2026-11-26T14:08:42+0000] [Info] [Pawn.CMD] plugin v3.4.0 loading...
+[2026-11-26T14:08:42+0000] [Info] [Pawn.CMD] 
+
+    | Pawn.CMD 3.4.0 | open.mp | 2016 - 2023
+    |-----------------------------------------
+    | Author and maintainer: katursis
+
+
+    | Compiled: Feb 12 2023 at 17:25:09
+    |----------------------------------------------------------
+    | Repository: https://github.com/katursis/Pawn.CMD/tree/omp
+
+[2026-11-26T14:08:42+0000] [Info] Loading plugin: mysql
+[2026-11-26T14:08:42+0000] [Info]  >> plugin.mysql: R41-4 successfully loaded.
+[2026-11-26T14:08:42+0000] [Info] Loading plugin: samp_bcrypt
+[2026-11-26T14:08:42+0000] [Info] [SampBcrypt] [info]: Version: 0.4.1
+[2026-11-26T14:08:42+0000] [Info] Loading plugin: streamer
+[2026-11-26T14:08:42+0000] [Info] 
+
+*** Streamer Plugin v2.9.6 by Incognito loaded ***
+
+[2026-11-26T14:08:42+0000] [Info] Loading plugin: PawnPlus
+[2026-11-26T14:08:42+0000] [Info]  PawnPlus v1.5.3 loaded
+[2026-11-26T14:08:42+0000] [Info]  Created by IS4
+[2026-11-26T14:08:42+0000] [Info]  
+[2026-11-26T14:08:42+0000] [Info] --------------------------------------
+[2026-11-26T14:08:42+0000] [Info]  Anticheat Nex-AC Load Shod
+[2026-11-26T14:08:42+0000] [Info]  Noskhe Anticheat: 1.9.69
+[2026-11-26T14:08:42+0000] [Info]  Sazande: Nexius
+[2026-11-26T14:08:42+0000] [Info] --------------------------------------
+
+[2026-11-26T14:08:42+0000] [Info] [MySQL]: MySQL connected to ArianaGames, Database: [ariana]
+[2026-11-26T14:08:42+0000] [Info] Legacy Network started on port 7777
+[2026-11-26T14:08:49+0000] [Info] [connection] incoming connection: 91.251.87.242:21218 id: 0
+[2026-11-26T14:08:49+0000] [Info] [join] Peyman has joined the server (0:91.251.87.242)
+[2026-11-26T14:09:04+0000] [Info] [connection] incoming connection: 2.147.69.120:30768 id: 1
+[2026-11-26T14:09:04+0000] [Info] [join] Mohamad has joined the server (1:2.147.69.120)
+[2026-11-26T14:09:09+0000] [Info] [chat] [Peyman]: time nadare kojash mizane?
+[2026-11-26T14:09:18+0000] [Info] [chat] [Mohamad]: Hichja
+[2026-11-26T14:09:25+0000] [Info] [chat] [Peyman]: Kho timer bezar
+[2026-11-26T14:09:32+0000] [Info] [chat] [Mohamad]: Bezaram?
+[2026-11-26T14:09:35+0000] [Info] [chat] [Peyman]: Are
+[2026-11-26T14:09:41+0000] [Info] [chat] [Mohamad]: Um
+[2026-11-26T14:09:45+0000] [Info] [chat] [Mohamad]: Mizaram barash
+[2026-11-26T14:09:48+0000] [Info] [chat] [Peyman]: +
+[2026-11-26T14:09:50+0000] [Info] [chat] [Mohamad]: biya fly school
+[2026-11-26T14:10:29+0000] [Info] [chat] [Peyman]: inam rime
+[2026-11-26T14:10:32+0000] [Info] [chat] [Peyman]: time?
+[2026-11-26T14:10:38+0000] [Info] [chat] [Mohamad]: In bishtare
+[2026-11-26T14:10:41+0000] [Info] [chat] [Mohamad]: Rahate
+[2026-11-26T14:10:46+0000] [Info] [chat] [Peyman]: G
+[2026-11-26T14:10:52+0000] [Info] [chat] [Peyman]: e
+[2026-11-26T14:13:27+0000] [Info] [chat] [Peyman]: haha
+[2026-11-26T14:13:31+0000] [Info] [chat] [Peyman]: ez
+[2026-11-26T14:13:31+0000] [Info] [chat] [Mohamad]: In khube na
+[2026-11-26T14:13:35+0000] [Info] [chat] [Peyman]: are
+[2026-11-26T14:13:46+0000] [Info] [chat] [Mohamad]: Vali timero nazaram behtar ni
+[2026-11-26T14:13:47+0000] [Info] [chat] [Mohamad]: ?
+[2026-11-26T14:13:54+0000] [Info] [chat] [Peyman]: Na vase un bezar
+[2026-11-26T14:14:03+0000] [Info] [chat] [Mohamad]: Time ono bishtar konam
+[2026-11-26T14:14:09+0000] [Info] [chat] [Peyman]: +
+[2026-11-26T14:14:45+0000] [Info] [chat] [Mohamad]: Ta inja
+[2026-11-26T14:15:00+0000] [Info] [chat] [Mohamad]: Dige systemamum tamum shod
+[2026-11-26T14:15:04+0000] [Info] [chat] [Peyman]: Um
+[2026-11-26T14:15:09+0000] [Info] [chat] [Mohamad]: Bishtare chizaye ke sakhtam
+[2026-11-26T14:15:15+0000] [Info] [chat] [Mohamad]: Posht sahnast
+[2026-11-26T14:15:20+0000] [Info] [chat] [Peyman]: Ow
+[2026-11-26T14:15:32+0000] [Info] [chat] [Mohamad]: Taze shoru kardam sakhte in chiza
+[2026-11-26T14:16:08+0000] [Info] [chat] [Mohamad]: Taze mape hallowine arsacia am dozdiam
+[2026-11-26T14:16:14+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T14:16:25+0000] [Info] [chat] [Mohamad]: Albate offe
+[2026-11-26T14:16:34+0000] [Info] [chat] [Mohamad]: Vali hast mitunam biyaram
+[2026-11-26T14:17:14+0000] [Info] [chat] [Mohamad]: Vas carshop
+[2026-11-26T14:17:22+0000] [Info] [chat] [Mohamad]: Gharare 3 ta besazam
+[2026-11-26T14:17:27+0000] [Info] [chat] [Mohamad]: Tu har 3 ta shahr
+[2026-11-26T14:17:31+0000] [Info] [chat] [Peyman]: awli
+[2026-11-26T14:17:39+0000] [Info] [chat] [Mohamad]: Badesh hame mashina yush mojud nist
+[2026-11-26T14:17:44+0000] [Info] [chat] [Mohamad]: Masalan ye inf
+[2026-11-26T14:17:50+0000] [Info] [chat] [Mohamad]: Hafteyi 1 2 ta
+[2026-11-26T14:18:04+0000] [Info] [chat] [Mohamad]: Tu yekishun be forush mirese
+[2026-11-26T14:18:16+0000] [Info] [chat] [Mohamad]: Khaz nemishe dige
+[2026-11-26T14:18:18+0000] [Info] [chat] [Peyman]: inam khube
+[2026-11-26T14:18:22+0000] [Info] [chat] [Mohamad]: Kam yab mishe o ba arzesh
+[2026-11-26T14:18:33+0000] [Info] [chat] [Mohamad]: Alan 1 2 ta server in systemo daran
+[2026-11-26T14:18:56+0000] [Info] [chat] [Mohamad]: Bad am biz am napare  ehtare age tu mah yeki time nazad
+[2026-11-26T14:18:58+0000] [Info] [chat] [Mohamad]: na?
+[2026-11-26T14:19:11+0000] [Info] [chat] [Peyman]: Na
+[2026-11-26T14:19:22+0000] [Info] [chat] [Peyman]: momkene daste yeki vashe bye bede
+[2026-11-26T14:19:27+0000] [Info] [chat] [Mohamad]: A
+[2026-11-26T14:19:30+0000] [Info] [chat] [Mohamad]: In are
+[2026-11-26T14:19:49+0000] [Info] [chat] [Mohamad]: Pas hadeaghal yekam az poole bize bere tu hesabesh
+[2026-11-26T14:20:02+0000] [Info] [chat] [Peyman]: um
+[2026-11-26T14:20:12+0000] [Info] [chat] [Peyman]: Chat am bug shod
+[2026-11-26T14:20:16+0000] [Info] [chat] [Peyman]: reconnect dare?
+[2026-11-26T14:20:21+0000] [Info] [chat] [Mohamad]: y
+[2026-11-26T14:20:23+0000] [Info] [chat] [Mohamad]: bezan
+[2026-11-26T14:20:26+0000] [Info] [chat] [Peyman]: chie cmd
+[2026-11-26T14:20:38+0000] [Info] [chat] [Mohamad]: Clientet reconnect dare
+[2026-11-26T14:20:43+0000] [Info] [chat] [Mohamad]: ./reconnect
+[2026-11-26T14:20:46+0000] [Info] [part] Peyman has left the server (0:1)
+[2026-11-26T14:21:29+0000] [Info] [connection] incoming connection: 91.251.87.242:21975 id: 0
+[2026-11-26T14:21:29+0000] [Info] [join] Peyman has joined the server (0:91.251.87.242)
+[2026-11-26T14:21:37+0000] [Info] [chat] [Peyman]: bqn mide
+[2026-11-26T14:21:40+0000] [Info] [chat] [Peyman]: rec bedi
+[2026-11-26T14:21:41+0000] [Info] [chat] [Mohamad]: Are
+[2026-11-26T14:21:44+0000] [Info] [chat] [Mohamad]: 20 sec
+[2026-11-26T14:21:49+0000] [Info] [chat] [Mohamad]: Mese arsacia e dige
+[2026-11-26T14:21:54+0000] [Info] [chat] [Mohamad]: Vali sakht gir tar
+[2026-11-26T14:21:58+0000] [Info] [chat] [Mohamad]: Vase ddose
+[2026-11-26T14:22:02+0000] [Info] [chat] [Peyman]: Arsa launcher pc intoriye
+[2026-11-26T14:22:10+0000] [Info] [chat] [Mohamad]: Are
+[2026-11-26T14:22:18+0000] [Info] [chat] [Mohamad]: Bizo yekari konam ke
+[2026-11-26T14:22:27+0000] [Info] [chat] [Mohamad]: Beja paridan
+[2026-11-26T14:22:40+0000] [Info] [chat] [Mohamad]: Bezare vase forush ye gheymat kam tar az stand
+[2026-11-26T14:22:48+0000] [Info] [chat] [Mohamad]: Na?
+[2026-11-26T14:22:51+0000] [Info] [chat] [Peyman]: Amm
+[2026-11-26T14:22:58+0000] [Info] [chat] [Peyman]: na hamun stand bezare
+[2026-11-26T14:23:12+0000] [Info] [chat] [Mohamad]: Pas beja paridan mizaram stand
+[2026-11-26T14:23:35+0000] [Info] [chat] [Mohamad]: ./bizstatus ham zamani beshe zad ke on biz vase forush bashe
+[2026-11-26T14:23:36+0000] [Info] [chat] [Peyman]: +
+[2026-11-26T14:23:39+0000] [Info] [chat] [Mohamad]: ./bizstatus ham zamani beshe zad ke on biz vase forush bashe
+[2026-11-26T14:24:17+0000] [Info] [chat] [Peyman]: camera aval shakhs dare clinet e pashmam
+[2026-11-26T14:24:23+0000] [Info] [chat] [Mohamad]: Y
+[2026-11-26T14:24:49+0000] [Info] [chat] [Peyman]: Ino arsa tarkib beshan khodas xd
+[2026-11-26T14:24:58+0000] [Info] [chat] [Mohamad]: Yani chi
+[2026-11-26T14:25:07+0000] [Info] [chat] [Peyman]: Clinet injaro migam xd
+[2026-11-26T14:25:13+0000] [Info] [chat] [Mohamad]: Aha
+[2026-11-26T14:25:23+0000] [Info] [chat] [Mohamad]: Baw inaro kharejia misazan
+[2026-11-26T14:25:28+0000] [Info] [chat] [Peyman]: Are
+[2026-11-26T14:25:28+0000] [Info] [chat] [Mohamad]: Rastiiiiiiiiii
+[2026-11-26T14:25:32+0000] [Info] [chat] [Peyman]: um
+[2026-11-26T14:25:34+0000] [Info] [chat] [Mohamad]: Ye client daram
+[2026-11-26T14:25:37+0000] [Info] [chat] [Mohamad]: Enghad khafane
+[2026-11-26T14:25:41+0000] [Info] [chat] [Mohamad]: sourcesh
+[2026-11-26T14:25:41+0000] [Info] [chat] [Peyman]: Kodum
+[2026-11-26T14:25:46+0000] [Info] [chat] [Mohamad]: Source
+[2026-11-26T14:25:54+0000] [Info] [chat] [Peyman]: Esmeshe!
+[2026-11-26T14:25:57+0000] [Info] [chat] [Mohamad]: Hamechizesh ke namayesh mkde jadide
+[2026-11-26T14:25:57+0000] [Info] [chat] [Peyman]: ?
+[2026-11-26T14:26:10+0000] [Info] [chat] [Mohamad]: Baw client makhsuse serveram ekhtesasi
+[2026-11-26T14:26:17+0000] [Info] [chat] [Mohamad]: Ye noskhe sakhtam
+[2026-11-26T14:26:19+0000] [Info] [chat] [Peyman]: aha
+[2026-11-26T14:26:22+0000] [Info] [chat] [Mohamad]: Vali kamel nist
+[2026-11-26T14:26:23+0000] [Info] [chat] [Peyman]: Launcher
+[2026-11-26T14:26:26+0000] [Info] [chat] [Mohamad]: Are
+[2026-11-26T14:26:27+0000] [Info] [chat] [Peyman]: Khubes
+[2026-11-26T14:26:35+0000] [Info] [chat] [Mohamad]: Hamechizesh jadide
+[2026-11-26T14:26:38+0000] [Info] [chat] [Mohamad]: Badesh
+[2026-11-26T14:26:43+0000] [Info] [chat] [Mohamad]: Vase bishtare chiza
+[2026-11-26T14:26:47+0000] [Info] [chat] [Mohamad]: Cmd nemizani dige
+[2026-11-26T14:26:52+0000] [Info] [chat] [Mohamad]: Kelid dare
+[2026-11-26T14:26:58+0000] [Info] [chat] [Peyman]: Aha
+[2026-11-26T14:27:02+0000] [Info] [chat] [Mohamad]: Khyli khafan tar tar
+[2026-11-26T14:27:10+0000] [Info] [chat] [Peyman]: mese enter o exit
+[2026-11-26T14:27:15+0000] [Info] [chat] [Mohamad]: Are
+[2026-11-26T14:27:23+0000] [Info] [chat] [Mohamad]: masalan ja /account kelid mizani
+[2026-11-26T14:27:31+0000] [Info] [chat] [Peyman]: um
+[2026-11-26T14:27:31+0000] [Info] [chat] [Mohamad]: Va ...
+[2026-11-26T14:27:43+0000] [Info] [chat] [Mohamad]: Vali download khodkar nadare bayad dorost beshe
+[2026-11-26T14:28:18+0000] [Info] [chat] [Mohamad]: 1 2 hafte dige
+[2026-11-26T14:28:23+0000] [Info] [chat] [Peyman]: ...
+[2026-11-26T14:28:23+0000] [Info] [chat] [Mohamad]: Biz ha
+[2026-11-26T14:28:27+0000] [Info] [chat] [Mohamad]: Ba house h
+[2026-11-26T14:28:32+0000] [Info] [chat] [Mohamad]: dorost mikonam
+[2026-11-26T14:28:38+0000] [Info] [chat] [Peyman]: Good
+[2026-11-26T14:28:47+0000] [Info] [chat] [Mohamad]: Badesh bayad ba cmd vaysam house sakhtam
+[2026-11-26T14:28:49+0000] [Info] [chat] [Mohamad]: Badesh bayad ba cmd vaysam house sakhtan
+[2026-11-26T14:28:53+0000] [Info] [chat] [Mohamad]: ye 1000 tayi
+[2026-11-26T14:29:08+0000] [Info] [chat] [Mohamad]: 2000 Ta
+[2026-11-26T14:29:09+0000] [Info] [chat] [Peyman]: Az in server haye amde nemitooni hegiri?
+[2026-11-26T14:29:27+0000] [Info] [chat] [Mohamad]: Na house tu data base
+[2026-11-26T14:29:29+0000] [Info] [chat] [Mohamad]: bad am
+[2026-11-26T14:29:35+0000] [Info] [chat] [Mohamad]: house ham systemesh jadide
+[2026-11-26T14:29:39+0000] [Info] [chat] [Mohamad]: fargh dare
+[2026-11-26T14:29:43+0000] [Info] [chat] [Peyman]: Um
+[2026-11-26T14:30:49+0000] [Info] [chat] [Mohamad]: Ye system am daram nesfe karast
+[2026-11-26T14:30:57+0000] [Info] [chat] [Mohamad]: Tu shahr tablo tablighati mkyad
+[2026-11-26T14:31:01+0000] [Info] [chat] [Mohamad]: Tu shahr tablo tablighati miyad
+[2026-11-26T14:31:03+0000] [Info] [chat] [Peyman]: um
+[2026-11-26T14:31:10+0000] [Info] [chat] [Mohamad]: miri mese ad mizari
+[2026-11-26T14:32:22+0000] [Info] [chat] [Peyman]: ha
+[2026-11-26T14:32:29+0000] [Info] [chat] [Peyman]: dv chiye
+[2026-11-26T14:32:37+0000] [Info] [chat] [Mohamad]: dv nadare
+[2026-11-26T14:32:42+0000] [Info] [chat] [Mohamad]: Bug mizanam
+[2026-11-26T14:32:42+0000] [Info] [chat] [Peyman]: pa chi
+[2026-11-26T14:32:43+0000] [Info] [chat] [Mohamad]: :d
+[2026-11-26T14:32:46+0000] [Info] [chat] [Peyman]: a
+[2026-11-26T14:32:56+0000] [Info] [chat] [Mohamad]: ye id veh eshtebah bezan gij mishe pak mikone xd
+[2026-11-26T14:33:04+0000] [Info] [chat] [Peyman]: ow
+[2026-11-26T14:33:14+0000] [Info] [Nex-AC debug] AC driver: 1, driver: 0, veh: 1
+[2026-11-26T14:33:14+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 032 (2)
+[2026-11-26T14:33:18+0000] [Info] [chat] [Peyman]: oom
+[2026-11-26T14:33:21+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T14:33:22+0000] [Info] [chat] [Mohamad]: Niyaz ni savar bash8
+[2026-11-26T14:33:34+0000] [Info] [chat] [Peyman]: mige cheater ei xd
+[2026-11-26T14:33:39+0000] [Info] [chat] [Mohamad]: are xd
+[2026-11-26T14:33:48+0000] [Info] [chat] [Mohamad]: Hooy cheater
+[2026-11-26T14:33:50+0000] [Info] [chat] [Mohamad]: na?
+[2026-11-26T14:33:53+0000] [Info] [chat] [Peyman]: Are
+[2026-11-26T14:33:54+0000] [Info] [chat] [Mohamad]: :d
+[2026-11-26T14:34:13+0000] [Info] [chat] [Mohamad]: Yak anti cheati vali daram
+[2026-11-26T14:34:19+0000] [Info] [chat] [Mohamad]: Pashm rizun
+[2026-11-26T14:34:30+0000] [Info] [chat] [Mohamad]: 48 ta cheato mifahme
+[2026-11-26T14:34:33+0000] [Info] [chat] [Peyman]: Mese un ke poolat ziyad mishod ban midad xd
+[2026-11-26T14:34:49+0000] [Info] [chat] [Mohamad]: In poolat ziyad beshe faghat namayeshiye
+[2026-11-26T14:34:49+0000] [Info] [chat] [Peyman]: Ya goto mikardi ban midad
+[2026-11-26T14:35:06+0000] [Info] [chat] [Mohamad]: Ona ke gamemode amade budan
+[2026-11-26T14:35:09+0000] [Info] [chat] [Mohamad]: Ashghala
+[2026-11-26T14:35:24+0000] [Info] [chat] [Mohamad]: Vase 10 sal pish busan hame
+[2026-11-26T14:35:29+0000] [Info] [chat] [Peyman]: Ye chan ta cmd modiriyati ham bezar
+[2026-11-26T14:35:34+0000] [Info] [chat] [Mohamad]: Chi
+[2026-11-26T14:35:45+0000] [Info] [chat] [Peyman]: goto, ban, mute
+[2026-11-26T14:35:47+0000] [Info] [chat] [Peyman]: ina
+[2026-11-26T14:35:55+0000] [Info] [chat] [Mohamad]: Goto o ke sadast
+[2026-11-26T14:35:59+0000] [Info] [chat] [Mohamad]: alan misazam
+[2026-11-26T14:36:05+0000] [Info] [chat] [Peyman]: Bano ina elzamiye
+[2026-11-26T14:36:12+0000] [Info] [chat] [Peyman]: yeki biyad ban koni
+[2026-11-26T14:36:15+0000] [Info] [chat] [Mohamad]: Ina hamaro misazam baw
+[2026-11-26T14:36:24+0000] [Info] [chat] [Mohamad]: Alan taze shoru kardama
+[2026-11-26T14:36:32+0000] [Info] [chat] [Peyman]: Besaz mesaz xd
+[2026-11-26T14:36:51+0000] [Info] [chat] [Mohamad]: Are baw fek kon harchi tu arsa hast gharare besazam bishtar hata
+[2026-11-26T14:37:02+0000] [Info] [chat] [Peyman]: Sakhte xd
+[2026-11-26T14:37:08+0000] [Info] [chat] [Peyman]: koonet mikeshe?
+[2026-11-26T14:37:18+0000] [Info] [chat] [Mohamad]: Azash lezat mibaram hal mide xd
+[2026-11-26T14:37:31+0000] [Info] [chat] [Peyman]: Ye 2 ta developer gir biyar xd
+[2026-11-26T14:37:36+0000] [Info] [chat] [Mohamad]: Ta alan 17 ta file +700 khat sakhtam xd
+[2026-11-26T14:37:44+0000] [Info] [chat] [Peyman]: :0
+[2026-11-26T14:37:53+0000] [Info] [chat] [Mohamad]: Pashmat berize
+[2026-11-26T14:38:09+0000] [Info] [chat] [Mohamad]: Vali sadast ha
+[2026-11-26T14:38:15+0000] [Info] [chat] [Peyman]: 
+[2026-11-26T14:38:26+0000] [Info] [chat] [Mohamad]: In rorem gharar bud behesh yad bedam
+[2026-11-26T14:38:31+0000] [Info] [chat] [Mohamad]: Biyad baham besazim
+[2026-11-26T14:38:36+0000] [Info] [chat] [Mohamad]: Rid
+[2026-11-26T14:38:44+0000] [Info] [chat] [Peyman]: madrese e xd
+[2026-11-26T14:38:48+0000] [Info] [chat] [Mohamad]: Are
+[2026-11-26T14:38:52+0000] [Info] [chat] [Peyman]: App khaasi dare?
+[2026-11-26T14:38:56+0000] [Info] [chat] [Mohamad]: Na
+[2026-11-26T14:38:58+0000] [Info] [chat] [Peyman]: biyam besazim xd
+[2026-11-26T14:39:09+0000] [Info] [chat] [Mohamad]: Kari nadare
+[2026-11-26T14:39:13+0000] [Info] [chat] [Mohamad]: pc dari?
+[2026-11-26T14:39:16+0000] [Info] [chat] [Peyman]: y
+[2026-11-26T14:39:19+0000] [Info] [chat] [Mohamad]: Ay khosh be halet
+[2026-11-26T14:39:26+0000] [Info] [chat] [Mohamad]: Ba android -_-
+[2026-11-26T14:39:32+0000] [Info] [chat] [Mohamad]: Ta inja omadam
+[2026-11-26T14:39:34+0000] [Info] [chat] [Peyman]: Bishtar ba android am man xd
+[2026-11-26T14:39:35+0000] [Info] [chat] [Mohamad]: Ajibe
+[2026-11-26T14:39:46+0000] [Info] [chat] [Mohamad]: Chiz kon
+[2026-11-26T14:39:51+0000] [Info] [chat] [Peyman]: chiz
+[2026-11-26T14:39:53+0000] [Info] [chat] [Mohamad]: Vs code beriz
+[2026-11-26T14:39:59+0000] [Info] [chat] [Peyman]: az koja
+[2026-11-26T14:40:03+0000] [Info] [chat] [Mohamad]: Google
+[2026-11-26T14:40:08+0000] [Info] [chat] [Peyman]: Bad
+[2026-11-26T14:40:15+0000] [Info] [chat] [Mohamad]: Badesh yeseri file e
+[2026-11-26T14:40:22+0000] [Info] [chat] [Mohamad]: Hamin
+[2026-11-26T14:40:30+0000] [Info] [chat] [Peyman]: in sa'at ham fix kon
+[2026-11-26T14:40:38+0000] [Info] [chat] [Mohamad]: cheshe
+[2026-11-26T14:40:44+0000] [Info] [chat] [Peyman]: 14:40 e
+[2026-11-26T14:40:54+0000] [Info] [chat] [Mohamad]: Saate amrica e chun vps amrica e xd
+[2026-11-26T14:40:59+0000] [Info] [chat] [Peyman]: Eh
+[2026-11-26T14:41:06+0000] [Info] [chat] [Mohamad]: Are vps vas amazone
+[2026-11-26T14:41:26+0000] [Info] [chat] [Peyman]: boro too settingesh fixesh kon
+[2026-11-26T14:41:36+0000] [Info] [chat] [Mohamad]: Mishe?
+[2026-11-26T14:41:38+0000] [Info] [chat] [Peyman]: are
+[2026-11-26T14:41:44+0000] [Info] [chat] [Mohamad]: Pas hale
+[2026-11-26T14:41:47+0000] [Info] [chat] [Peyman]: sa'at windows e?
+[2026-11-26T14:41:51+0000] [Info] [chat] [Peyman]: ya linux
+[2026-11-26T14:42:06+0000] [Info] [chat] [Mohamad]: windowse vase run kardan vps iran mihiram
+[2026-11-26T14:42:20+0000] [Info] [chat] [Peyman]: Khube
+[2026-11-26T14:42:36+0000] [Info] [chat] [Mohamad]: Vali ino yad am begiri pool am mishe kand
+[2026-11-26T14:42:43+0000] [Info] [chat] [Mohamad]: Man ye server fix kardam
+[2026-11-26T14:42:45+0000] [Info] [chat] [Peyman]: Are
+[2026-11-26T14:42:48+0000] [Info] [chat] [Mohamad]: Ye nesfe rooz
+[2026-11-26T14:42:56+0000] [Info] [chat] [Mohamad]: 1tomN gereftam
+[2026-11-26T14:43:01+0000] [Info] [chat] [Peyman]: awli
+[2026-11-26T14:43:03+0000] [Info] [chat] [Mohamad]: Esmesh am royal city e
+[2026-11-26T14:43:08+0000] [Info] [chat] [Mohamad]: bezani google moyad
+[2026-11-26T14:43:22+0000] [Info] [chat] [Peyman]: Alan dastresi dari behesh?
+[2026-11-26T14:43:29+0000] [Info] [chat] [Mohamad]: Be servereh?
+[2026-11-26T14:43:31+0000] [Info] [chat] [Peyman]: y
+[2026-11-26T14:43:37+0000] [Info] [chat] [Mohamad]: Are
+[2026-11-26T14:43:51+0000] [Info] [chat] [Peyman]: Ao
+[2026-11-26T14:44:01+0000] [Info] [chat] [Peyman]: Mitooni be fana bedish xd
+[2026-11-26T14:44:07+0000] [Info] [chat] [Mohamad]: Hamin dige
+[2026-11-26T14:44:17+0000] [Info] [chat] [Mohamad]: Raftam tu servershun hey khamushesh mikardam
+[2026-11-26T14:44:23+0000] [Info] [chat] [Mohamad]: Bad goftam pool migiram
+[2026-11-26T14:44:24+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T14:44:26+0000] [Info] [chat] [Mohamad]: fix mikonam
+[2026-11-26T14:44:34+0000] [Info] [chat] [Mohamad]: Poolo dad fixesh kardam
+[2026-11-26T14:44:34+0000] [Info] [chat] [Peyman]: lawshi xddd
+[2026-11-26T14:44:47+0000] [Info] [chat] [Mohamad]: Baw halale poolesh
+[2026-11-26T14:44:52+0000] [Info] [chat] [Peyman]: xD
+[2026-11-26T14:44:56+0000] [Info] [chat] [Mohamad]: Amniyat nadasht dige xd
+[2026-11-26T14:45:08+0000] [Info] [chat] [Mohamad]: Systeme getgift am sakhtam
+[2026-11-26T14:45:13+0000] [Info] [chat] [Peyman]: Yaru gharar dadi chizi nabast?
+[2026-11-26T14:45:14+0000] [Info] [chat] [Mohamad]: Ba voice chat o phone
+[2026-11-26T14:45:41+0000] [Info] [chat] [Mohamad]: Na baw vali vasash anti cheat mofti am eshantiom sakhtam
+[2026-11-26T14:45:48+0000] [Info] [chat] [Mohamad]: Etemad kard
+[2026-11-26T14:45:49+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T14:46:05+0000] [Info] [chat] [Mohamad]: Hesesh nist vagatna ye alame server inyori hast
+[2026-11-26T14:46:10+0000] [Info] [chat] [Mohamad]: ke mishe pool gereft
+[2026-11-26T14:46:39+0000] [Info] [chat] [Peyman]: Vs bud appe?
+[2026-11-26T14:46:41+0000] [Info] [chat] [Mohamad]: Vali man ba inia vaghtesh am nadaram 24 i injam
+[2026-11-26T14:46:47+0000] [Info] [chat] [Mohamad]: VS code
+[2026-11-26T14:46:51+0000] [Info] [chat] [Mohamad]: berizesh ru pc
+[2026-11-26T14:46:52+0000] [Info] [chat] [Peyman]: Halle
+[2026-11-26T14:46:57+0000] [Info] [chat] [Mohamad]: Bad begu yadet bedam
+[2026-11-26T14:46:59+0000] [Info] [chat] [Peyman]: Ru and mishe?
+[2026-11-26T14:47:04+0000] [Info] [chat] [Mohamad]: Na
+[2026-11-26T14:47:12+0000] [Info] [chat] [Mohamad]: Ru and bayad ru vps kar bokoni
+[2026-11-26T14:47:17+0000] [Info] [chat] [Peyman]: Aha
+[2026-11-26T14:47:32+0000] [Info] [chat] [Mohamad]: Az amazon age beguni sabte nam koni mishe geteft vps free am
+[2026-11-26T14:47:39+0000] [Info] [chat] [Mohamad]: mese in ke server rushe alan
+[2026-11-26T14:47:51+0000] [Info] [chat] [Peyman]: gmail am moshkel dare
+[2026-11-26T14:48:02+0000] [Info] [chat] [Mohamad]: Na baw ba gmail o shomare fake
+[2026-11-26T14:48:07+0000] [Info] [chat] [Peyman]: Code nemiyad vasash
+[2026-11-26T14:48:25+0000] [Info] [chat] [Mohamad]: Baw in ye site baladam gmail fake mkde code mode behet am
+[2026-11-26T14:48:29+0000] [Info] [chat] [Mohamad]: ba shomare
+[2026-11-26T14:48:45+0000] [Info] [chat] [Mohamad]: Man intori gereftam vagarna befahme irani karet sakhtast
+[2026-11-26T14:48:46+0000] [Info] [chat] [Peyman]: Hsla bebinam chi mishe
+[2026-11-26T14:48:52+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T14:48:54+0000] [Info] [chat] [Peyman]: e
+[2026-11-26T14:49:12+0000] [Info] [chat] [Mohamad]: Are baw iran in amazon ba mushak zad hagh dare
+[2026-11-26T14:49:23+0000] [Info] [chat] [Peyman]: xddd
+[2026-11-26T14:49:27+0000] [Info] [chat] [Mohamad]: Are dige
+[2026-11-26T14:49:46+0000] [Info] [chat] [Peyman]: lag dare in clinet e
+[2026-11-26T14:50:10+0000] [Info] [chat] [Peyman]: 40 fps mide
+[2026-11-26T14:50:13+0000] [Info] [chat] [Mohamad]: Are ye client khub bayad peyda konam
+[2026-11-26T14:50:28+0000] [Info] [chat] [Mohamad]: Albate open.mp am dare vas android misaze
+[2026-11-26T14:50:28+0000] [Info] [chat] [Peyman]: Hamun yaru banafshe khub buda
+[2026-11-26T14:50:42+0000] [Info] [chat] [Mohamad]: On chata nemiyad nmd chera
+[2026-11-26T14:50:50+0000] [Info] [chat] [Mohamad]: Man test nakaarde budam
+[2026-11-26T14:51:01+0000] [Info] [chat] [Peyman]: Shayad dotamoon bayad un bashim
+[2026-11-26T14:51:18+0000] [Info] [chat] [Mohamad]: Na baw che rabti dare
+[2026-11-26T14:51:29+0000] [Info] [chat] [Mohamad]: Asan chat o server pardazesh mikone
+[2026-11-26T14:51:30+0000] [Info] [chat] [Peyman]: In aslan chat nadare fek konams
+[2026-11-26T14:51:57+0000] [Info] [chat] [Mohamad]: Hichi mese on samp zarde khub nabud
+[2026-11-26T14:52:04+0000] [Info] [chat] [Peyman]: Bayad bege --> Peyman says: fff
+[2026-11-26T14:52:06+0000] [Info] [chat] [Mohamad]: Vali pakesh kardan yechi dige shod
+[2026-11-26T14:52:15+0000] [Info] [chat] [Mohamad]: Ino ke nasakhta.
+[2026-11-26T14:52:29+0000] [Info] [chat] [Mohamad]: Bayad tu code ha format bedam intori pm bede
+[2026-11-26T14:52:48+0000] [Info] [chat] [Peyman]: samp abi ham khub bud filter shide
+[2026-11-26T14:52:50+0000] [Info] [chat] [Mohamad]: Ehtemalan yekari am konam range esm am bezane
+[2026-11-26T14:52:51+0000] [Info] [chat] [Peyman]: samp abi ham khub bud filter shode
+[2026-11-26T14:53:07+0000] [Info] [chat] [Mohamad]: Sampe abi o neteto ghat kon vared server sho roshan kon
+[2026-11-26T14:53:11+0000] [Info] [chat] [Peyman]:  Salam
+[2026-11-26T14:53:19+0000] [Info] [chat] [Mohamad]: Man intori ba on miyad cheat mizanam vas test
+[2026-11-26T14:53:44+0000] [Info] [chat] [Peyman]: Vali download bayad dashte basham az ghabl
+[2026-11-26T14:53:48+0000] [Info] [chat] [Peyman]: file hasho
+[2026-11-26T14:53:53+0000] [Info] [chat] [Mohamad]: Are
+[2026-11-26T14:54:12+0000] [Info] [chat] [Mohamad]: Samp dige dare mimire
+[2026-11-26T14:54:16+0000] [Info] [chat] [Peyman]: +
+[2026-11-26T14:54:26+0000] [Info] [chat] [Mohamad]: Manam vas hamin open.mp omadam
+[2026-11-26T14:54:33+0000] [Info] [chat] [Mohamad]: Alan inja open.mp
+[2026-11-26T14:54:34+0000] [Info] [chat] [Mohamad]: e
+[2026-11-26T14:54:39+0000] [Info] [chat] [Peyman]: Chi hast
+[2026-11-26T14:54:51+0000] [Info] [chat] [Mohamad]: Bebin samp kolan vase 20 sal pishe
+[2026-11-26T14:55:06+0000] [Info] [chat] [Mohamad]: Hich update amniyati va jadid nemigire
+[2026-11-26T14:55:24+0000] [Info] [chat] [Peyman]: ahoom
+[2026-11-26T14:55:25+0000] [Info] [chat] [Mohamad]: Ye jame'e migan beshe jame open.mp
+[2026-11-26T14:55:37+0000] [Info] [chat] [Mohamad]: omade dare baz nevisish mikone
+[2026-11-26T14:55:48+0000] [Info] [chat] [Mohamad]: Shode yejurayi mese mta
+[2026-11-26T14:55:51+0000] [Info] [chat] [Peyman]: Oom
+[2026-11-26T14:55:58+0000] [Info] [chat] [Mohamad]: Alan vase pc client dare
+[2026-11-26T14:56:06+0000] [Info] [chat] [Mohamad]: Vali vase android daran misazan
+[2026-11-26T14:56:06+0000] [Info] [chat] [Peyman]: : Are
+[2026-11-26T14:56:21+0000] [Info] [chat] [Peyman]: mta ham ghadimiye
+[2026-11-26T14:56:39+0000] [Info] [chat] [Mohamad]: Alan bozorg tarin server haye samp daran hame miran open.mp
+[2026-11-26T14:56:49+0000] [Info] [chat] [Mohamad]: Alan B-zone shode open.mp
+[2026-11-26T14:56:59+0000] [Info] [chat] [Peyman]: -_+
+[2026-11-26T14:57:03+0000] [Info] [chat] [Mohamad]: in B-zone khyliiii ghadimiye
+[2026-11-26T14:57:14+0000] [Info] [chat] [Peyman]: Kharejiye?
+[2026-11-26T14:57:15+0000] [Info] [chat] [Mohamad]: Arsacia az B-zone copy karde serversho
+[2026-11-26T14:57:30+0000] [Info] [chat] [Peyman]: Oo.
+[2026-11-26T14:57:37+0000] [Info] [chat] [Mohamad]: Ye sar bezan behesh hata alan chizayi am ke daran baz az onja miyaran
+[2026-11-26T14:57:55+0000] [Info] [chat] [Mohamad]: Hamin systeme hast ke veh bad az 20min delete kishe
+[2026-11-26T14:57:58+0000] [Info] [chat] [Mohamad]: Hamin systeme hast ke veh bad az 20min delete mishe
+[2026-11-26T14:58:05+0000] [Info] [chat] [Peyman]: Didam unaro
+[2026-11-26T14:58:08+0000] [Info] [chat] [Mohamad]: Ino b-zone tarahi karde
+[2026-11-26T14:58:24+0000] [Info] [chat] [Mohamad]: Vas in ke mahdudiat 2000 ta veh o dor bezane
+[2026-11-26T14:58:32+0000] [Info] [chat] [Mohamad]: Bad arsacia omad copy raft darja
+[2026-11-26T14:58:46+0000] [Info] [chat] [Peyman]: Zate irani
+[2026-11-26T14:58:49+0000] [Info] [chat] [Mohamad]: Asan in arsacia systeme vehesh enghad daghun bud
+[2026-11-26T14:59:01+0000] [Info] [chat] [Mohamad]: Vas inke veh jadid bardari bayad veheto miterkundi
+[2026-11-26T14:59:17+0000] [Info] [chat] [Mohamad]: ./deleteveh am copye
+[2026-11-26T14:59:21+0000] [Info] [chat] [Peyman]: xd
+[2026-11-26T14:59:36+0000] [Info] [chat] [Mohamad]: Asan midunesti serveraye itan
+[2026-11-26T14:59:39+0000] [Info] [chat] [Mohamad]: Asan midunesti serveraye iran
+[2026-11-26T14:59:52+0000] [Info] [chat] [Mohamad]: Hame noskhe haye ghadimiye server kharjiyast
+[2026-11-26T14:59:56+0000] [Info] [chat] [Peyman]: Hame copy an baw
+[2026-11-26T15:00:09+0000] [Info] [chat] [Mohamad]: Na kolan noskhe copy e
+[2026-11-26T15:00:23+0000] [Info] [chat] [Mohamad]: Ina nemitunan ke ye game mode kamel benevisan
+[2026-11-26T15:00:30+0000] [Info] [chat] [Peyman]: Esme faction hash ham eski e baw xd
+[2026-11-26T15:00:39+0000] [Info] [chat] [Mohamad]: Are dige
+[2026-11-26T15:00:57+0000] [Info] [chat] [Mohamad]: Vali man kolan bar aks fek kardam ja copy
+[2026-11-26T15:01:02+0000] [Info] [chat] [Mohamad]: Daram misazam -_-
+[2026-11-26T15:01:14+0000] [Info] [chat] [Peyman]: +_-
+[2026-11-26T15:01:22+0000] [Info] [chat] [Mohamad]: ye game kode kamel
+[2026-11-26T15:01:29+0000] [Info] [chat] [Peyman]: Ebtekar
+[2026-11-26T15:01:32+0000] [Info] [chat] [Mohamad]: Hade aghal 30000 khat code dare
+[2026-11-26T15:01:56+0000] [Info] [chat] [Mohamad]: Ke khyli am sakht mishe neveshtanesh
+[2026-11-26T15:02:12+0000] [Info] [chat] [Mohamad]: Man omadam kardamesh mese derakht
+[2026-11-26T15:02:15+0000] [Info] [chat] [Mohamad]: Tike tike
+[2026-11-26T15:02:31+0000] [Info] [chat] [Mohamad]: Ke har update va sakhte system haye jadid fast tamum beshe
+[2026-11-26T15:02:46+0000] [Info] [chat] [Mohamad]: Masalan ye system khyli khafan ja 1 mah 2 ruz jam mishe
+[2026-11-26T15:02:57+0000] [Info] [chat] [Mohamad]: Onama ba 1 scripter
+[2026-11-26T15:03:16+0000] [Info] [chat] [Peyman]: Oops
+[2026-11-26T15:03:20+0000] [Info] [chat] [Mohamad]: Ahaaaaaaaa
+[2026-11-26T15:03:25+0000] [Info] [chat] [Mohamad]: Ino yadam raft begam
+[2026-11-26T15:03:31+0000] [Info] [chat] [Mohamad]: System log am darama
+[2026-11-26T15:03:36+0000] [Info] [chat] [Peyman]: Om
+[2026-11-26T15:03:41+0000] [Info] [chat] [Mohamad]: Sabr linke sitesho bedam
+[2026-11-26T15:04:22+0000] [Info] [chat] [Mohamad]: http://3.146.65.77/logs
+[2026-11-26T15:04:25+0000] [Info] [chat] [Mohamad]: Ine
+[2026-11-26T15:04:30+0000] [Info] [chat] [Mohamad]: Bezan google
+[2026-11-26T15:04:34+0000] [Info] [chat] [Mohamad]: Moyad
+[2026-11-26T15:04:40+0000] [Info] [chat] [Mohamad]: Ya chrome
+[2026-11-26T15:04:41+0000] [Info] [chat] [Peyman]: hamun ip servere
+[2026-11-26T15:04:50+0000] [Info] [chat] [Mohamad]: Are ssl nadare
+[2026-11-26T15:04:50+0000] [Info] [chat] [Peyman]: ye /logs
+[2026-11-26T15:04:58+0000] [Info] [chat] [Mohamad]: are
+[2026-11-26T15:05:11+0000] [Info] [chat] [Peyman]: man felan off misham
+[2026-11-26T15:05:25+0000] [Info] [chat] [Mohamad]: Hale
+[2026-11-26T15:05:26+0000] [Info] [chat] [Peyman]: Shab khosh
+[2026-11-26T15:05:29+0000] [Info] [chat] [Mohamad]: Felan
+[2026-11-26T15:05:32+0000] [Info] [part] Peyman has left the server (0:1)
+[2026-11-26T15:09:04+0000] [Info] [chat] [Mohamad]: tt
+[2026-11-26T15:10:01+0000] [Info] [chat] [Mohamad]: ttt
