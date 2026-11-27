@@ -102,7 +102,7 @@ CMD:buybiz(playerid){
         GiveMoney(playerid, 1, -BizStandardPrice[BI], Tok);
         new Res[50];
         format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
-        MoneyLog(-BizForSellPrice[BI], playerid, -1, -1, Res, "/Buybiz");
+        MoneyLog(-BizStandardPrice[BI], playerid, -1, -1, Res, "/Buybiz");
     }else SendPM(playerid, PMError, "In Business forushi nist", "This business is not for sale", Tok);
     return 1;
 }
