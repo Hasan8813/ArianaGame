@@ -103,6 +103,10 @@ CMD:buybiz(playerid){
         new Res[50];
         format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
         MoneyLog(-BizStandardPrice[BI], playerid, -1, -1, Res, "/Buybiz");
+        new query[100];
+        GetNameP(playerid);
+        mysql_format(sql, query, sizeof(query), "UPDATE biz SET owner_pid = %d, owner_name = '%e' WHERE bid = %d", GetPlayerPID(playerid), Name, BizID[BI]);
+        mysql_pquery(sql, query, "BizBuyed", "idd", playerid, BI, Tok);
     }else SendPM(playerid, PMError, "In Business forushi nist", "This business is not for sale", Tok);
     return 1;
 }
