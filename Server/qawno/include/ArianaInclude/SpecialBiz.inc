@@ -69,19 +69,41 @@ stock SetBizStandardPrice(Biz, Price){
     UpdateBizLabel(Biz);
     return 1;
 }
-stock SendPmBizNotExist(playerid, Tok) return SendPM(playerid, PMError, "Shoma nazdike hich Businesse baraye forushi nistid", "You are not near any business that is for sale", Tok);
+stock SendPmBizNotExist(playerid, Tok) return SendPM(playerid, PMError, "Shoma nazdike hich Businessi nistid", "You are not near any business", Tok);
 CMD:bizstatus(playerid){
     new Tok = GetPlayerToken(playerid);
     new bid = FindPlaceForEnter(playerid);
     if(bid == -1 || BizForThisPlace[bid] == -1 ) return SendPmBizNotExist(playerid, Tok);
     new BI = FindBizIndexID(BizForThisPlace[bid]);
     if(BI == -1) return SendPmBizNotExist(playerid, Tok);
-    new MSG1[100], FundsStr[16];
+    new MSG1[100], FundsStr[16], ValueStr[16];
     FormatNumber(BizFund[BI], FundsStr);
-    format(MSG1, sizeof(MSG1), "Business Name: %s.", BizName[BI]);
+    format(MSG1, sizeof(MSG1), "Business Name: %s", BizName[BI]);
     SendLongMessage(playerid, -1, MSG1, Tok);
-    format(MSG1, sizeof(MSG1), "Fund: {1A7936}$%s", FundsStr);
+    FormatNumber(BizStandardPrice[BI], ValueStr);
+    format(MSG1, sizeof(MSG1), "Fund: {1A7936}$%s {FFFFFF}| Value: {1A7936}$%s", FundsStr, ValueStr);
     SendLongMessage(playerid, -1, MSG1, Tok);
+    return 1;
+}
+CMD:buybiz(playerid){
+    new Tok = GetPlayerToken(playerid);
+    new bid = FindPlaceForEnter(playerid);
+    if(bid == -1 || BizForThisPlace[bid] == -1) return SendPmBizNotExist(playerid, Tok);
+    new BI = FindBizIndexID(BizForThisPlace[bid]);
+    if(BI == -1) return SendPmBizNotExist(playerid, Tok);
+    if(BizOwnerPID[BI] >= 0 && BizForSellPrice[BI] > 0){
+        CheckPlayerMoneyForBuyAndSendError(playerid, BizForSellPrice[BI], Tok);
+        GiveMoney(playerid, 1, -BizForSellPrice[BI], Tok);
+        new Res[50];
+        format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
+        MoneyLog(-BizForSellPrice[BI], playerid, -1, -1, Res, "/Buybiz");
+    }else if(BizOwnerPID[BI] == -1){
+        CheckPlayerMoneyForBuyAndSendError(playerid, BizStandardPrice[BI], Tok);
+        GiveMoney(playerid, 1, -BizStandardPrice[BI], Tok);
+        new Res[50];
+        format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
+        MoneyLog(-BizForSellPrice[BI], playerid, -1, -1, Res, "/Buybiz");
+    }else SendPM(playerid, PMError, "In Business forushi nist", "This business is not for sale", Tok);
     return 1;
 }
 CMD:bizinfo(playerid){

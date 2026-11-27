@@ -146,7 +146,7 @@ new PWeaponLicense[MAX_PLAYERS];
 #define GetPlayerLogin(%0) GetInt(%0, LoginBool)
 #define CheckPlayerLogin(%0) if(GetPlayerLogin(%0) == 0)
 #define CheckPlayerLoginToCMD(%0) if(GetPlayerLogin(%0) == 0) return SendPM(%0, PMError, "Shoma vared nashodid", "You are not logged in", GetPlayerToken(%0))
-
+#define CheckPlayerMoneyForBuyAndSendError(%0,%1,%2) if(GetPlayerPmoney(%0) < %1) return SendPM(%0,PMError,"Mojudiye hesabe shoma kafi nist","Your account balance is insufficient",%2)
 
 #define LanguagePersian(%0) if(GetPlayerPlanguage(%0) == 1)
 #define LanguageEnglish(%0) if(GetPlayerPlanguage(%0) == 2)

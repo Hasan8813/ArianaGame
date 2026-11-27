@@ -187,19 +187,19 @@ stock StartTestLicense(playerid, TestNumber, Token){
 	new LIC, VehTestId, LicNameP[30], LicNameE[20];
 	switch(TestNumber){
 		case 1:{
-			if(GetPlayerPmoney(playerid) < DMV_LIC_FEE) return SendPM(playerid, PMError, "Mojudiye hesabe shoma kafi nist", "Your account balance is insufficient", Token);
+			CheckPlayerMoneyForBuyAndSendError(playerid, DMV_LIC_FEE, Token);
 			LIC = GetPlayerPdrivlic(playerid);
 			VehTestId = 589;
 			LicNameP = "govahinameye ranandegi";
 			LicNameE = "driving license";
 		}case 2:{
-			if(GetPlayerPmoney(playerid) < FLY_LIC_FEE) return SendPM(playerid, PMError, "Mojudiye hesabe shoma kafi nist", "Your account balance is insufficient", Token);
+			CheckPlayerMoneyForBuyAndSendError(playerid, FLY_LIC_FEE, Token);
 			LIC = GetPlayerPflylic(playerid);
 			VehTestId = 469;
 			LicNameP = "mojaveze parvaz";
 			LicNameE = "flying license";
 		}case 3:{
-			if(GetPlayerPmoney(playerid) < SAILING_LIC_FEE) return SendPM(playerid, PMError, "Mojudiye hesabe shoma kafi nist", "Your account balance is insufficient", Token);
+			CheckPlayerMoneyForBuyAndSendError(playerid, SAILING_LIC_FEE, Token);
 			LIC = GetPlayerPsailinglic(playerid);
 			VehTestId = 446;
 			LicNameP = "mojaveze ghayegh rani";
@@ -225,9 +225,9 @@ stock StartTestLicense(playerid, TestNumber, Token){
 		Iter_Add(ExamLic, playerid);
 		if(!IsValidTimer(TimerExamLic)) TimerExamLic = SetTimer("CheckPlayerExamLic", 3000, true);
 		switch(TestNumber-1){
-			case 0: SetPlayerRaceCheckpoint(playerid, CP_TYPE_GROUND_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 4.0), GiveMoney(playerid, 1, -DMV_LIC_FEE, Token);
-			case 1: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0), GiveMoney(playerid, 1, -FLY_LIC_FEE, Token);
-			case 2: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_BOBBING, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0), GiveMoney(playerid, 1, -SAILING_LIC_FEE, Token);
+			case 0: SetPlayerRaceCheckpoint(playerid, CP_TYPE_GROUND_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 4.0), GiveMoney(playerid, 1, -DMV_LIC_FEE, Token), MoneyLog(-DMV_LIC_FEE, playerid, -1, -1, "Driving Lic", "/Exam");
+			case 1: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_NORMAL, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0), GiveMoney(playerid, 1, -FLY_LIC_FEE, Token), MoneyLog(-FLY_LIC_FEE, playerid, -1, -1, "Flying Lic", "/Exam");
+			case 2: SetPlayerRaceCheckpoint(playerid, CP_TYPE_AIR_BOBBING, DmvCpPos[TestNumber-1][0][0], DmvCpPos[TestNumber-1][0][1], DmvCpPos[TestNumber-1][0][2], DmvCpPos[TestNumber-1][1][0], DmvCpPos[TestNumber-1][1][1], DmvCpPos[TestNumber-1][1][2], 8.0), GiveMoney(playerid, 1, -SAILING_LIC_FEE, Token), MoneyLog(-SAILING_LIC_FEE, playerid, -1, -1, "Sailing Lic", "/Exam");
 		}
 		SetPlayerCheckPointID(playerid, CHECKPOINTID_ExamLic);
 		SetInt(playerid, CheckPointNumberDMV, 1);
