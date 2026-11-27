@@ -174,18 +174,16 @@ stock CheckBikeAndRcVeh(vehid){
     if(br == 481 || br == 509 || br == 510 || br == 441 || br == 564 || br == 594) return true;
     return false;
 }
-// عدد رو به متن با کاما تبدیل می‌کنه: 1111111 -> "1,111,111"
 stock FormatNumber(number, dest[], len = sizeof(dest)){
     new src[16], out[24], pos;
     format(src, sizeof(src), "%d", number);
-    new neg = (src[0] == '-') ? 1 : 0;           // علامت منفی رو جدا حساب کن
+    new neg = (src[0] == '-') ? 1 : 0;
     new digits = strlen(src) - neg;
     if(neg) out[pos++] = '-';
     for(new i = 0; i < digits; i++){
-        if(i > 0 && (digits - i) % 3 == 0) out[pos++] = ',';   // هر ۳ رقم از راست
+        if(i > 0 && (digits - i) % 3 == 0) out[pos++] = ',';
         out[pos++] = src[neg + i];
-    }
-    out[pos] = '\0';
+    }out[pos] = '\0';
     format(dest, len, "%s", out);
-    return pos;                                   // طول متن نهایی
+    return pos;
 }

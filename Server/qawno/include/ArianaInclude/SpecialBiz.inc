@@ -76,8 +76,12 @@ CMD:bizstatus(playerid){
     if(bid == -1 || BizForThisPlace[bid] == -1 ) return SendPmBizNotExist(playerid, Tok);
     new BI = FindBizIndexID(BizForThisPlace[bid]);
     if(BI == -1) return SendPmBizNotExist(playerid, Tok);
-    new MSG1[100], MSG2[100];
-    //format(MSG1, sizeof[MSG1], "Sandogh")
+    new MSG1[100], FundsStr[16];
+    FormatNumber(BizFund[BI], FundsStr);
+    format(MSG1, sizeof(MSG1), "Business Name: %s.", BizName[BI]);
+    SendLongMessage(playerid, -1, MSG1, Tok);
+    format(MSG1, sizeof(MSG1), "Fund: {1A7936}$%s", FundsStr);
+    SendLongMessage(playerid, -1, MSG1, Tok);
     return 1;
 }
 CMD:bizinfo(playerid){
