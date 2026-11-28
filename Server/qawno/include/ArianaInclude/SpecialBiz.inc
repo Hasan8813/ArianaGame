@@ -110,6 +110,11 @@ CMD:buybiz(playerid){
     }else SendPM(playerid, PMError, "In Business forushi nist", "This business is not for sale", Tok);
     return 1;
 }
+forward BizBuyed(playerid, Biz, Token);
+public BizBuyed(playerid, Biz, Token){
+    CheckPlayerTokenCmp(playerid, Token);
+    return 1;
+}
 CMD:bizinfo(playerid){
     new bid = FindPlaceForEnter(playerid);
     if(bid == -1) return SendClientMessage(playerid, -1, "Nazdik hichi nistiiii");

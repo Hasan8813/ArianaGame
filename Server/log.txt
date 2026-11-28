@@ -199353,3 +199353,59 @@ Loaded 25 component(s) from C:\Users\Administrator\Desktop\ArianaGame\Server\com
 [2026-11-27T15:47:16+0000] [Info] Legacy Network started on port 7777
 [2026-11-27T15:47:29+0000] [Info] [connection] incoming connection: 2.147.109.2:42799 id: 0
 [2026-11-27T15:47:29+0000] [Info] [join] Mohamad has joined the server (0:2.147.109.2)
+[2026-11-27T15:47:57+0000] [Info] [part] Mohamad has left the server (0:0)
+[2026-11-27T15:58:12+0000] [Info] [connection] incoming connection: 93.110.64.59:21005 id: 0
+[2026-11-27T15:58:12+0000] [Info] [join] Peyman has joined the server (0:93.110.64.59)
+[2026-11-27T15:58:54+0000] [Info] [part] Peyman has left the server (0:0)
+[2026-11-27T16:05:20+0000] [Info] [connection] incoming connection: 93.110.64.59:21011 id: 0
+[2026-11-27T16:05:20+0000] [Info] [join] Peyman has joined the server (0:93.110.64.59)
+[2026-11-27T16:08:54+0000] [Info] [Nex-AC debug] AC money: 9699, money: 9711, stunt bonus: 0, veh: 1, playerid: 0
+[2026-11-27T16:08:54+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 014
+[2026-11-27T16:10:06+0000] [Info] [Nex-AC debug] Dist: 25.844957, old pos diff: 0.000000, old pos z: -0.574413, veh: 1, seat: 0, playerid: 0
+[2026-11-27T16:10:06+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 005 (1)
+[2026-11-27T16:10:07+0000] [Info] [Nex-AC debug] Dist: 25.830654, old pos diff: 0.000000, old pos z: -0.574413, veh: 1, seat: 0, playerid: 0
+[2026-11-27T16:10:07+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 005 (1)
+[2026-11-27T16:14:06+0000] [Info] [Nex-AC debug] AC veh health: 959.861022, veh health: 1000.000000, veh: 1, playerid: 0
+[2026-11-27T16:14:06+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-27T16:14:56+0000] [Info] [Nex-AC debug] AC veh health: 999.520507, veh health: 1000.000000, veh: 1, playerid: 0
+[2026-11-27T16:14:56+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-27T16:15:58+0000] [Info] [Nex-AC debug] AC veh health: 1000.000000, veh health: 1000.587402, veh: 1, playerid: 0
+[2026-11-27T16:15:58+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-27T16:18:34+0000] [Info] [part] Peyman has left the server (0:1)
+[2026-11-28T05:45:40+0000] [Info] [connection] incoming connection: 5.218.126.84:53138 id: 0
+[2026-11-28T05:45:40+0000] [Info] [join] Peyman has joined the server (0:5.218.126.84)
+[2026-11-28T06:12:16+0000] [Info] [Nex-AC debug] AC veh health: 992.422973, veh health: 1000.000000, veh: 1, playerid: 0
+[2026-11-28T06:12:16+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-28T06:12:18+0000] [Info] [Nex-AC debug] AC veh health: 963.700073, veh health: 1000.000000, veh: 1, playerid: 0
+[2026-11-28T06:12:18+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-28T06:15:25+0000] [Info] [Nex-AC debug] AC veh health: 996.030273, veh health: 1000.000000, veh: 1, playerid: 0
+[2026-11-28T06:15:25+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-28T06:15:27+0000] [Info] [Nex-AC debug] AC veh health: 996.000000, veh health: 1000.000000, veh: 1, playerid: 0
+[2026-11-28T06:15:27+0000] [Info] [Nex-AC] ID 0 Mashkook Mibashad. Dalil: 011
+[2026-11-28T06:17:24+0000] [Info] [chat] [Peyman]: gm
+[2026-11-28T06:17:52+0000] [Info] [connection] incoming connection: 2.147.40.24:24945 id: 1
+[2026-11-28T06:17:52+0000] [Info] [join] Mohamad has joined the server (1:2.147.40.24)
+[2026-11-28T06:17:59+0000] [Info] [chat] [Mohamad]: Alow
+[2026-11-28T06:18:04+0000] [Info] [chat] [Peyman]: Yo
+[2026-11-28T06:18:07+0000] [Info] [chat] [Mohamad]: Spawn
+[2026-11-28T06:18:10+0000] [Info] [chat] [Mohamad]: am
+[2026-11-28T06:18:19+0000] [Info] [chat] [Mohamad]: Kushi pa
+[2026-11-28T06:18:25+0000] [Info] [chat] [Peyman]: Um
+[2026-11-28T06:18:26+0000] [Info] [chat] [Mohamad]: Silam
+[2026-11-28T06:18:28+0000] [Info] [chat] [Peyman]: Silam
+[2026-11-28T06:18:36+0000] [Info] [chat] [Mohamad]: File ferestadam boro unzip kon tu pc
+[2026-11-28T06:18:42+0000] [Info] [chat] [Peyman]: Wait
+[2026-11-28T06:18:44+0000] [Info] [chat] [Mohamad]: 35mg e
+[2026-11-28T06:19:38+0000] [Info] [chat] [Peyman]: Khob
+[2026-11-28T06:19:43+0000] [Info] [chat] [Mohamad]: Unzip shod?
+[2026-11-28T06:19:45+0000] [Info] [chat] [Peyman]: Ye
+[2026-11-28T06:19:53+0000] [Info] [chat] [Mohamad]: On file khame servere sampe
+[2026-11-28T06:20:01+0000] [Info] [chat] [Peyman]: Khobbbb
+[2026-11-28T06:20:04+0000] [Info] [chat] [Mohamad]: Open.mp ham hast na samp
+[2026-11-28T06:20:13+0000] [Info] [chat] [Peyman]: Chikareshoon koina
+[2026-11-28T06:20:15+0000] [Info] [chat] [Peyman]: Chikareshoon konam
+[2026-11-28T06:20:22+0000] [Info] [chat] [Mohamad]: Boro tu vs vode
+[2026-11-28T06:20:29+0000] [Info] [chat] [Mohamad]: aks midam alan
+[2026-11-28T06:20:33+0000] [Info] [chat] [Peyman]: Halle
+[2026-11-28T06:39:34+0000] [Info] [part] Mohamad has left the server (1:0)
+[2026-11-28T07:32:52+0000] [Info] [part] Peyman has left the server (0:1)
