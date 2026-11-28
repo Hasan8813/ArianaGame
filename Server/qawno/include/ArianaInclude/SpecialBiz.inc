@@ -4,7 +4,7 @@
 #define _SPECIAL_BIZ_BY_MAMAD_PERSIAN_INC
 
 #define                                 MAX_BIZ                            500
-new BizID[MAX_BIZ], BizType[MAX_BIZ], BizName[MAX_BIZ][41], Text3D:BizLabel[MAX_BIZ], PlaceForThisBiz[MAX_BIZ], BizStandardPrice[MAX_BIZ], BizForSellPrice[MAX_BIZ], BizOwnerPID[MAX_BIZ], BizOwnerName[MAX_BIZ][25], BizFund[MAX_BIZ], BizReqLevel[MAX_BIZ], BizBuyClosed[MAX_BIZ];
+new BizID[MAX_BIZ], BizType[MAX_BIZ], BizName[MAX_BIZ][41], Text3D:BizLabel[MAX_BIZ], PlaceForThisBiz[MAX_BIZ], BizStandardPrice[MAX_BIZ], BizForSellPrice[MAX_BIZ], BizOwnerPID[MAX_BIZ], BizOwnerName[MAX_BIZ][25], BizFund[MAX_BIZ], BizReqLevel[MAX_BIZ], bool:BizBuyClosed[MAX_BIZ];
 
 
 //Type Enter Exit interiors
@@ -96,6 +96,7 @@ CMD:buybiz(playerid){
     new Level = GetPlayerPlevel(playerid);
     new PID = GetPlayerPID(playerid);
     if(PID == BizOwnerPID[BI]) return SendPM(playerid, PMError, "Shoma maleke in business hastid", "You are the owner of this business", Tok);
+    if(BizBuyClosed[BI]) return SendPM(playerid, PMError, "In business ghabele kharid nist, lotfan chand daghighe digar talash konid", "This business cannot be purchased, please try again in a few minutes", Tok);
     if(BizOwnerPID[BI] >= 0 && BizForSellPrice[BI] > 0){
         if(Level < BizReqLevel[BI]){
             new MSG1[80], MSG2[80];
@@ -105,7 +106,6 @@ CMD:buybiz(playerid){
             return 1;
         }
         CheckPlayerMoneyForBuyAndSendError(playerid, BizForSellPrice[BI], Tok);
-        if(BizBuyClosed[BI]) return SendPM(playerid, PMError, "In business ghabele kharid nist, lotfan chand daghighe digar talash konid", "This business cannot be purchased, please try again in a few minutes", Tok);
         GiveMoney(playerid, 1, -BizForSellPrice[BI], Tok);
         new Res[50];
         format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
@@ -125,7 +125,6 @@ CMD:buybiz(playerid){
             return 1;
         }
         CheckPlayerMoneyForBuyAndSendError(playerid, BizStandardPrice[BI], Tok);
-        if(BizBuyClosed[BI]) return SendPM(playerid, PMError, "In business ghabele kharid nist, lotfan chand daghighe digar talash konid", "This business cannot be purchased, please try again in a few minutes", Tok);
         GiveMoney(playerid, 1, -BizStandardPrice[BI], Tok);
         new Res[50];
         format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
@@ -139,8 +138,8 @@ CMD:buybiz(playerid){
     }else SendPM(playerid, PMError, "In Business forushi nist", "This business is not for sale", Tok);
     return 1;
 }
-forward BizBuyed(playerid, PLID, const Name[25], Biz, pid, Token, MoneyForOldOwner);
-public BizBuyed(playerid, PLID, const Name[25], Biz, pid, Token, MoneyForOldOwner){
+forward BizBuyed(playerid, PLID, const Name[], Biz, pid, Token, MoneyForOldOwner);
+public BizBuyed(playerid, PLID, const Name[], Biz, pid, Token, MoneyForOldOwner){
     BizBuyClosed[Biz] = false;
     Querys--;
     if(MoneyForOldOwner > 0){
@@ -150,7 +149,7 @@ public BizBuyed(playerid, PLID, const Name[25], Biz, pid, Token, MoneyForOldOwne
         Querys++;
     }
     BizOwnerPID[Biz] = PLID;
-    BizOwnerName[Biz] = Name;
+    format(BizOwnerName[Biz], 25, "%s", Name);
     BizForSellPrice[Biz] = 0;
     UpdateBizLabel(Biz);
     CheckPlayerTokenCmp(playerid, Token);
