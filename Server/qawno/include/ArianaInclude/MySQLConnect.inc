@@ -178,7 +178,7 @@ stock MySQLConnectAndLogAndCreateTable(){
 #define KickForHardWare(%0) Skick(%0,"Vaghfeye zamaniye sakht afzari.","Hardware timeout.",TOKEN,true)
 #define KickForKhata(%0) Skick(%0,"Khatayi rokh dad, teame scripter Ariana Game dar hale raf'e in moshkel hastand lotfan daghayeghi digar talash konid.","An error occurred, Our programming team is working to resolve the issue, please try again later.",TOKEN,true)
 public OnQueryError(errorid, const error[], const callback[], const query[], MySQL:handle){
-	SQLError(error);
+	SQLError(query);
 	new LogsError[888];
 	//Bedune token va id
 	if(strcmp(callback, "UpdateDataCallbackDisconnect", true) == 0){
@@ -187,6 +187,10 @@ public OnQueryError(errorid, const error[], const callback[], const query[], MyS
 		Querys--;
 	}else if(strcmp(callback, "MoneyLogCallback", true) == 0){
 		format(LogsError, sizeof(LogsError), "MoneyLog: %s", query);
+		SQLLogError(LogsError);
+		Querys--;
+	}else if(strcmp(callback, "BizBuyed", true) == 0){
+		format(LogsError, sizeof(LogsError), "BizBuyed: %s", query);
 		SQLLogError(LogsError);
 		Querys--;
 	}else if(strcmp(callback, "GoldLogCallback", true) == 0){

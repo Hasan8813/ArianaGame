@@ -91,27 +91,49 @@ CMD:buybiz(playerid){
     if(bid == -1 || BizForThisPlace[bid] == -1) return SendPmBizNotExist(playerid, Tok);
     new BI = FindBizIndexID(BizForThisPlace[bid]);
     if(BI == -1) return SendPmBizNotExist(playerid, Tok);
+    new Level = GetPlayerPlevel(playerid);
     if(BizOwnerPID[BI] >= 0 && BizForSellPrice[BI] > 0){
+        if(Level < BizReqLevel[BI]){
+            new MSG1[80], MSG2[80];
+            format(MSG1, sizeof(MSG1), "Kharide in business niyazmande levele %d ast", BizReqLevel[BI]);
+            format(MSG2, sizeof(MSG2), "Purchasing this business requires level %d", BizReqLevel[BI]);
+            SendPM(playerid, PMError, MSG1, MSG2, Tok);
+            return 1;
+        }
         CheckPlayerMoneyForBuyAndSendError(playerid, BizForSellPrice[BI], Tok);
         GiveMoney(playerid, 1, -BizForSellPrice[BI], Tok);
         new Res[50];
         format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
         MoneyLog(-BizForSellPrice[BI], playerid, -1, -1, Res, "/Buybiz");
+        new query[200];
+        GetNameP(playerid);
+        mysql_format(sql, query, sizeof(query), "UPDATE biz SET owner_pid = %d, owner_name = '%e', bizfsprice = 0 WHERE bid = %d", GetPlayerPID(playerid), Name, BizID[BI]);
+        mysql_pquery(sql, query, "BizBuyed", "idddd", playerid, BI, bid, Tok, BizForSellPrice[BI]);
+        Querys++;
     }else if(BizOwnerPID[BI] == -1){
+        if(Level < BizReqLevel[BI]){
+            new MSG1[80], MSG2[80];
+            format(MSG1, sizeof(MSG1), "Kharide in business niyazmande levele %d ast", BizReqLevel[BI]);
+            format(MSG2, sizeof(MSG2), "Purchasing this business requires level %d", BizReqLevel[BI]);
+            SendPM(playerid, PMError, MSG1, MSG2, Tok);
+            return 1;
+        }
         CheckPlayerMoneyForBuyAndSendError(playerid, BizStandardPrice[BI], Tok);
         GiveMoney(playerid, 1, -BizStandardPrice[BI], Tok);
         new Res[50];
         format(Res, sizeof(Res), "Buybiz ID %d", BizID[BI]);
         MoneyLog(-BizStandardPrice[BI], playerid, -1, -1, Res, "/Buybiz");
-        new query[100];
+        new query[200];
         GetNameP(playerid);
         mysql_format(sql, query, sizeof(query), "UPDATE biz SET owner_pid = %d, owner_name = '%e', bizfsprice = 0 WHERE bid = %d", GetPlayerPID(playerid), Name, BizID[BI]);
-        mysql_pquery(sql, query, "BizBuyed", "iddd", playerid, BI, bid, Tok);
+        mysql_pquery(sql, query, "BizBuyed", "idddd", playerid, BI, bid, Tok, 0);
+        Querys++;
     }else SendPM(playerid, PMError, "In Business forushi nist", "This business is not for sale", Tok);
     return 1;
 }
-forward BizBuyed(playerid, Biz, pid, Token);
-public BizBuyed(playerid, Biz, pid, Token){
+forward BizBuyed(playerid, Biz, pid, Token, MoneyForOldOwner);
+public BizBuyed(playerid, Biz, pid, Token, MoneyForOldOwner){
+    Querys--;
     CheckPlayerTokenCmp(playerid, Token);
     PlayerPlace[playerid] = pid;
     SetPlayerInterior(playerid, PlaceInt[pid]);
@@ -119,13 +141,19 @@ public BizBuyed(playerid, Biz, pid, Token){
     SetPlayerPos(playerid, PlaceToX[pid], PlaceToY[pid], PlaceToZ[pid]);
     SetPlayerFacingAngle(playerid, PlaceToA[pid]);
     SetCameraBehindPlayer(playerid);
+    if(MoneyForOldOwner += 0){
+        new query[100];
+        mysql_format(sql, query, sizeof(query), "UPDATE users SET pMoney = pMoney + %d WHERE pid = %d", MoneyForOldOwner, BizOwnerPID[Biz]);
+        mysql_pquery(sql, query, "MoneyForOldOwnerBiz");
+        Querys++;
+    }
     BizOwnerPID[Biz] = GetPlayerPID(playerid);
     GetNameP(playerid);
     BizOwnerName[Biz] = Name;
     BizForSellPrice[Biz] = 0;
     UpdateBizLabel(Biz);
     return 1;
-}
+}forward MoneyForOldOwnerBiz(); public MoneyForOldOwnerBiz() return Querys--;
 CMD:bizinfo(playerid){
     new bid = FindPlaceForEnter(playerid);
     if(bid == -1) return SendClientMessage(playerid, -1, "Nazdik hichi nistiiii");
