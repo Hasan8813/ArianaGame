@@ -144,7 +144,7 @@ public BizBuyed(playerid, PLID, const Name[25], Biz, pid, Token, MoneyForOldOwne
     BizBuyClosed[Biz] = false;
     Querys--;
     PlayerPlace[playerid] = pid;
-    if(MoneyForOldOwner += 0){
+    if(MoneyForOldOwner > 0){
         new query[100];
         mysql_format(sql, query, sizeof(query), "UPDATE users SET pMoney = pMoney + %d WHERE pid = %d", MoneyForOldOwner, BizOwnerPID[Biz]);
         mysql_pquery(sql, query, "MoneyForOldOwnerBiz");
