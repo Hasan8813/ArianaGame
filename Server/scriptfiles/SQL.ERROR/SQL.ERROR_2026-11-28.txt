@@ -1,1 +1,0 @@
-[12:19:54] You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '+= 12345678 WHERE pid = 3' at line 1
