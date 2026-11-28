@@ -24,15 +24,14 @@ stock UpdateBizLabel(BID, bool:create = false){
     else UpdateDynamic3DTextLabelText(BizLabel[BID], 0x36F5A5FF, StrLabel);
     return 1;
 }
-stock FindBizIndexID(Biz){
-    for(new i; i < MAX_BIZ; i++){
-        if(BizID[i] == Biz) return i;
-    }return -1;
-}
 forward LoadedAllBiz();
 public LoadedAllBiz(){
     new rows = cache_num_rows();
     for(new i; i < rows; i++){
+        if(i >= MAX_BIZ){
+            print("[Warning]: Biz haye sakhte shode bishtar az saghfe tayin shodeye MAX_BIZ ast!");
+            break;
+        }
         new Float:x, Float:y, Float:z, Float:a, Float:tx, Float:ty, Float:tz, Float:ta, intid, mapicon;
         cache_get_value_name_int(i, "bid", BizID[i]);
         cache_get_value_name_float(i, "x", x);
@@ -56,7 +55,10 @@ public LoadedAllBiz(){
         if(mapicon > 0) CreateDynamicMapIcon(x, y, z, mapicon, 0, 0, 0, -1, 2000.0);
         CreateDynamicPickup(1239, 1, x, y, z, 0, 0, -1, 150.0);
         PlaceForThisBiz[i] = AddPlace(x, y, z, a, tx, ty, tz, ta, intid, BizType[i], i);
-        UpdateBizLabel(i, true);
+        if(PlaceForThisBiz[i] == -1){
+            print("[Warning]: Place ha be saghfe tayin shode resid!");
+            continue;
+        }UpdateBizLabel(i, true);
     }return 1;
 }
 stock SetBizName(Biz, const NameB[]){
@@ -74,7 +76,7 @@ CMD:bizstatus(playerid){
     new Tok = GetPlayerToken(playerid);
     new bid = FindPlaceForEnter(playerid);
     if(bid == -1 || BizForThisPlace[bid] == -1 ) return SendPmBizNotExist(playerid, Tok);
-    new BI = FindBizIndexID(BizForThisPlace[bid]);
+    new BI = BizForThisPlace[bid];
     if(BI == -1) return SendPmBizNotExist(playerid, Tok);
     new MSG1[100], FundsStr[16], ValueStr[16];
     FormatNumber(BizFund[BI], FundsStr);
@@ -92,9 +94,9 @@ CMD:buybiz(playerid){
     new BI = BizForThisPlace[bid];
     if(BI == -1) return SendPmBizNotExist(playerid, Tok);
     new Level = GetPlayerPlevel(playerid);
+    new PID = GetPlayerPID(playerid);
+    if(PID == BizOwnerPID[BI]) return SendPM(playerid, PMError, "Shoma maleke in business hastid", "You are the owner of this business", Tok);
     if(BizOwnerPID[BI] >= 0 && BizForSellPrice[BI] > 0){
-        new PID = GetPlayerPID(playerid);
-        if(PID == BizOwnerPID[BI]) return SendPM(playerid, PMError, "Shoma maleke in business hastid", "You are the owner of this business", Tok);
         if(Level < BizReqLevel[BI]){
             new MSG1[80], MSG2[80];
             format(MSG1, sizeof(MSG1), "Kharide in business niyazmande levele %d ast", BizReqLevel[BI]);
@@ -115,8 +117,6 @@ CMD:buybiz(playerid){
         BizBuyClosed[BI] = true;
         Querys++;
     }else if(BizOwnerPID[BI] == -1){
-        new PID = GetPlayerPID(playerid);
-        if(PID == BizOwnerPID[BI]) return SendPM(playerid, PMError, "Shoma maleke in business hastid", "You are the owner of this business", Tok);
         if(Level < BizReqLevel[BI]){
             new MSG1[80], MSG2[80];
             format(MSG1, sizeof(MSG1), "Kharide in business niyazmande levele %d ast", BizReqLevel[BI]);
