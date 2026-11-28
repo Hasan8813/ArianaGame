@@ -143,7 +143,7 @@ public BizBuyed(playerid, Biz, pid, Token, MoneyForOldOwner){
     SetCameraBehindPlayer(playerid);
     if(MoneyForOldOwner += 0){
         new query[100];
-        mysql_format(sql, query, sizeof(query), "UPDATE users SET pMoney = pMoney + %d WHERE pid = %d", MoneyForOldOwner, BizOwnerPID[Biz]);
+        mysql_format(sql, query, sizeof(query), "UPDATE users SET pMoney =m pMoney + %d WHERE pid = %d", MoneyForOldOwner, BizOwnerPID[Biz]);
         mysql_pquery(sql, query, "MoneyForOldOwnerBiz");
         Querys++;
     }
