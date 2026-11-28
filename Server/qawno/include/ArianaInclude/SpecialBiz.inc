@@ -105,14 +105,25 @@ CMD:buybiz(playerid){
         MoneyLog(-BizStandardPrice[BI], playerid, -1, -1, Res, "/Buybiz");
         new query[100];
         GetNameP(playerid);
-        mysql_format(sql, query, sizeof(query), "UPDATE biz SET owner_pid = %d, owner_name = '%e' WHERE bid = %d", GetPlayerPID(playerid), Name, BizID[BI]);
-        mysql_pquery(sql, query, "BizBuyed", "idd", playerid, BI, Tok);
+        mysql_format(sql, query, sizeof(query), "UPDATE biz SET owner_pid = %d, owner_name = '%e', bizfsprice = 0 WHERE bid = %d", GetPlayerPID(playerid), Name, BizID[BI]);
+        mysql_pquery(sql, query, "BizBuyed", "iddd", playerid, BI, bid, Tok);
     }else SendPM(playerid, PMError, "In Business forushi nist", "This business is not for sale", Tok);
     return 1;
 }
-forward BizBuyed(playerid, Biz, Token);
-public BizBuyed(playerid, Biz, Token){
+forward BizBuyed(playerid, Biz, pid, Token);
+public BizBuyed(playerid, Biz, pid, Token){
     CheckPlayerTokenCmp(playerid, Token);
+    PlayerPlace[playerid] = pid;
+    SetPlayerInterior(playerid, PlaceInt[pid]);
+    SetPlayerVirtualWorld(playerid, 1000+pid);
+    SetPlayerPos(playerid, PlaceToX[pid], PlaceToY[pid], PlaceToZ[pid]);
+    SetPlayerFacingAngle(playerid, PlaceToA[pid]);
+    SetCameraBehindPlayer(playerid);
+    BizOwnerPID[Biz] = GetPlayerPID(playerid);
+    GetNameP(playerid);
+    BizOwnerName[Biz] = Name;
+    BizForSellPrice[Biz] = 0;
+    UpdateBizLabel(Biz);
     return 1;
 }
 CMD:bizinfo(playerid){
