@@ -55,7 +55,7 @@ public LoadedAllBiz(){
         cache_get_value_name_int(i, "bizfund", BizFund[i]);
         if(mapicon > 0) CreateDynamicMapIcon(x, y, z, mapicon, 0, 0, 0, -1, 2000.0);
         CreateDynamicPickup(1239, 1, x, y, z, 0, 0, -1, 150.0);
-        PlaceForThisBiz[i] = AddPlace(x, y, z, a, tx, ty, tz, ta, intid, BizType[i], BizID[i]);
+        PlaceForThisBiz[i] = AddPlace(x, y, z, a, tx, ty, tz, ta, intid, BizType[i], i);
         UpdateBizLabel(i, true);
     }return 1;
 }
@@ -89,7 +89,7 @@ CMD:buybiz(playerid){
     new Tok = GetPlayerToken(playerid);
     new bid = FindPlaceForEnter(playerid);
     if(bid == -1 || BizForThisPlace[bid] == -1) return SendPmBizNotExist(playerid, Tok);
-    new BI = FindBizIndexID(BizForThisPlace[bid]);
+    new BI = BizForThisPlace[bid];
     if(BI == -1) return SendPmBizNotExist(playerid, Tok);
     new Level = GetPlayerPlevel(playerid);
     if(BizOwnerPID[BI] >= 0 && BizForSellPrice[BI] > 0){
@@ -143,7 +143,6 @@ forward BizBuyed(playerid, PLID, const Name[25], Biz, pid, Token, MoneyForOldOwn
 public BizBuyed(playerid, PLID, const Name[25], Biz, pid, Token, MoneyForOldOwner){
     BizBuyClosed[Biz] = false;
     Querys--;
-    PlayerPlace[playerid] = pid;
     if(MoneyForOldOwner > 0){
         new query[100];
         mysql_format(sql, query, sizeof(query), "UPDATE users SET pMoney = pMoney + %d WHERE pid = %d", MoneyForOldOwner, BizOwnerPID[Biz]);
@@ -155,6 +154,7 @@ public BizBuyed(playerid, PLID, const Name[25], Biz, pid, Token, MoneyForOldOwne
     BizForSellPrice[Biz] = 0;
     UpdateBizLabel(Biz);
     CheckPlayerTokenCmp(playerid, Token);
+    PlayerPlace[playerid] = pid;
     SetPlayerInterior(playerid, PlaceInt[pid]);
     SetPlayerVirtualWorld(playerid, 1000+pid);
     SetPlayerPos(playerid, PlaceToX[pid], PlaceToY[pid], PlaceToZ[pid]);
@@ -166,7 +166,7 @@ CMD:bizinfo(playerid){
     new bid = FindPlaceForEnter(playerid);
     if(bid == -1) return SendClientMessage(playerid, -1, "Nazdik hichi nistiiii");
     if(BizForThisPlace[bid] == -1) return SendClientMessage(playerid, -1, "Nazdik hichi bizi nisti");
-    new BI = FindBizIndexID(BizForThisPlace[bid]);
+    new BI = BizForThisPlace[bid];
     if(BI == -1) return SendClientMessage(playerid, -1, "Nazdik hichi bizi nisti");
     SendClientMessage(playerid, -1, "Id in biz: %d", BizForThisPlace[bid]);
     SetBizStandardPrice(BI, 88888888);
